@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="lt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FeelHarmonic — vizitinė kortelė spaudai</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Karla:wght@400;500;600;700&display=swap">
+
+<style>
+/* =====================================================================
+   FeelHarmonic — vizitinė kortelė
+   Formatas: 85 × 55 mm + 3 mm nuopjova (bleed) = 91 × 61 mm
+   Saugi zona: 5 mm nuo apipjovimo linijos
+   ---------------------------------------------------------------------
+   Kitas formatas (90 × 50 mm): pakeisk --trim-w/--trim-h ŽEMIAU ir
+   dydžius @page taisyklėje (jos negali naudoti kintamųjų).
+   ===================================================================== */
+
+:root{
+  --trim-w:85mm;
+  --trim-h:55mm;
+  --bleed:3mm;
+  --safe:5mm;
+
+  --emerald:#077254;
+  --gold:#C9A227;
+  --gold-deep:#8C6C16;
+  --gold-light:#E7D083;
+  --ink:#14120D;
+  --paper:#FFFFFF;
+  --paper-warm:#F8F6F1;
+  --muted:#67625A;
+}
+
+*{box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+
+body{
+  margin:0;
+  background:#DFDCD5;
+  font-family:"Karla","Helvetica Neue",Arial,sans-serif;
+  color:var(--ink);
+}
+
+/* ---------- kortelė ---------- */
+
+.card{
+  position:relative;
+  width:calc(var(--trim-w) + var(--bleed) * 2);
+  height:calc(var(--trim-h) + var(--bleed) * 2);
+  overflow:hidden;
+  background:var(--paper);
+}
+
+.card__inner{
+  position:absolute;
+  inset:calc(var(--bleed) + var(--safe));
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+
+/* ---------- priekinė pusė ---------- */
+
+.front{background:var(--paper)}
+
+/* auksinė juostelė — išeina per apipjovimo kraštą, kad po pjovimo
+   liktų lygiai prigludusi prie kortelės krašto */
+.front::after{
+  content:"";
+  position:absolute;
+  left:0;right:0;bottom:0;
+  height:calc(1.4mm + var(--bleed));
+  background:linear-gradient(90deg,var(--gold-light) 0%,var(--gold) 45%,#9C7817 100%);
+}
+
+.logo{display:flex;align-items:center;gap:2.2mm}
+.logo__mark{
+  width:7.4mm;height:7.4mm;flex:none;border-radius:1.8mm;
+  background:linear-gradient(135deg,var(--gold-light) 0%,var(--gold) 48%,#9C7817 100%);
+  display:flex;align-items:center;justify-content:center;
+}
+.logo__mark svg{width:4.8mm;height:3mm;overflow:visible}
+.logo__mark path{fill:none;stroke:#191509;stroke-width:1.9;stroke-linecap:round}
+.logo__text{
+  font-family:"Fraunces",Georgia,serif;
+  font-variation-settings:"SOFT" 24,"WONK" 1;
+  font-weight:600;font-size:6.4mm;letter-spacing:-.02em;line-height:1;
+  color:var(--emerald);white-space:nowrap;
+}
+.logo__text em{font-style:normal;color:var(--gold-deep)}
+
+.person{display:grid;gap:1.1mm}
+.person__name{
+  font-family:"Fraunces",Georgia,serif;
+  font-variation-settings:"SOFT" 24,"WONK" 1;
+  font-weight:600;font-size:5.2mm;letter-spacing:-.015em;line-height:1;
+  color:var(--ink);
+}
+.person__role{
+  font-size:2.9mm;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--muted);font-weight:600;
+}
+
+/* ---------- galinė pusė ---------- */
+
+.back{background:var(--ink);color:#F5F1E6}
+
+.back .card__inner{justify-content:space-between}
+
+.back__top{display:flex;align-items:center;gap:2.2mm}
+.back__wave{width:11mm;height:3.4mm;overflow:visible}
+.back__wave path{fill:none;stroke:var(--gold);stroke-width:1.4;stroke-linecap:round}
+.back__label{
+  font-size:2.6mm;letter-spacing:.2em;text-transform:uppercase;
+  color:rgba(245,241,230,.62);font-weight:600;
+}
+
+.contacts{display:grid;gap:2.1mm}
+.contact{display:grid;gap:.6mm}
+.contact__k{
+  font-size:2.3mm;letter-spacing:.2em;text-transform:uppercase;
+  color:rgba(245,241,230,.5);font-weight:700;
+}
+.contact__v{font-size:3.5mm;line-height:1.2;color:#F5F1E6}
+.contact__v.gold{color:var(--gold)}
+
+.back__foot{
+  font-size:2.7mm;letter-spacing:.06em;
+  color:rgba(245,241,230,.55);
+}
+
+/* ---------- ekrano peržiūra (spausdinant nematoma) ---------- */
+
+.guide{
+  position:absolute;
+  inset:var(--bleed);
+  border:.2mm dashed rgba(220,53,69,.55);
+  pointer-events:none;
+}
+.guide::after{
+  content:"";position:absolute;
+  inset:var(--safe);
+  border:.2mm dashed rgba(0,120,255,.35);
+}
+
+.workspace{padding:14mm 10mm;display:grid;gap:12mm;justify-items:center}
+.pair{display:grid;gap:8mm;justify-items:center}
+@media(min-width:820px){.pair{grid-template-columns:auto auto;align-items:start}}
+.stack{display:grid;gap:3mm;justify-items:center}
+.stack figcaption{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#6B675F;font-weight:700}
+.card{box-shadow:0 2px 6px rgba(0,0,0,.16),0 14px 34px rgba(0,0,0,.14)}
+
+.notes{
+  max-width:150mm;background:#fff;border:1px solid #D6D2C8;border-radius:4px;
+  padding:9mm 10mm;font-size:14px;line-height:1.6;color:#3A3630;
+}
+.notes h1{
+  font-family:"Fraunces",Georgia,serif;font-variation-settings:"SOFT" 24,"WONK" 1;
+  font-size:22px;margin:0 0 2mm;letter-spacing:-.01em;
+}
+.notes h2{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#7C7668;margin:7mm 0 2mm}
+.notes p{margin:0 0 3mm}
+.notes ul{margin:0 0 3mm;padding-left:5mm}
+.notes li{margin-bottom:1.5mm}
+.notes table{border-collapse:collapse;width:100%;font-size:13px;margin-bottom:3mm}
+.notes th,.notes td{text-align:left;padding:2mm 3mm 2mm 0;border-bottom:1px solid #E8E4D8;vertical-align:top}
+.notes th{font-weight:700;color:#7C7668;font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.swatch{display:inline-block;width:4mm;height:4mm;border-radius:1mm;vertical-align:-.5mm;margin-right:2mm;border:1px solid rgba(0,0,0,.12)}
+.notes code{background:#F4F1E9;padding:.1em .35em;border-radius:2px;font-size:12px}
+
+/* ---------- SPAUDA ---------- */
+
+@page{
+  size: 91mm 61mm;   /* 85 × 55 + 3 mm nuopjova iš kiekvienos pusės */
+  margin: 0;
+}
+
+@media print{
+  body{background:#fff}
+  .workspace{padding:0;gap:0;display:block}
+  .pair,.stack{display:block;gap:0}
+  .stack figcaption,.notes,.guide{display:none !important}
+  .card{
+    box-shadow:none;
+    break-after:page;
+    page-break-after:always;
+    margin:0;
+  }
+  .card:last-of-type{break-after:auto;page-break-after:auto}
+}
+</style>
+</head>
+<body>
+
+<div class="workspace">
+
+  <div class="pair">
+    <figure class="stack">
+      <div class="card front">
+        <div class="card__inner">
+          <div class="logo">
+            <span class="logo__mark">
+              <svg viewBox="0 0 16 10" aria-hidden="true"><path d="M0 5c2-5 3 5 5 0s3 5 5 0 3 5 5 0"/></svg>
+            </span><span class="logo__text">Feel<em>Harmonic</em></span>
+          </div>
+
+          <div class="person">
+            <p class="person__name">Elena Daunytė</p>
+            <p class="person__role">Violončelė</p>
+          </div>
+        </div>
+        <div class="guide"></div>
+      </div>
+      <figcaption>Priekis</figcaption>
+    </figure>
+
+    <figure class="stack">
+      <div class="card back">
+        <div class="card__inner">
+          <div class="back__top">
+            <svg class="back__wave" viewBox="0 0 46 10" aria-hidden="true"><path d="M0 5c3-6 5 6 8 0s5 6 8 0 5 6 8 0 5 6 8 0 5 6 8 0"/></svg>
+            <span class="back__label">Koncertai · Edukacija · Renginiai</span>
+          </div>
+
+          <div class="contacts">
+            <div class="contact">
+              <span class="contact__k">El. paštas</span>
+              <span class="contact__v gold">daunyte.elena@gmail.com</span>
+            </div>
+            <div class="contact">
+              <span class="contact__k">Telefonas</span>
+              <span class="contact__v">+370 6XX XXXXX</span>
+            </div>
+            <!-- Kai bus domenas, atkomentuok ir įrašyk adresą:
+            <div class="contact">
+              <span class="contact__k">Svetainė</span>
+              <span class="contact__v">feelharmonic.lt</span>
+            </div>
+            -->
+          </div>
+
+          <p class="back__foot">Violončelės programos renginiams ir mokykloms · Lietuva</p>
+        </div>
+        <div class="guide"></div>
+      </div>
+      <figcaption>Nugarėlė</figcaption>
+    </figure>
+  </div>
+
+  <div class="notes">
+    <h1>Kaip iš šio failo padaryti spaudai tinkamą PDF</h1>
+    <p>Raudona punktyrinė linija — apipjovimo vieta, mėlyna — saugi zona. Ekrane jos matomos, spausdinant — ne.</p>
+
+    <h2>Eksportas</h2>
+    <ul>
+      <li>Atidaryk šį failą <strong>Chrome</strong> naršyklėje ir spausk <code>Ctrl + P</code>.</li>
+      <li>Paskirtis: <strong>Save as PDF</strong>.</li>
+      <li>Popieriaus dydis: <strong>91 × 61 mm</strong> (jei sąraše nėra — pasirink „Custom“ arba palik numatytą, nes dydį nustato pats failas).</li>
+      <li>Mastelis: <strong>100 %</strong> (ne „Fit to page“).</li>
+      <li>Paraštės: <strong>None</strong>.</li>
+      <li><strong>Background graphics: įjungta</strong> — kitaip tamsi nugarėlė išeis balta.</li>
+    </ul>
+    <p>Gausi dviejų puslapių PDF: 1 puslapis — priekis, 2 — nugarėlė. Tokį formatą priima visos spaustuvės.</p>
+
+    <h2>Ką pasakyti spaustuvei</h2>
+    <table>
+      <tr><th>Formatas</th><td>85 × 55 mm, nuopjova 3 mm iš visų pusių (failas 91 × 61 mm)</td></tr>
+      <tr><th>Pusės</th><td>4+4 (spauda iš abiejų pusių)</td></tr>
+      <tr><th>Popierius</th><td>Rekomenduoju 350 g/m² matinį kartoną su matiniu laminatu</td></tr>
+      <tr><th>Spalvos</th><td>CMYK, profilis ISO Coated v2 (FOGRA39)</td></tr>
+      <tr><th>Šriftai</th><td>Įterpti į PDF (Chrome tai padaro automatiškai)</td></tr>
+    </table>
+
+    <h2>Firminės spalvos</h2>
+    <table>
+      <tr><th>Spalva</th><th>RGB / HEX</th><th>CMYK (apytiksliai)</th></tr>
+      <tr>
+        <td><span class="swatch" style="background:#077254"></span>Smaragdinė</td>
+        <td><code>#077254</code></td><td>C94 M0 Y26 K55</td>
+      </tr>
+      <tr>
+        <td><span class="swatch" style="background:#C9A227"></span>Auksinė</td>
+        <td><code>#C9A227</code></td><td>C0 M19 Y81 K21</td>
+      </tr>
+      <tr>
+        <td><span class="swatch" style="background:#8C6C16"></span>Tamsi auksinė (tekstui)</td>
+        <td><code>#8C6C16</code></td><td>C0 M23 Y84 K45</td>
+      </tr>
+      <tr>
+        <td><span class="swatch" style="background:#14120D"></span>Juoda (nugarėlė)</td>
+        <td><code>#14120D</code></td><td>C60 M40 Y40 K100 (sodri juoda)</td>
+      </tr>
+    </table>
+    <p>CMYK reikšmės apytikslės — leisk spaustuvei konvertuoti iš HEX pagal savo profilį, rezultatas bus tikslesnis.</p>
+
+    <h2>Apie auksą</h2>
+    <p>CMYK auksas visada išeina kaip garstyčių geltona — tikro metalinio blizgesio spauda neatkuria. Jei nori, kad auksas atrodytų kaip auksas, spaustuvei sakyk vieną iš dviejų:</p>
+    <ul>
+      <li><strong>Pantone 871 C</strong> — metalizuoti dažai, papildoma spalva prie CMYK;</li>
+      <li><strong>Aukso folija (hot foil)</strong> — brangiau, bet ant matinio juodo kartono atrodo geriausiai. Tada foliją dėti tik logotipui ir juostelei.</li>
+    </ul>
+
+    <h2>Prieš siunčiant</h2>
+    <ul>
+      <li>Įrašyti tikrą telefono numerį (dabar <code>+370 6XX XXXXX</code>).</li>
+      <li>Nusprendus dėl domeno — atkomentuoti svetainės eilutę faile.</li>
+      <li>Kitam formatui (90 × 50 mm) pakeisti <code>--trim-w</code>, <code>--trim-h</code> ir dydį <code>@page</code> taisyklėje.</li>
+    </ul>
+  </div>
+
+</div>
+</body>
+</html>

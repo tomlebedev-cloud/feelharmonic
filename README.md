@@ -114,3 +114,12 @@ GitHub Pages perkuria puslapį per ~1 min.
 Žr. [TODO.md](TODO.md). Puslapyje visos neužpildytos vietos pažymėtos
 punktyriniu rėmeliu — jos matomos ir lankytojui, todėl prieš siunčiant
 nuorodą užsakovams jas reikia pakeisti tikru turiniu.
+
+---
+
+## 7. Vizitinės kortelės
+
+`spauda/vizitine.html` — spaudai paruoštas šablonas (85 × 55 mm + 3 mm nuopjova).
+Atidaryk Chrome ir spausk `Ctrl + P` → Save as PDF, mastelis 100 %, paraštės None,
+„Background graphics“ įjungta. Gausi dviejų puslapių PDF, kurį priima spaustuvės.
+Visos instrukcijos ir CMYK reikšmės surašytos pačiame faile.
