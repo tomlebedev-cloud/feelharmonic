@@ -15,14 +15,14 @@ Statinis puslapis — jokių duomenų bazių, jokio WordPress. Trys failai, kuri
 
 ## 1. Paleisti lokaliai
 
-Užtenka atidaryti `index.html` naršyklėje — viskas veiks.
-Jei nori tikro serverio (kad veiktų taip pat kaip internete):
+Užtenka du kartus spustelėti `index.html` — atsidarys naršyklėje ir viskas veiks.
+Pakeitęs tekstą, faile paspausk `Ctrl+S`, naršyklėje `Ctrl+F5`.
+
+Jei kada įsidiegsi Python arba Node, gali paleisti ir tikrą serverį:
 
 ```bash
 python -m http.server 8000
 ```
-
-Tada naršyklėje: `http://localhost:8000`
 
 ---
 
