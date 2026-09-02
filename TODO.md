@@ -14,8 +14,10 @@ Visos nuotraukos dedamos į aplanką `assets/img/` su **tiksliai tokiais pavadin
 | `galerija-1.jpg` … `galerija-6.jpg` | Galerija: portretas, koncertas salėje, dvaras ar bažnyčia, edukacija mokykloje, lauko renginys, instrumento detalė |
 | `og.jpg` | Nuotrauka, matoma dalinantis nuoroda (1200×630 px) |
 
-Kol failo nėra, jo vietoje rodomas punktyrinis laukelis su pavadinimu — puslapis nesugriūva.
-Įdėjus failą, jis atsiranda automatiškai, nieko kode keisti nereikia.
+Kol failų nėra, puslapis prisitaiko pats: portreto vietoje rodoma tamsi plokštuma
+su bangos ženklu, „Apie“ skiltis išsiplečia per visą plotį, o galerijos skiltis
+kartu su nuoroda meniu paslepiama. Įdėjus failus viskas atsiranda automatiškai —
+kode keisti nieko nereikia.
 
 Rekomendacijos: kvadratinės arba vertikalios, ne mažesnės kaip 1200 px pločio,
 suspaustos iki ~300 KB (tinka [squoosh.app](https://squoosh.app)).

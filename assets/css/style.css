@@ -648,14 +648,6 @@ body.no-scroll{overflow:hidden}
 
 /* ================= tuščios nuotraukų vietos ================= */
 
-[data-photo]{position:relative}
-[data-photo] .shot-empty{display:none}
-[data-photo].is-empty{background:var(--fill-bg);border:1px dashed var(--fill-line)}
-[data-photo].is-empty .shot-empty{display:grid}
-[data-photo].is-empty::after{content:none}
-[data-photo].is-empty .portrait-caption,
-[data-photo].is-empty figcaption{display:none}
-
 /* ================= kredencialų juosta ================= */
 
 .creds{
@@ -668,3 +660,30 @@ body.no-scroll{overflow:hidden}
   background:var(--ground);
 }
 .sec-alt .creds li{background:var(--surface)}
+
+/* ================= kai nuotraukos dar nėra ================= */
+
+[data-photo]{position:relative}
+
+/* vietoj tuščio rėmelio — tamsi plokštuma su bangos ženklu */
+[data-photo].is-empty{
+  background:
+    radial-gradient(120% 90% at 50% 30%, rgba(201,146,87,.14), transparent 62%),
+    var(--portrait-bg);
+  display:grid;place-items:center;
+}
+[data-photo].is-empty::before{
+  content:"";
+  width:min(58%,220px);aspect-ratio:46/10;
+  background:currentColor;color:rgba(201,146,87,.55);
+  -webkit-mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 46 10'><path d='M0 5c3-6 5 6 8 0s5 6 8 0 5 6 8 0 5 6 8 0 5 6 8 0' fill='none' stroke='black' stroke-width='1.2' stroke-linecap='round'/></svg>") center/contain no-repeat;
+  mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 46 10'><path d='M0 5c3-6 5 6 8 0s5 6 8 0 5 6 8 0 5 6 8 0 5 6 8 0' fill='none' stroke='black' stroke-width='1.2' stroke-linecap='round'/></svg>") center/contain no-repeat;
+}
+[data-photo].is-empty::after{content:none}
+[data-photo].is-empty figcaption:not(.portrait-caption){display:none}
+
+/* „Apie“ skiltis be nuotraukos — tekstas per visą plotį */
+.about.no-photo{grid-template-columns:minmax(0,1fr)}
+.about.no-photo .about-photo{display:none}
+
+[hidden]{display:none !important}

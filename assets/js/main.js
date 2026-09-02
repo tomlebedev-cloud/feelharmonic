@@ -104,14 +104,52 @@ var CONFIG = {
     Array.prototype.forEach.call(revealables, function (el) { io.observe(el); });
   }
 
-  /* ---------- trūkstamos nuotraukos ---------- */
+  /* ---------- trūkstamos nuotraukos ----------
+     Nesant failo, vietoj tuščio rėmelio rodoma tamsi plokštuma su
+     bangos ženklu. Jei nėra nė vienos galerijos nuotraukos, visa
+     galerijos skiltis paslepiama — taip puslapis atrodo baigtas. */
+
+  function tidyPhotos() {
+    var gallery = document.querySelector(".gallery");
+    if (gallery && !gallery.querySelector("img")) {
+      var section = document.getElementById("galerija");
+      if (section) section.hidden = true;
+      Array.prototype.forEach.call(
+        document.querySelectorAll("a[href='#galerija']"),
+        function (a) { a.hidden = true; }
+      );
+    }
+
+    var about = document.querySelector(".about");
+    var aboutPhoto = document.querySelector(".about-photo");
+    if (about && aboutPhoto && !aboutPhoto.querySelector("img")) {
+      about.classList.add("no-photo");
+    }
+  }
+
+  var pending = document.querySelectorAll("img[data-optional]").length;
+
   Array.prototype.forEach.call(document.querySelectorAll("img[data-optional]"), function (img) {
-    img.addEventListener("error", function () {
-      var holder = img.closest("[data-photo]");
-      if (holder) holder.classList.add("is-empty");
-      img.remove();
-    });
+    var settle = function (failed) {
+      if (failed) {
+        var holder = img.closest("[data-photo]");
+        if (holder) holder.classList.add("is-empty");
+        img.remove();
+      }
+      pending -= 1;
+      if (pending <= 0) tidyPhotos();
+    };
+
+    if (img.complete) {
+      settle(img.naturalWidth === 0);
+      return;
+    }
+    img.addEventListener("error", function () { settle(true); });
+    img.addEventListener("load", function () { settle(false); });
   });
+
+  // atsarginis variantas, jei kuri nors nuotrauka niekada neatsako
+  setTimeout(tidyPhotos, 2500);
 
   /* ---------- užklausos forma ---------- */
   var form = document.getElementById("uzklausa");
