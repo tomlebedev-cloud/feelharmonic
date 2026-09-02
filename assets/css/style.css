@@ -1,107 +1,118 @@
 /* FeelHarmonic — stiliai
    ------------------------------------------------------------------
-   Tema paimta iš portretinės nuotraukos: šilta tamsa, violončelės
-   lako atspalvis, kreminis tekstas. Visos spalvos — kintamuosiuose.
+   Balta bazė ir auksas. Visos spalvos — kintamuosiuose žemiau.
    ------------------------------------------------------------------ */
 
-/* ---- ŠVIESI tema (numatytoji) ---- */
+/* ---- ŠVIESI tema (numatytoji): balta + auksas ---- */
 :root{
-  --ground:#F6F1E9;
-  --ground-2:#EFE8DB;
-  --surface:#FDFBF7;
-  --ink:#191410;
-  --ink-2:#6B5F53;
-  --ink-3:#8F8073;
-  --line:#E1D7C6;
-  --line-soft:#EBE3D6;
+  --ground:#FFFFFF;
+  --ground-2:#F8F6F1;
+  --surface:#FFFFFF;
+  --ink:#14120D;
+  --ink-2:#67625A;
+  --ink-3:#7C7668;
+  --line:#E8E4D8;
+  --line-soft:#F2EFE7;
 
-  --accent:#8A5A21;
-  --accent-hover:#6E4617;
-  --accent-glow:rgba(138,90,33,.12);
-  --on-accent:#FDF9F2;
+  --accent:#8C6C16;
+  --accent-hover:#6F550F;
+  --accent-bright:#C9A227;
+  --accent-grad:linear-gradient(135deg,#E7D083 0%,#C9A227 48%,#9C7817 100%);
+  --accent-grad-hover:linear-gradient(135deg,#D9BE60 0%,#AC8A1B 48%,#7F6110 100%);
+  --accent-glow:rgba(201,162,39,.20);
+  --hero-glow:rgba(201,162,39,.13);
+  --on-accent:#191509;
 
-  --h-amber:#8A5A21;
-  --h-rust:#96472E;
-  --h-olive:#5C6738;
-  --h-plum:#7A4256;
+  --h-amber:#8C6C16;
+  --h-rust:#8C5A2A;
+  --h-olive:#5B6733;
+  --h-plum:#77455A;
 
-  --fill-line:#C3B291;
-  --fill-ink:#7A6743;
-  --fill-bg:#F1E9D8;
+  --fill-line:#DDD3B3;
+  --fill-ink:#8A7A45;
+  --fill-bg:#FAF6E9;
 
-  --ok:#5C6738;
-  --err:#96472E;
+  --ok:#5B6733;
+  --err:#8C4433;
 
-  --portrait-bg:#241B15;
+  --portrait-bg:#16130D;
   --pad-sec:clamp(4rem,8vw,7rem);
-  --shadow-1:0 1px 2px rgba(25,20,16,.05), 0 8px 24px rgba(25,20,16,.06);
-  --shadow-2:0 2px 4px rgba(25,20,16,.06), 0 18px 44px rgba(25,20,16,.10);
+  --shadow-1:0 1px 2px rgba(20,18,13,.05), 0 8px 24px rgba(20,18,13,.06);
+  --shadow-2:0 2px 4px rgba(20,18,13,.06), 0 18px 44px rgba(20,18,13,.10);
 }
 
 /* ---- TAMSI tema ---- */
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --ground:#13100D;
-    --ground-2:#191410;
-    --surface:#201A15;
-    --ink:#F2EBE1;
-    --ink-2:#A99C8E;
-    --ink-3:#82766A;
-    --line:#2E251E;
-    --line-soft:#231C16;
+    --ground:#0F0E0A;
+    --ground-2:#15130E;
+    --surface:#1B1811;
+    --ink:#F5F1E6;
+    --ink-2:#A69F8D;
+    --ink-3:#8B8574;
+    --line:#2B2719;
+    --line-soft:#211E14;
 
-    --accent:#C99257;
-    --accent-hover:#DFAC77;
-    --accent-glow:rgba(201,146,87,.16);
-    --on-accent:#17110B;
+    --accent:#DCBB61;
+    --accent-hover:#EBCE81;
+    --accent-bright:#E3C56F;
+    --accent-grad:linear-gradient(135deg,#F0DA9B 0%,#DCBB61 48%,#B2903A 100%);
+    --accent-grad-hover:linear-gradient(135deg,#F6E4B4 0%,#E9CB78 48%,#C4A24C 100%);
+    --accent-glow:rgba(220,187,97,.20);
+    --hero-glow:rgba(220,187,97,.11);
+    --on-accent:#141107;
 
-    --h-amber:#C99257;
-    --h-rust:#C97A5C;
-    --h-olive:#9AA76C;
-    --h-plum:#C08298;
+    --h-amber:#DCBB61;
+    --h-rust:#CE8F5F;
+    --h-olive:#A3B173;
+    --h-plum:#C68CA1;
 
-    --fill-line:#4A3D28;
-    --fill-ink:#BFA97E;
-    --fill-bg:#1C1710;
+    --fill-line:#463F26;
+    --fill-ink:#C4B276;
+    --fill-bg:#1A1810;
 
-    --ok:#9AA76C;
-    --err:#C97A5C;
+    --ok:#A3B173;
+    --err:#CE8F5F;
 
-    --portrait-bg:#1A1410;
-    --shadow-1:0 1px 2px rgba(0,0,0,.34), 0 8px 24px rgba(0,0,0,.40);
-    --shadow-2:0 2px 4px rgba(0,0,0,.38), 0 18px 44px rgba(0,0,0,.52);
+    --portrait-bg:#14110C;
+    --shadow-1:0 1px 2px rgba(0,0,0,.36), 0 8px 24px rgba(0,0,0,.42);
+    --shadow-2:0 2px 4px rgba(0,0,0,.40), 0 18px 44px rgba(0,0,0,.54);
   }
 }
 :root[data-theme="dark"]{
-  --ground:#13100D;
-  --ground-2:#191410;
-  --surface:#201A15;
-  --ink:#F2EBE1;
-  --ink-2:#A99C8E;
-  --ink-3:#82766A;
-  --line:#2E251E;
-  --line-soft:#231C16;
+  --ground:#0F0E0A;
+  --ground-2:#15130E;
+  --surface:#1B1811;
+  --ink:#F5F1E6;
+  --ink-2:#A69F8D;
+  --ink-3:#8B8574;
+  --line:#2B2719;
+  --line-soft:#211E14;
 
-  --accent:#C99257;
-  --accent-hover:#DFAC77;
-  --accent-glow:rgba(201,146,87,.16);
-  --on-accent:#17110B;
+  --accent:#DCBB61;
+  --accent-hover:#EBCE81;
+  --accent-bright:#E3C56F;
+  --accent-grad:linear-gradient(135deg,#F0DA9B 0%,#DCBB61 48%,#B2903A 100%);
+  --accent-grad-hover:linear-gradient(135deg,#F6E4B4 0%,#E9CB78 48%,#C4A24C 100%);
+  --accent-glow:rgba(220,187,97,.20);
+  --hero-glow:rgba(220,187,97,.11);
+  --on-accent:#141107;
 
-  --h-amber:#C99257;
-  --h-rust:#C97A5C;
-  --h-olive:#9AA76C;
-  --h-plum:#C08298;
+  --h-amber:#DCBB61;
+  --h-rust:#CE8F5F;
+  --h-olive:#A3B173;
+  --h-plum:#C68CA1;
 
-  --fill-line:#4A3D28;
-  --fill-ink:#BFA97E;
-  --fill-bg:#1C1710;
+  --fill-line:#463F26;
+  --fill-ink:#C4B276;
+  --fill-bg:#1A1810;
 
-  --ok:#9AA76C;
-  --err:#C97A5C;
+  --ok:#A3B173;
+  --err:#CE8F5F;
 
-  --portrait-bg:#1A1410;
-  --shadow-1:0 1px 2px rgba(0,0,0,.34), 0 8px 24px rgba(0,0,0,.40);
-  --shadow-2:0 2px 4px rgba(0,0,0,.38), 0 18px 44px rgba(0,0,0,.52);
+  --portrait-bg:#14110C;
+  --shadow-1:0 1px 2px rgba(0,0,0,.36), 0 8px 24px rgba(0,0,0,.42);
+  --shadow-2:0 2px 4px rgba(0,0,0,.40), 0 18px 44px rgba(0,0,0,.54);
 }
 
 /* ================= pagrindas ================= */
@@ -139,7 +150,7 @@ img{max-width:100%;height:auto;display:block}
   font-size:.7rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
   color:var(--ink-3);margin:0;
 }
-.rule{display:block;width:46px;height:10px;overflow:visible;color:var(--accent)}
+.rule{display:block;width:46px;height:10px;overflow:visible;color:var(--accent-bright)}
 .rule path{fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round}
 
 /* ================= navigacija ================= */
@@ -162,7 +173,7 @@ img{max-width:100%;height:auto;display:block}
   font-size:1.24rem;font-weight:600;letter-spacing:-.015em;
   text-decoration:none;color:inherit;
 }
-.brand-mark{width:24px;height:24px;flex:none;border-radius:6px;background:var(--accent);display:grid;place-items:center}
+.brand-mark{width:24px;height:24px;flex:none;border-radius:6px;background:var(--accent-grad);display:grid;place-items:center}
 .brand-mark svg{width:16px;height:10px;overflow:visible}
 .brand-mark path{fill:none;stroke:var(--on-accent);stroke-width:1.9;stroke-linecap:round}
 .brand em{font-style:normal;color:var(--accent)}
@@ -192,19 +203,19 @@ img{max-width:100%;height:auto;display:block}
 .btn{
   display:inline-flex;align-items:center;justify-content:center;gap:.55rem;
   font-family:inherit;font-size:.94rem;font-weight:600;letter-spacing:.01em;
-  padding:.82rem 1.45rem;border-radius:3px;border:1px solid var(--accent);
-  background:var(--accent);color:var(--on-accent);text-decoration:none;cursor:pointer;
+  padding:.82rem 1.45rem;border-radius:3px;border:1px solid transparent;
+  background:var(--accent-grad);color:var(--on-accent);text-decoration:none;cursor:pointer;
   transition:background .2s ease,border-color .2s ease,transform .2s ease,box-shadow .2s ease;
 }
-.btn:hover{background:var(--accent-hover);border-color:var(--accent-hover);transform:translateY(-1px);box-shadow:var(--shadow-1)}
+.btn:hover{background:var(--accent-grad-hover);border-color:transparent;transform:translateY(-1px);box-shadow:var(--shadow-1)}
 .btn:active{transform:translateY(0)}
 .btn[disabled]{opacity:.55;cursor:progress;transform:none}
 .btn svg{width:14px;height:14px;flex:none;transition:transform .2s ease}
 .btn:hover svg{transform:translateX(3px)}
 .btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
 .btn-ghost:hover{background:var(--surface);border-color:var(--ink-3);box-shadow:none}
-.btn-light{background:var(--on-accent);color:var(--accent);border-color:var(--on-accent)}
-.btn-light:hover{background:#fff;border-color:#fff;color:var(--accent-hover)}
+.btn-light{background:var(--on-accent);color:#F0DA9B;border-color:var(--on-accent)}
+.btn-light:hover{background:#fff;border-color:#fff;color:#7A5E12}
 
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{
   outline:2px solid var(--accent);outline-offset:3px;border-radius:2px;
@@ -216,7 +227,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   position:relative;overflow:hidden;
   border-bottom:1px solid var(--line);
   background:
-    radial-gradient(90% 70% at 88% 12%, var(--accent-glow), transparent 60%),
+    radial-gradient(66% 50% at 91% 6%, var(--hero-glow), transparent 64%),
     linear-gradient(180deg, var(--ground) 0%, var(--ground-2) 100%);
 }
 .hero-grid{
@@ -442,7 +453,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 
 /* ================= CTA juosta ================= */
 
-.cta-band{background:var(--accent);color:var(--on-accent);padding-block:clamp(3rem,6vw,4.5rem)}
+.cta-band{background:var(--accent-grad);color:var(--on-accent);padding-block:clamp(3rem,6vw,4.5rem)}
 .cta-in{display:grid;gap:1.6rem}
 @media(min-width:900px){.cta-in{grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:3rem}}
 .cta-band h2{font-size:clamp(1.75rem,3.4vw,2.45rem);color:var(--on-accent);margin-bottom:.7rem}
@@ -582,7 +593,7 @@ body.no-scroll{overflow:hidden}
 .media-play{
   width:48px;height:48px;flex:none;border-radius:50%;
   display:grid;place-items:center;
-  background:var(--accent);color:var(--on-accent);
+  background:var(--accent-grad);color:var(--on-accent);
 }
 .media-play svg{width:20px;height:20px;margin-left:2px}
 .media-body{display:grid;gap:.2rem;min-width:0}
@@ -668,14 +679,14 @@ body.no-scroll{overflow:hidden}
 /* vietoj tuščio rėmelio — tamsi plokštuma su bangos ženklu */
 [data-photo].is-empty{
   background:
-    radial-gradient(120% 90% at 50% 30%, rgba(201,146,87,.14), transparent 62%),
+    radial-gradient(120% 90% at 50% 30%, var(--accent-glow), transparent 62%),
     var(--portrait-bg);
   display:grid;place-items:center;
 }
 [data-photo].is-empty::before{
   content:"";
   width:min(58%,220px);aspect-ratio:46/10;
-  background:currentColor;color:rgba(201,146,87,.55);
+  background:currentColor;color:var(--accent-bright);
   -webkit-mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 46 10'><path d='M0 5c3-6 5 6 8 0s5 6 8 0 5 6 8 0 5 6 8 0 5 6 8 0' fill='none' stroke='black' stroke-width='1.2' stroke-linecap='round'/></svg>") center/contain no-repeat;
   mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 46 10'><path d='M0 5c3-6 5 6 8 0s5 6 8 0 5 6 8 0 5 6 8 0 5 6 8 0' fill='none' stroke='black' stroke-width='1.2' stroke-linecap='round'/></svg>") center/contain no-repeat;
 }
