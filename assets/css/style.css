@@ -17,6 +17,7 @@
   --accent:#8C6C16;
   --accent-hover:#6F550F;
   --accent-bright:#C9A227;
+  --brand-green:#15654A;
   --accent-grad:linear-gradient(135deg,#E7D083 0%,#C9A227 48%,#9C7817 100%);
   --accent-grad-hover:linear-gradient(135deg,#D9BE60 0%,#AC8A1B 48%,#7F6110 100%);
   --accent-glow:rgba(201,162,39,.20);
@@ -56,6 +57,7 @@
     --accent:#DCBB61;
     --accent-hover:#EBCE81;
     --accent-bright:#E3C56F;
+    --brand-green:#4EC195;
     --accent-grad:linear-gradient(135deg,#F0DA9B 0%,#DCBB61 48%,#B2903A 100%);
     --accent-grad-hover:linear-gradient(135deg,#F6E4B4 0%,#E9CB78 48%,#C4A24C 100%);
     --accent-glow:rgba(220,187,97,.20);
@@ -92,6 +94,7 @@
   --accent:#DCBB61;
   --accent-hover:#EBCE81;
   --accent-bright:#E3C56F;
+  --brand-green:#4EC195;
   --accent-grad:linear-gradient(135deg,#F0DA9B 0%,#DCBB61 48%,#B2903A 100%);
   --accent-grad-hover:linear-gradient(135deg,#F6E4B4 0%,#E9CB78 48%,#C4A24C 100%);
   --accent-glow:rgba(220,187,97,.20);
@@ -170,9 +173,10 @@ img{max-width:100%;height:auto;display:block}
 .brand{
   display:inline-flex;align-items:center;gap:.6rem;
   font-family:"Fraunces",Georgia,serif;font-variation-settings:"SOFT" 24,"WONK" 1;
-  font-size:1.24rem;font-weight:600;letter-spacing:-.015em;
+  font-size:1.42rem;font-weight:600;letter-spacing:-.02em;
   text-decoration:none;color:inherit;
 }
+.brand-text{color:var(--brand-green);white-space:nowrap}
 .brand-mark{width:24px;height:24px;flex:none;border-radius:6px;background:var(--accent-grad);display:grid;place-items:center}
 .brand-mark svg{width:16px;height:10px;overflow:visible}
 .brand-mark path{fill:none;stroke:var(--on-accent);stroke-width:1.9;stroke-linecap:round}
@@ -654,7 +658,7 @@ body.no-scroll{overflow:hidden}
   form .btn{width:100%}
   .nav .btn{padding:.6rem .85rem;font-size:.86rem}
   .nav-in{gap:.6rem}
-  .brand{font-size:1.08rem}
+  .brand{font-size:1.2rem}
 }
 
 /* ================= tuščios nuotraukų vietos ================= */
