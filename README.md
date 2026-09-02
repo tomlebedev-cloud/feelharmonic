@@ -77,7 +77,7 @@ Kad užklausos ateitų automatiškai:
 
 ```js
 var CONFIG = {
-  email: "labas@feelharmonic.lt",
+  email: "daunyte.elena@gmail.com",
   formEndpoint: "https://formspree.io/f/xxxxxxxx"
 };
 ```

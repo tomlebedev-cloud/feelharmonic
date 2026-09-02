@@ -1,43 +1,53 @@
-# Ką užpildyti prieš siunčiant nuorodą užsakovams
+# Ką užpildyti
 
-Puslapyje neužpildytos vietos pažymėtos punktyriniu rėmeliu.
-Eiliškumas svarbus — sąrašas surikiuotas pagal tai, kas labiausiai lemia užsakymą.
+Puslapyje neužpildytos vietos pažymėtos punktyriniu rėmeliu — jos matomos ir lankytojui.
+Sąrašas surikiuotas pagal tai, kas labiausiai lemia užsakymą.
 
-## Būtina (be šito puslapio siųsti nereikia)
+## 1. Nuotraukos — svarbiausia
 
-- [ ] **Rekvizitai** — vardas, individualios veiklos pažymos nr., adresas sąskaitoms
-      → `index.html`, sekcija „Kontaktai“
-- [ ] **Telefonas ir tikras el. paštas**
-      → `index.html` (telefonas) ir `assets/js/main.js` (`CONFIG.email`)
-- [ ] **Kainos „nuo“** trims programoms
-      → `index.html`, sekcija „Programos“
-- [ ] **Portretinė nuotrauka** — vertikali, su instrumentu
-      → įkelti į `assets/img/`, pakeisti `.portrait` bloką sekcijoje „Apie“
-- [ ] **Bio pastraipa** — vardas, instrumentas, išsilavinimas, svarbiausi darbai
-      → `index.html`, sekcija „Apie“
-- [ ] **Formspree adresas**
-      → `assets/js/main.js`, `CONFIG.formEndpoint`
+Visos nuotraukos dedamos į aplanką `assets/img/` su **tiksliai tokiais pavadinimais**:
 
-## Labai stipriai padeda
+| Failas | Kas tai |
+|---|---|
+| `elena.jpg` | Portretas su violončele — rodomas pirmame ekrane |
+| `apie.jpg` | Antra nuotrauka skiltyje „Apie“ (koncertinė) |
+| `galerija-1.jpg` … `galerija-6.jpg` | Galerija: portretas, koncertas salėje, dvaras ar bažnyčia, edukacija mokykloje, lauko renginys, instrumento detalė |
+| `og.jpg` | Nuotrauka, matoma dalinantis nuoroda (1200×630 px) |
 
-- [ ] **Vienas vaizdo įrašas** — 60–90 sek. koncerto ištrauka, geras garsas
-      → YouTube arba Vimeo, įterpimo kodas pridėtas komentare `index.html` sekcijoje „Klausyti“
-- [ ] **DUK skaičiai** — kiek žmonių salei pakanka aparatūros, kelionės įkainis,
-      atšaukimo terminas
+Kol failo nėra, jo vietoje rodomas punktyrinis laukelis su pavadinimu — puslapis nesugriūva.
+Įdėjus failą, jis atsiranda automatiškai, nieko kode keisti nereikia.
+
+Rekomendacijos: kvadratinės arba vertikalios, ne mažesnės kaip 1200 px pločio,
+suspaustos iki ~300 KB (tinka [squoosh.app](https://squoosh.app)).
+Naudoti tik tas nuotraukas, kurių teisės priklauso Elenai arba dėl kurių susitarta su fotografu.
+
+## 2. Skaičiai ir rekvizitai
+
+- [ ] **Kainos „nuo“** trims programoms → `index.html`, skiltis „Programos“
+- [ ] **Telefonas** → `index.html`, skiltis „Kontaktai“
+- [ ] **Individualios veiklos pažymos nr.** ir adresas sąskaitoms
+- [ ] **DUK skaičiai** — kiek žmonių salei pakanka aparatūros, kelionės įkainis, atšaukimo terminas
 - [ ] **Socialinių tinklų nuorodos**
-- [ ] **OG nuotrauka** dalinimuisi (1200×630 px) → `assets/img/og.jpg`
+- [ ] **Edukacijos amžiaus grupė** — kurioms klasėms skirtas užsiėmimas „Kaip skamba emocija?“
 
-## Kai atsiras
+## 3. Forma
 
+- [ ] **Formspree adresas** → `assets/js/main.js`, `CONFIG.formEndpoint`.
+      Kol neįrašytas, mygtukas atidaro el. pašto programą su paruoštu laišku.
+
+## 4. Kai atsiras
+
+- [ ] **Vaizdo įrašai** — koncerto ištrauka ir edukacinis užsiėmimas.
+      Įterpimo kodas paruoštas komentare `index.html` skiltyje „Klausyti ir žiūrėti“.
 - [ ] **Trys atsiliepimai** su vardu, pareigomis ir įstaiga.
-      Prašyk raštu iškart po renginio ir kartu paprašyk leidimo paskelbti.
+      Prašyti raštu iškart po renginio, kartu prašant leidimo paskelbti.
       Nesugalvotų atsiliepimų nerašyti — kultūros įstaigose žmonės pažįsta vieni kitus.
-- [ ] **Kultūros paso žymė** — kai edukacija bus patvirtinta, pakeisti
-      „Rengiama Kultūros paso atrankai“ į tikslų statusą ir pridėti nuorodą į katalogą.
+- [ ] **Kultūros paso žymė** — patvirtinus edukaciją, pakeisti „Rengiama Kultūros paso atrankai“
+      į tikslų statusą ir pridėti nuorodą į katalogą.
 
 ## Terminai
 
-- **Rugsėjis** — rekvizitai, kainos, nuotrauka, publikavimas.
-  Kalėdinius pasiūlymus kultūros centrams reikia siųsti su veikiančia nuoroda.
-- **Spalis** — Kultūros paso kvietimas. Iki jo puslapis turi būti gyvas:
-  vertinant tikrinama, ar teikėjas realus. Tikslias datas pasitikrinti kulturospasas.lt.
+- **Rugsėjis** — nuotraukos, kainos, rekvizitai. Kalėdinius pasiūlymus kultūros centrams
+  reikia siųsti su veikiančia nuoroda.
+- **Spalis** — Kultūros paso kvietimas. Iki jo puslapis turi būti gyvas: vertinant
+  tikrinama, ar teikėjas realus. Tikslias datas pasitikrinti kulturospasas.lt.

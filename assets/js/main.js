@@ -5,7 +5,7 @@
 
 var CONFIG = {
   // El. pašto adresas, kuriuo su tavimi susisieks užsakovai.
-  email: "labas@feelharmonic.lt",
+  email: "daunyte.elena@gmail.com",
 
   // Formspree adresas. Registruokis formspree.io, sukurk formą ir
   // įklijuok gautą nuorodą (atrodo taip: https://formspree.io/f/abcdwxyz).
@@ -17,144 +17,172 @@ var CONFIG = {
 (function () {
   "use strict";
 
-  /* --- metai poraštėje --- */
+  var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ---------- metai poraštėje ---------- */
   var yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  /* --- el. pašto adresas įrašomas iš CONFIG --- */
+  /* ---------- el. pašto adresas iš CONFIG ---------- */
   Array.prototype.forEach.call(document.querySelectorAll("[data-email]"), function (el) {
     el.textContent = CONFIG.email;
     if (el.tagName === "A") el.setAttribute("href", "mailto:" + CONFIG.email);
   });
 
-  /* --- užklausos forma --- */
-  var form = document.getElementById("uzklausa");
-  if (form) {
-    var msg = document.getElementById("form-msg");
-    var btn = form.querySelector("button[type=submit]");
+  /* ---------- mobilusis meniu ---------- */
+  var burger = document.getElementById("burger");
+  var mobileNav = document.getElementById("mobile-nav");
 
-    function say(text, state) {
-      if (!msg) return;
-      msg.textContent = text;
-      msg.setAttribute("data-state", state || "");
-    }
+  if (burger && mobileNav) {
+    var closeMenu = function () {
+      mobileNav.classList.remove("is-open");
+      burger.setAttribute("aria-expanded", "false");
+      document.body.classList.remove("no-scroll");
+    };
 
-    function mailtoFallback(data) {
-      var body = [
-        "Vardas: " + (data.get("vardas") || ""),
-        "Įstaiga: " + (data.get("istaiga") || ""),
-        "El. paštas: " + (data.get("pastas") || ""),
-        "Telefonas: " + (data.get("telefonas") || ""),
-        "Ko ieško: " + (data.get("tipas") || ""),
-        "Data: " + (data.get("data") || ""),
-        "",
-        data.get("zinute") || ""
-      ].join("\n");
+    burger.addEventListener("click", function () {
+      var open = mobileNav.classList.toggle("is-open");
+      burger.setAttribute("aria-expanded", open ? "true" : "false");
+      document.body.classList.toggle("no-scroll", open);
+    });
 
-      window.location.href =
-        "mailto:" + CONFIG.email +
-        "?subject=" + encodeURIComponent("Užklausa dėl " + (data.get("tipas") || "programos")) +
-        "&body=" + encodeURIComponent(body);
+    Array.prototype.forEach.call(mobileNav.querySelectorAll("a"), function (a) {
+      a.addEventListener("click", closeMenu);
+    });
 
-      say("Atidaryta jūsų el. pašto programa. Jei nieko neįvyko, rašykite adresu " + CONFIG.email, "");
-    }
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closeMenu();
+    });
 
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-
-      // paprastas apsaugos nuo robotų laukas
-      if (form.querySelector("[name=_gotcha]") && form.querySelector("[name=_gotcha]").value) return;
-
-      var data = new FormData(form);
-
-      if (CONFIG.formEndpoint.indexOf("formspree.io") === -1) {
-        mailtoFallback(data);
-        return;
-      }
-
-      btn.disabled = true;
-      say("Siunčiama…", "");
-
-      fetch(CONFIG.formEndpoint, {
-        method: "POST",
-        body: data,
-        headers: { Accept: "application/json" }
-      })
-        .then(function (r) {
-          if (!r.ok) throw new Error("HTTP " + r.status);
-          form.reset();
-          say("Ačiū — užklausa gauta. Atsakysiu per dvi darbo dienas.", "ok");
-        })
-        .catch(function () {
-          say("Nepavyko išsiųsti. Parašykite tiesiai adresu " + CONFIG.email, "err");
-        })
-        .then(function () {
-          btn.disabled = false;
-        });
+    window.addEventListener("resize", function () {
+      if (window.innerWidth >= 980) closeMenu();
     });
   }
 
-  /* --- harmonikų banga hero'jaus apačioje --- */
-  var cv = document.getElementById("wave");
-  if (!cv || !cv.getContext) return;
-
-  var ctx = cv.getContext("2d");
-  var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var stroke = "#1E5C50";
-
-  function readColor() {
-    var v = getComputedStyle(document.documentElement).getPropertyValue("--accent").trim();
-    if (v) stroke = v;
+  /* ---------- navigacijos būsena slenkant ---------- */
+  var nav = document.getElementById("nav");
+  if (nav) {
+    var onScroll = function () {
+      nav.classList.toggle("is-stuck", window.scrollY > 12);
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
   }
 
-  function size() {
-    var r = cv.getBoundingClientRect();
-    var dpr = Math.min(window.devicePixelRatio || 1, 2);
-    cv.width = Math.max(1, r.width * dpr);
-    cv.height = Math.max(1, r.height * dpr);
-    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  /* ---------- aktyvi nuoroda meniu ---------- */
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll(".nav-links a[href^='#']"));
+  if (navLinks.length && "IntersectionObserver" in window) {
+    var sections = navLinks
+      .map(function (a) { return document.querySelector(a.getAttribute("href")); })
+      .filter(Boolean);
+
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        navLinks.forEach(function (a) {
+          a.classList.toggle("is-active", a.getAttribute("href") === "#" + entry.target.id);
+        });
+      });
+    }, { rootMargin: "-45% 0px -50% 0px" });
+
+    sections.forEach(function (s) { spy.observe(s); });
   }
 
-  var harmonics = [
-    { n: 1, amp: 0.30, alpha: 0.34, speed: 0.00022 },
-    { n: 2, amp: 0.16, alpha: 0.24, speed: 0.00031 },
-    { n: 3, amp: 0.10, alpha: 0.18, speed: 0.00044 }
-  ];
+  /* ---------- turinio pasirodymas slenkant ---------- */
+  var revealables = document.querySelectorAll(".reveal");
+  if (reduced || !("IntersectionObserver" in window)) {
+    Array.prototype.forEach.call(revealables, function (el) { el.classList.add("is-in"); });
+  } else {
+    var io = new IntersectionObserver(function (entries, obs) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-in");
+        obs.unobserve(entry.target);
+      });
+    }, { rootMargin: "0px 0px -12% 0px", threshold: 0.06 });
 
-  function draw(t) {
-    var r = cv.getBoundingClientRect();
-    var w = r.width, h = r.height;
-    ctx.clearRect(0, 0, w, h);
-    for (var i = 0; i < harmonics.length; i++) {
-      var hm = harmonics[i];
-      ctx.beginPath();
-      for (var x = 0; x <= w; x += 2) {
-        var y = h * 0.62 + Math.sin((x / w) * Math.PI * 2 * hm.n + t * hm.speed) * h * hm.amp;
-        if (x === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
-      }
-      ctx.globalAlpha = hm.alpha;
-      ctx.strokeStyle = stroke;
-      ctx.lineWidth = 1.25;
-      ctx.stroke();
-    }
-    ctx.globalAlpha = 1;
+    Array.prototype.forEach.call(revealables, function (el) { io.observe(el); });
   }
 
-  readColor();
-  size();
-  draw(0);
-
-  window.addEventListener("resize", function () { size(); draw(performance.now()); });
-
-  var mq = window.matchMedia("(prefers-color-scheme: dark)");
-  if (mq.addEventListener) mq.addEventListener("change", readColor);
-  else if (mq.addListener) mq.addListener(readColor);
-
-  new MutationObserver(readColor).observe(document.documentElement, {
-    attributes: true, attributeFilter: ["data-theme"]
+  /* ---------- trūkstamos nuotraukos ---------- */
+  Array.prototype.forEach.call(document.querySelectorAll("img[data-optional]"), function (img) {
+    img.addEventListener("error", function () {
+      var holder = img.closest("[data-photo]");
+      if (holder) holder.classList.add("is-empty");
+      img.remove();
+    });
   });
 
-  if (!reduced) {
-    (function loop(ts) { draw(ts); requestAnimationFrame(loop); })(0);
+  /* ---------- užklausos forma ---------- */
+  var form = document.getElementById("uzklausa");
+  if (!form) return;
+
+  var msg = document.getElementById("form-msg");
+  var btn = form.querySelector("button[type=submit]");
+
+  function say(text, state) {
+    if (!msg) return;
+    msg.textContent = text;
+    msg.setAttribute("data-state", state || "");
   }
+
+  function mailtoFallback(data) {
+    var body = [
+      "Vardas: " + (data.get("vardas") || ""),
+      "Įstaiga: " + (data.get("istaiga") || ""),
+      "El. paštas: " + (data.get("pastas") || ""),
+      "Telefonas: " + (data.get("telefonas") || ""),
+      "Ko ieško: " + (data.get("tipas") || ""),
+      "Data: " + (data.get("data") || ""),
+      "",
+      data.get("zinute") || ""
+    ].join("\n");
+
+    window.location.href =
+      "mailto:" + CONFIG.email +
+      "?subject=" + encodeURIComponent("Užklausa dėl " + (data.get("tipas") || "programos")) +
+      "&body=" + encodeURIComponent(body);
+
+    say("Atidaryta jūsų el. pašto programa. Jei nieko neįvyko, rašykite adresu " + CONFIG.email, "");
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    var honeypot = form.querySelector("[name=_gotcha]");
+    if (honeypot && honeypot.value) return;
+
+    if (!form.checkValidity()) {
+      say("Užpildykite vardą ir el. paštą — be jų negalėsiu atsakyti.", "err");
+      form.reportValidity();
+      return;
+    }
+
+    var data = new FormData(form);
+
+    if (CONFIG.formEndpoint.indexOf("formspree.io") === -1) {
+      mailtoFallback(data);
+      return;
+    }
+
+    btn.disabled = true;
+    say("Siunčiama…", "");
+
+    fetch(CONFIG.formEndpoint, {
+      method: "POST",
+      body: data,
+      headers: { Accept: "application/json" }
+    })
+      .then(function (r) {
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        form.reset();
+        say("Ačiū — užklausa gauta. Atsakysiu per dvi darbo dienas.", "ok");
+      })
+      .catch(function () {
+        say("Nepavyko išsiųsti. Parašykite tiesiai adresu " + CONFIG.email, "err");
+      })
+      .then(function () {
+        btn.disabled = false;
+      });
+  });
 })();
