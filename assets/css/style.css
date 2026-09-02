@@ -17,7 +17,7 @@
   --accent:#8C6C16;
   --accent-hover:#6F550F;
   --accent-bright:#C9A227;
-  --brand-green:#15654A;
+  --brand-green:#17835E;
   --accent-grad:linear-gradient(135deg,#E7D083 0%,#C9A227 48%,#9C7817 100%);
   --accent-grad-hover:linear-gradient(135deg,#D9BE60 0%,#AC8A1B 48%,#7F6110 100%);
   --accent-glow:rgba(201,162,39,.20);
@@ -173,7 +173,7 @@ img{max-width:100%;height:auto;display:block}
 .brand{
   display:inline-flex;align-items:center;gap:.6rem;
   font-family:"Fraunces",Georgia,serif;font-variation-settings:"SOFT" 24,"WONK" 1;
-  font-size:1.42rem;font-weight:600;letter-spacing:-.02em;
+  font-size:1.62rem;font-weight:600;letter-spacing:-.02em;
   text-decoration:none;color:inherit;
 }
 .brand-text{color:var(--brand-green);white-space:nowrap}
@@ -182,13 +182,13 @@ img{max-width:100%;height:auto;display:block}
 .brand-mark path{fill:none;stroke:var(--on-accent);stroke-width:1.9;stroke-linecap:round}
 .brand em{font-style:normal;color:var(--accent)}
 
-.nav-links{display:none;gap:.3rem;margin-left:auto;font-size:.9rem}
+.nav-links{display:none;gap:.2rem;margin-left:auto;font-size:1rem}
 .nav-links a{
   position:relative;text-decoration:none;color:var(--ink-2);
-  padding:.4rem .7rem;transition:color .2s ease;
+  padding:.45rem .62rem;transition:color .2s ease;
 }
 .nav-links a::after{
-  content:"";position:absolute;left:.7rem;right:.7rem;bottom:.1rem;height:1px;
+  content:"";position:absolute;left:.62rem;right:.62rem;bottom:.1rem;height:1px;
   background:var(--accent);transform:scaleX(0);transform-origin:left;
   transition:transform .28s cubic-bezier(.22,1,.36,1);
 }
@@ -658,7 +658,7 @@ body.no-scroll{overflow:hidden}
   form .btn{width:100%}
   .nav .btn{padding:.6rem .85rem;font-size:.86rem}
   .nav-in{gap:.6rem}
-  .brand{font-size:1.2rem}
+  .brand{font-size:1.32rem}
 }
 
 /* ================= tuščios nuotraukų vietos ================= */
