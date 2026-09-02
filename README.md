@@ -88,30 +88,12 @@ Pirmą užklausą Formspree paprašys patvirtinti el. paštu. Būtinai išsiųsk
 
 ---
 
-## 5. Prijungti savo domeną (`feelharmonic.lt`)
+## 5. Savas domenas — vėliau
 
-1. Nusipirk domeną per bet kurį `.lt` registratorių (~10–15 €/metus).
-2. Registratoriaus DNS nustatymuose sukurk įrašus:
-
-```
-A     @    185.199.108.153
-A     @    185.199.109.153
-A     @    185.199.110.153
-A     @    185.199.111.153
-CNAME www  tomlebedev-cloud.github.io.
-```
-
-3. Šiame aplanke sukurk failą `CNAME` su vienintele eilute:
-
-```
-feelharmonic.lt
-```
-
-4. GitHub → Settings → Pages → **Custom domain** → įrašyk `feelharmonic.lt` → Save.
-5. Kai atsiras varnelė, pažymėk **Enforce HTTPS** (gali užtrukti iki 24 val.).
-6. Pakeisk adresus faile `index.html` (`canonical`, `og:url`, `og:image`),
-   `robots.txt` ir `sitemap.xml` iš `tomlebedev-cloud.github.io/feelharmonic/`
-   į `feelharmonic.lt`. Failuose `404.html` kelius `/feelharmonic/...` pakeisk į `/...`.
+Puslapis parašytas be jokių prisirišimų prie adreso: visos nuorodos reliatyvios,
+todėl jis vienodai veikia atidarytas iš failo, GitHub Pages adresu ar bet kuriame
+kitame hostinge. Nusipirkus domeną nieko perrašinėti nereikės — užteks jį prijungti
+GitHub Pages nustatymuose ir pridėti `robots.txt` bei `sitemap.xml`.
 
 ---
 
