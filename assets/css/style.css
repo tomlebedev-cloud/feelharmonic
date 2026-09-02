@@ -1,0 +1,270 @@
+/* FeelHarmonic — stiliai
+   Spalvos aprašytos kintamaisiais. Norint pakeisti temą,
+   užtenka pataisyti reikšmes :root bloke. */
+
+:root{
+  --ground:#F3F5F1;
+  --surface:#FBFCFA;
+  --ink:#14201D;
+  --ink-2:#586662;
+  --line:#DCE1DA;
+  --line-soft:#E7EBE4;
+  --accent:#1E5C50;
+  --accent-hover:#164740;
+  --on-accent:#F6FAF8;
+  --h-amber:#A96D18;
+  --h-violet:#57468F;
+  --h-teal:#1E5C50;
+  --h-rose:#A0374C;
+  --fill-line:#B9AE8E;
+  --fill-ink:#7A6C48;
+  --fill-bg:#F2EDDF;
+  --ok:#1E5C50;
+  --err:#A0374C;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#0F1513;
+    --surface:#161E1B;
+    --ink:#E9EEEA;
+    --ink-2:#94A29C;
+    --line:#26312D;
+    --line-soft:#1D2724;
+    --accent:#5CC3A8;
+    --accent-hover:#79D3BB;
+    --on-accent:#0C1210;
+    --h-amber:#DDA355;
+    --h-violet:#A497DC;
+    --h-teal:#5CC3A8;
+    --h-rose:#E58098;
+    --fill-line:#4B4633;
+    --fill-ink:#BCAE85;
+    --fill-bg:#1C1D15;
+    --ok:#5CC3A8;
+    --err:#E58098;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0F1513;
+  --surface:#161E1B;
+  --ink:#E9EEEA;
+  --ink-2:#94A29C;
+  --line:#26312D;
+  --line-soft:#1D2724;
+  --accent:#5CC3A8;
+  --accent-hover:#79D3BB;
+  --on-accent:#0C1210;
+  --h-amber:#DDA355;
+  --h-violet:#A497DC;
+  --h-teal:#5CC3A8;
+  --h-rose:#E58098;
+  --fill-line:#4B4633;
+  --fill-ink:#BCAE85;
+  --fill-bg:#1C1D15;
+  --ok:#5CC3A8;
+  --err:#E58098;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--ink);
+  font-family:"Karla","Helvetica Neue",Arial,sans-serif;
+  font-size:17px;
+  line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:"Fraunces",Georgia,"Times New Roman",serif;font-weight:600;text-wrap:balance;margin:0;line-height:1.12}
+p{margin:0}
+img{max-width:100%;height:auto;display:block}
+
+.shell{width:min(1140px,100% - 2.5rem);margin-inline:auto}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:1rem;top:1rem;z-index:99;background:var(--accent);color:var(--on-accent);padding:.6rem 1rem;border-radius:3px}
+
+.eyebrow{
+  font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-2);margin:0;
+}
+
+/* ---------- navigacija ---------- */
+.nav{
+  position:sticky;top:0;z-index:40;
+  background:color-mix(in srgb,var(--ground) 88%,transparent);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.nav-in{display:flex;align-items:center;gap:1.5rem;height:62px}
+.brand{font-family:"Fraunces",Georgia,serif;font-size:1.18rem;font-weight:600;letter-spacing:-.01em;text-decoration:none;color:inherit}
+.brand span{color:var(--accent)}
+.nav-links{display:none;gap:1.4rem;margin-left:auto;font-size:.9rem}
+.nav-links a{text-decoration:none;color:var(--ink-2);padding-block:.35rem}
+.nav-links a:hover{color:var(--ink)}
+.nav .btn{margin-left:auto}
+@media(min-width:900px){
+  .nav-links{display:flex}
+  .nav .btn{margin-left:0}
+}
+
+/* ---------- mygtukai ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+  font-family:inherit;font-size:.94rem;font-weight:600;
+  padding:.72rem 1.25rem;border-radius:3px;border:1px solid var(--accent);
+  background:var(--accent);color:var(--on-accent);text-decoration:none;cursor:pointer;
+  transition:background .16s ease,border-color .16s ease;
+}
+.btn:hover{background:var(--accent-hover);border-color:var(--accent-hover)}
+.btn[disabled]{opacity:.6;cursor:progress}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{background:var(--surface);border-color:var(--ink-2)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{
+  outline:2px solid var(--accent);outline-offset:3px;border-radius:2px;
+}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+#wave{position:absolute;inset:auto 0 0 0;width:100%;height:46%;display:block;opacity:.5;pointer-events:none}
+.hero-in{position:relative;z-index:1;display:grid;gap:1.6rem;padding-block:clamp(3.6rem,9vw,6.4rem) clamp(4.5rem,11vw,7.5rem)}
+.hero h1{font-size:clamp(2.5rem,6.4vw,4.35rem);letter-spacing:-.022em;max-width:16ch}
+.hero .lead{font-size:clamp(1.06rem,1.7vw,1.24rem);color:var(--ink-2);max-width:56ch}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:.4rem}
+.hero-facts{display:flex;flex-wrap:wrap;gap:.5rem 1.4rem;margin-top:1.4rem;font-size:.86rem;color:var(--ink-2)}
+.hero-facts span{display:inline-flex;align-items:center;gap:.5rem}
+.hero-facts span::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--accent)}
+
+/* ---------- sekcijos ---------- */
+.sec{padding-block:clamp(3.4rem,7vw,5.6rem);border-bottom:1px solid var(--line)}
+.sec-head{display:grid;gap:.85rem;margin-bottom:2.6rem;max-width:60ch}
+.sec-head h2{font-size:clamp(1.7rem,3.4vw,2.35rem);letter-spacing:-.015em}
+.sec-head p{color:var(--ink-2)}
+
+/* ---------- kryptys ---------- */
+.grid-rule{display:grid;gap:1px;background:var(--line);border-block:1px solid var(--line)}
+@media(min-width:820px){.grid-rule{grid-template-columns:1fr 1fr}}
+.cell{background:var(--ground);padding:2rem clamp(0rem,3vw,2rem) 2rem 0}
+@media(min-width:820px){
+  .cell{padding:2.2rem 2.4rem}
+  .cell:nth-child(odd){padding-left:0}
+  .cell:nth-child(even){padding-right:0}
+}
+.cell-top{display:flex;align-items:center;gap:.7rem;margin-bottom:1rem}
+.glyph{flex:none;width:26px;height:14px;overflow:visible}
+.cell h3{font-size:1.24rem;margin-bottom:.6rem}
+.cell p{color:var(--ink-2);font-size:.98rem}
+.meta{display:grid;gap:.4rem;margin-top:1.3rem;font-size:.85rem}
+.meta div{display:grid;grid-template-columns:7.5rem 1fr;gap:.75rem}
+.meta .k{color:var(--ink-2);letter-spacing:.02em}
+.tag{
+  display:inline-block;margin-top:1.1rem;font-size:.74rem;font-weight:700;
+  letter-spacing:.08em;text-transform:uppercase;
+  padding:.3rem .6rem;border:1px solid var(--line);border-radius:2px;color:var(--ink-2);
+}
+
+/* ---------- programos ---------- */
+.programs{display:grid;gap:1px;background:var(--line);border-block:1px solid var(--line)}
+.prog{background:var(--ground);display:grid;gap:.9rem 2.5rem;padding:1.9rem 0}
+@media(min-width:820px){.prog{grid-template-columns:minmax(0,1fr) 20rem;align-items:start}}
+.prog h3{font-size:1.3rem;margin-bottom:.55rem}
+.prog p{color:var(--ink-2);font-size:.98rem;max-width:56ch}
+.prog-specs{display:grid;gap:.35rem;font-size:.85rem}
+.prog-specs div{display:flex;justify-content:space-between;gap:1rem;padding:.4rem 0;border-bottom:1px solid var(--line-soft)}
+.prog-specs .k{color:var(--ink-2)}
+.prog-specs .v{text-align:right;font-variant-numeric:tabular-nums}
+
+/* ---------- auditorijos ---------- */
+.audience{display:grid;gap:1.5rem}
+@media(min-width:860px){.audience{grid-template-columns:repeat(3,1fr)}}
+.aud{background:var(--surface);border:1px solid var(--line);border-radius:3px;padding:1.7rem;display:grid;gap:.9rem;align-content:start}
+.aud h3{font-size:1.12rem}
+.aud > p{color:var(--ink-2);font-size:.95rem}
+.aud ul{list-style:none;margin:0;padding:0;display:grid;gap:.65rem;font-size:.92rem}
+.aud li{display:grid;grid-template-columns:1rem 1fr;gap:.65rem;color:var(--ink-2)}
+.aud li::before{content:"—";color:var(--accent)}
+
+/* ---------- eiga ---------- */
+.steps{display:grid;gap:1px;background:var(--line);border-block:1px solid var(--line)}
+@media(min-width:760px){.steps{grid-template-columns:repeat(4,1fr)}}
+.step{background:var(--ground);padding:1.7rem 1.4rem 1.7rem 0;display:grid;gap:.55rem;align-content:start}
+@media(min-width:760px){.step{padding:1.8rem 1.6rem}.step:first-child{padding-left:0}.step:last-child{padding-right:0}}
+.step-n{font-family:"Fraunces",Georgia,serif;font-size:.95rem;font-weight:600;color:var(--accent);font-variant-numeric:tabular-nums}
+.step h3{font-size:1.02rem}
+.step p{font-size:.9rem;color:var(--ink-2)}
+
+/* ---------- vietos turiniui ---------- */
+.slots{display:grid;gap:1.2rem}
+@media(min-width:760px){.slots{grid-template-columns:repeat(3,1fr)}}
+.slot{
+  border:1px dashed var(--fill-line);border-radius:3px;background:var(--fill-bg);
+  min-height:9.5rem;display:grid;gap:.5rem;align-content:center;justify-items:start;
+  padding:1.3rem;color:var(--fill-ink);
+}
+.slot strong{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase}
+.slot span{font-size:.9rem;line-height:1.5}
+.fill{
+  display:inline-block;border:1px dashed var(--fill-line);background:var(--fill-bg);
+  color:var(--fill-ink);border-radius:2px;padding:.05em .45em;
+  font-size:.86em;font-weight:600;white-space:nowrap;
+}
+.video{position:relative;aspect-ratio:16/9;border-radius:3px;overflow:hidden;background:var(--surface)}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+/* ---------- apie ---------- */
+.about{display:grid;gap:2rem}
+@media(min-width:860px){.about{grid-template-columns:20rem minmax(0,1fr);gap:3rem}}
+.about p{color:var(--ink-2);margin-bottom:1rem}
+.portrait{
+  border:1px dashed var(--fill-line);background:var(--fill-bg);color:var(--fill-ink);
+  aspect-ratio:4/5;border-radius:3px;display:grid;place-content:center;text-align:center;
+  padding:1.5rem;gap:.5rem;font-size:.86rem;
+}
+.about h2{font-size:clamp(1.7rem,3.4vw,2.35rem);margin-bottom:1.2rem}
+
+/* ---------- DUK ---------- */
+.faq{border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:1.15rem 2.5rem 1.15rem 0;position:relative;font-weight:600;font-size:1.02rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:.4rem;top:50%;transform:translateY(-50%);color:var(--accent);font-size:1.3rem;font-weight:400}
+.faq details[open] summary::after{content:"–"}
+.faq .ans{padding:0 0 1.3rem;color:var(--ink-2);max-width:64ch;font-size:.96rem}
+
+/* ---------- kontaktai ---------- */
+.contact{display:grid;gap:2.4rem}
+@media(min-width:900px){.contact{grid-template-columns:minmax(0,1fr) 22rem;gap:3.5rem}}
+form{display:grid;gap:1rem}
+.row{display:grid;gap:1rem}
+@media(min-width:620px){.row{grid-template-columns:1fr 1fr}}
+label{display:grid;gap:.4rem;font-size:.82rem;font-weight:600;letter-spacing:.03em;color:var(--ink-2)}
+input,select,textarea{
+  font-family:inherit;font-size:.96rem;color:var(--ink);
+  background:var(--surface);border:1px solid var(--line);border-radius:3px;
+  padding:.7rem .8rem;width:100%;
+}
+textarea{min-height:7rem;resize:vertical}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.form-msg{font-size:.92rem;min-height:1.4em}
+.form-msg[data-state="ok"]{color:var(--ok);font-weight:600}
+.form-msg[data-state="err"]{color:var(--err);font-weight:600}
+.contact-side{display:grid;gap:1.4rem;align-content:start}
+.contact-side h3{font-size:1.05rem;margin-bottom:.5rem}
+.contact-side p{font-size:.95rem;color:var(--ink-2)}
+.contact-side a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}
+.note{font-size:.84rem;color:var(--ink-2)}
+
+/* ---------- poraštė ---------- */
+footer{padding-block:2.6rem 3.4rem;font-size:.86rem;color:var(--ink-2)}
+.foot-in{display:flex;flex-wrap:wrap;gap:1rem 2rem;justify-content:space-between;align-items:baseline}
+footer a{color:inherit}
+
+/* ---------- 404 ---------- */
+.center-page{min-height:70vh;display:grid;place-content:center;text-align:center;gap:1.2rem;padding:3rem 0}
+.center-page h1{font-size:clamp(2rem,5vw,3rem)}
+.center-page p{color:var(--ink-2)}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{animation:none !important;transition:none !important}
+}

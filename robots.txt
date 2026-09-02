@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tomlebedev-cloud.github.io/feelharmonic/sitemap.xml

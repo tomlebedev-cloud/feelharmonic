@@ -1,0 +1,134 @@
+# FeelHarmonic
+
+Vieno puslapio svetainė: koncertinės programos, sezoninės šventės kultūros centrams,
+edukaciniai užsiėmimai mokykloms ir renginiai po raktu.
+
+Statinis puslapis — jokių duomenų bazių, jokio WordPress. Trys failai, kuriuos redaguoji:
+
+| Failas | Kam |
+|---|---|
+| `index.html` | Visas tekstas ir turinys |
+| `assets/js/main.js` | `CONFIG` blokas viršuje: el. paštas ir formos adresas |
+| `assets/css/style.css` | Spalvos (`:root` blokas viršuje) |
+
+---
+
+## 1. Paleisti lokaliai
+
+Užtenka atidaryti `index.html` naršyklėje — viskas veiks.
+Jei nori tikro serverio (kad veiktų taip pat kaip internete):
+
+```bash
+python -m http.server 8000
+```
+
+Tada naršyklėje: `http://localhost:8000`
+
+---
+
+## 2. Įkelti į GitHub
+
+Repozitorija dar nesukurta GitHub'e. Prisijunk ir sukurk:
+
+```bash
+gh auth login
+```
+
+Tada iš šio aplanko:
+
+```bash
+gh repo create feelharmonic --public --source=. --remote=origin --push
+```
+
+Jei nenori naudoti `gh`, sukurk tuščią repozitoriją per github.com (pavadinimas `feelharmonic`,
+**be** README) ir paleisk:
+
+```bash
+git remote add origin https://github.com/tomlebedev-cloud/feelharmonic.git
+git push -u origin main
+```
+
+---
+
+## 3. Įjungti GitHub Pages
+
+GitHub → repozitorija `feelharmonic` → **Settings** → **Pages**:
+
+- **Source:** `Deploy from a branch`
+- **Branch:** `main`, aplankas `/ (root)`
+- **Save**
+
+Po 1–2 min. svetainė bus adresu:
+`https://tomlebedev-cloud.github.io/feelharmonic/`
+
+Pastaba: GitHub Pages nemokamai veikia tik **viešose** repozitorijose.
+
+---
+
+## 4. Prijungti formą (kad užklausos ateitų į paštą)
+
+Kol kas mygtukas „Siųsti užklausą“ atidaro el. pašto programą su paruoštu laišku.
+Kad užklausos ateitų automatiškai:
+
+1. Registruokis [formspree.io](https://formspree.io) (nemokamai — 50 užklausų per mėnesį).
+2. Sukurk naują formą, nurodyk savo el. paštą.
+3. Nukopijuok gautą adresą (`https://formspree.io/f/xxxxxxxx`).
+4. `assets/js/main.js`, `CONFIG` blokas:
+
+```js
+var CONFIG = {
+  email: "labas@feelharmonic.lt",
+  formEndpoint: "https://formspree.io/f/xxxxxxxx"
+};
+```
+
+5. `git commit` ir `git push` — po minutės veiks.
+
+Pirmą užklausą Formspree paprašys patvirtinti el. paštu. Būtinai išsiųsk testinę.
+
+---
+
+## 5. Prijungti savo domeną (`feelharmonic.lt`)
+
+1. Nusipirk domeną per bet kurį `.lt` registratorių (~10–15 €/metus).
+2. Registratoriaus DNS nustatymuose sukurk įrašus:
+
+```
+A     @    185.199.108.153
+A     @    185.199.109.153
+A     @    185.199.110.153
+A     @    185.199.111.153
+CNAME www  tomlebedev-cloud.github.io.
+```
+
+3. Šiame aplanke sukurk failą `CNAME` su vienintele eilute:
+
+```
+feelharmonic.lt
+```
+
+4. GitHub → Settings → Pages → **Custom domain** → įrašyk `feelharmonic.lt` → Save.
+5. Kai atsiras varnelė, pažymėk **Enforce HTTPS** (gali užtrukti iki 24 val.).
+6. Pakeisk adresus faile `index.html` (`canonical`, `og:url`, `og:image`),
+   `robots.txt` ir `sitemap.xml` iš `tomlebedev-cloud.github.io/feelharmonic/`
+   į `feelharmonic.lt`. Failuose `404.html` kelius `/feelharmonic/...` pakeisk į `/...`.
+
+---
+
+## 6. Kaip atnaujinti turinį
+
+```bash
+git add -A
+git commit -m "Atnaujintas turinys"
+git push
+```
+
+GitHub Pages perkuria puslapį per ~1 min.
+
+---
+
+## Ką dar reikia užpildyti
+
+Žr. [TODO.md](TODO.md). Puslapyje visos neužpildytos vietos pažymėtos
+punktyriniu rėmeliu — jos matomos ir lankytojui, todėl prieš siunčiant
+nuorodą užsakovams jas reikia pakeisti tikru turiniu.
