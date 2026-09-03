@@ -12,10 +12,11 @@ Visos nuotraukos dedamos į aplanką `assets/img/` su **tiksliai tokiais pavadin
 | `elena.jpg` | Portretas su violončele — rodomas pirmame ekrane |
 | `apie.jpg` | Antra nuotrauka skiltyje „Apie“ (koncertinė) |
 | `galerija-1.jpg` … `galerija-6.jpg` | Galerija: portretas, koncertas salėje, dvaras ar bažnyčia, edukacija mokykloje, lauko renginys, instrumento detalė |
+| `paslauga-koncertai.jpg`, `paslauga-edukacijos.jpg`, `paslauga-renginiai.jpg` | Trys paslaugų kortelės (horizontalios, 3:2) |
 | `og.jpg` | Nuotrauka, matoma dalinantis nuoroda (1200×630 px) |
 
-Kol failų nėra, puslapis prisitaiko pats: portreto vietoje rodoma tamsi plokštuma
-su bangos ženklu, „Apie“ skiltis išsiplečia per visą plotį, o galerijos skiltis
+Kol failų nėra, puslapis prisitaiko pats: nuotraukų vietose rodomas firminis
+ženklas tamsiame fone, „Apie“ skiltis išsiplečia per visą plotį, o galerijos skiltis
 kartu su nuoroda meniu paslepiama. Įdėjus failus viskas atsiranda automatiškai —
 kode keisti nieko nereikia.
 
@@ -26,7 +27,6 @@ Naudoti tik tas nuotraukas, kurių teisės priklauso Elenai arba dėl kurių sus
 ## 2. Skaičiai ir rekvizitai
 
 - [ ] **Kainos „nuo“** trims programoms → `index.html`, skiltis „Programos“
-- [ ] **Telefonas** → `index.html`, skiltis „Kontaktai“
 - [ ] **Individualios veiklos pažymos nr.** ir adresas sąskaitoms
 - [ ] **DUK skaičiai** — kiek žmonių salei pakanka aparatūros, kelionės įkainis, atšaukimo terminas
 - [ ] **Socialinių tinklų nuorodos**

@@ -5,45 +5,66 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>FeelHarmonic — Elena Daunytė, violončelė</title>
-<meta name="description" content="Violončelės koncertinės programos, sezoninės ir kalėdinės šventės kultūros centrams, edukaciniai užsiėmimai mokykloms ir renginiai po raktu. Dirbu visoje Lietuvoje.">
+<meta name="description" content="Gyva muzika, kultūrinės edukacijos ir renginiai mokykloms, kultūros centrams ir privatiems užsakovams visoje Lietuvoje.">
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="lt_LT">
 <meta property="og:site_name" content="FeelHarmonic">
 <meta property="og:title" content="FeelHarmonic — Elena Daunytė, violončelė">
-<meta property="og:description" content="Koncertinės programos, sezoninės šventės kultūros centrams, edukaciniai užsiėmimai mokykloms ir renginiai po raktu.">
-<meta property="og:image" content="assets/img/elena.jpg">
+<meta property="og:description" content="Koncertai, kultūrinės edukacijos ir renginiai visoje Lietuvoje.">
+<meta property="og:image" content="assets/img/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#C9A227">
+<meta name="theme-color" content="#0B3C41">
 
 <script>document.documentElement.classList.add("js")</script>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Karla:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;1,400&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
 <a class="skip" href="#turinys">Pereiti prie turinio</a>
 
-<header class="nav" id="nav">
-  <div class="shell nav-in">
+<!-- ženklo šablonas -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mark" viewBox="0 0 100 100">
+    <g class="mark">
+      <g class="ray">
+        <line x1="50" y1="2"  x2="50" y2="98"/>
+        <line x1="12" y1="50" x2="88" y2="50"/>
+        <line x1="24" y1="24" x2="76" y2="76"/>
+        <line x1="76" y1="24" x2="24" y2="76"/>
+        <line x1="34" y1="14" x2="66" y2="86"/>
+        <line x1="66" y1="14" x2="34" y2="86"/>
+        <line x1="16" y1="34" x2="84" y2="66"/>
+        <line x1="84" y1="34" x2="16" y2="66"/>
+      </g>
+      <path class="tri" d="M50 22 L76 74 L24 74 Z"/>
+      <circle class="dot" cx="50" cy="50" r="6.4"/>
+      <circle class="dot" cx="34" cy="22" r="2.6"/>
+      <circle class="dot" cx="72" cy="34" r="1.8"/>
+      <circle class="dot" cx="70" cy="70" r="2.4"/>
+      <circle class="dot" cx="26" cy="60" r="1.6"/>
+    </g>
+  </symbol>
+</svg>
+
+<header id="nav">
+  <div class="in">
     <a class="brand" href="#top">
-      <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 16 10"><path d="M0 5c2-5 3 5 5 0s3 5 5 0 3 5 5 0"/></svg>
-      </span><span class="brand-text">Feel<em>Harmonic</em></span>
+      <svg><use href="#mark"/></svg>
+      <b>FeelHarmonic</b>
     </a>
-    <nav class="nav-links" aria-label="Pagrindinė navigacija">
+    <nav class="main" aria-label="Pagrindinė navigacija">
       <a href="#paslaugos">Paslaugos</a>
+      <a href="#edukacijos">Edukacijos</a>
       <a href="#programos">Programos</a>
-      <a href="#kam">Kam skirta</a>
-      <a href="#klausyti">Įrašai</a>
       <a href="#galerija">Galerija</a>
       <a href="#apie">Apie</a>
-      <a href="#duk">DUK</a>
+      <a class="btn" href="#kontaktai">Susisiekti</a>
     </nav>
-    <a class="btn" href="#kontaktai">Užsakyti</a>
     <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Meniu">
       <span></span><span></span><span></span>
     </button>
@@ -52,498 +73,453 @@
 
 <nav class="mobile-nav" id="mobile-nav" aria-label="Meniu telefone">
   <a href="#paslaugos">Paslaugos</a>
+  <a href="#irasai">Įrašai</a>
+  <a href="#edukacijos">Edukacijos</a>
   <a href="#programos">Programos</a>
-  <a href="#kam">Kam skirta</a>
-  <a href="#klausyti">Įrašai</a>
   <a href="#galerija">Galerija</a>
   <a href="#apie">Apie</a>
   <a href="#duk">DUK</a>
-  <a class="btn" href="#kontaktai">Užsakyti programą</a>
+  <a class="btn solid" href="#kontaktai">Susisiekti</a>
 </nav>
 
 <main id="top">
-  <span id="turinys"></span>
+<span id="turinys"></span>
 
-  <section class="hero">
-    <div class="shell hero-grid">
-      <div class="hero-text">
-        <p class="eyebrow">Violončelė · koncertai ir edukacija · Lietuva</p>
-        <h1>Muzika, kurią salė prisimena <span class="accent">kitą rytą</span>.</h1>
-        <p class="lead">Violončelės programos kultūros centrų šventėms, dvarams ir bažnyčioms, edukaciniai užsiėmimai mokykloms ir renginiai po raktu — nuo pirmos užklausos iki paskutinio akordo.</p>
-        <div class="hero-cta">
-          <a class="btn" href="#kontaktai">Užsakyti programą
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg>
-          </a>
-          <a class="btn btn-ghost" href="#klausyti">Pasiklausyti</a>
-        </div>
+<!-- ---------- HERO ---------- -->
+<div class="hero">
+  <svg class="halo" aria-hidden="true"><use href="#mark"/></svg>
+  <div class="in">
+    <div>
+      <p class="tagline">Let it come!</p>
+      <h1>Gyva muzika, kuri <em>lieka</em> ilgiau nei vakaras</h1>
+      <p class="sub">Violončelės koncertai, kultūrinės edukacijos ir renginiai mokykloms, kultūros centrams bei privatiems užsakovams visoje Lietuvoje.</p>
+      <div class="acts">
+        <a class="btn solid" href="#kontaktai">Užsakyti pasirodymą</a>
+        <a class="btn" href="#programos">Peržiūrėti programas</a>
       </div>
+      <div class="hero-facts">
+        <span>Datos rezervuojamos 2–6 mėn. į priekį</span>
+        <span>Išrašau sąskaitą faktūrą</span>
+      </div>
+    </div>
 
-      <figure class="hero-portrait" data-photo>        <img src="assets/img/elena.jpg" alt="Elena Daunytė su violončele" width="1000" height="1000" data-optional>
-        <figcaption class="portrait-caption">
-          <strong>Elena Daunytė</strong>
-          <span>Violončelė</span>
-        </figcaption>
+    <figure class="portrait" data-photo>
+      <svg class="ph-empty" viewBox="0 0 100 100" aria-hidden="true"><use href="#mark"/></svg>
+      <img src="assets/img/elena.jpg" alt="Elena Daunytė su violončele" width="1000" height="1000" data-optional>
+      <figcaption>
+        <b>Elena Daunytė</b>
+        <span>Violončelė</span>
+      </figcaption>
+    </figure>
+  </div>
+</div>
+
+<!-- ---------- PASLAUGOS ---------- -->
+<section id="paslaugos" class="band-cream">
+  <div class="in">
+    <div class="head reveal">
+      <p class="eyebrow">Ką siūlau</p>
+      <h2>Trys kryptys, viena kokybė</h2>
+      <p class="lede">Kiekviena programa pritaikoma erdvei, progai ir auditorijai — nuo mokyklos salės iki dvaro.</p>
+    </div>
+
+    <div class="grid3 reveal">
+      <article class="card">
+        <figure class="shot" data-photo>
+          <svg class="ph-empty" viewBox="0 0 100 100" aria-hidden="true"><use href="#mark"/></svg>
+          <img src="assets/img/paslauga-koncertai.jpg" alt="Koncertas salėje" data-optional>
+        </figure>
+        <div class="tx">
+          <h3>Koncertai</h3>
+          <p>Paruoštos programos šventėms, minėjimams ir sezoniniams renginiams. Trukmė, sudėtis ir repertuaras derinami iš anksto.</p>
+          <a class="more" href="#programos">Teirautis programų</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <figure class="shot" data-photo>
+          <svg class="ph-empty" viewBox="0 0 100 100" aria-hidden="true"><use href="#mark"/></svg>
+          <img src="assets/img/paslauga-edukacijos.jpg" alt="Edukacinis užsiėmimas mokykloje" data-optional>
+        </figure>
+        <div class="tx">
+          <h3>Edukacijos</h3>
+          <p>Kultūrinės edukacijos priešmokyklinukams ir 1–12 klasių mokiniams. Apmokama Kultūros paso lėšomis.</p>
+          <a class="more" href="#edukacijos">Žiūrėti užsiėmimus</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <figure class="shot" data-photo>
+          <svg class="ph-empty" viewBox="0 0 100 100" aria-hidden="true"><use href="#mark"/></svg>
+          <img src="assets/img/paslauga-renginiai.jpg" alt="Renginys dvare" data-optional>
+        </figure>
+        <div class="tx">
+          <h3>Renginiai</h3>
+          <p>Šventė nuo idėjos iki paskutinio akordo: programa, atlikėjai, garsas ir eiga vienose rankose.</p>
+          <a class="more" href="#kontaktai">Aptarti renginį</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ---------- ĮRAŠAI ---------- -->
+<section id="irasai" class="band-teal">
+  <div class="in">
+    <div class="head reveal">
+      <p class="eyebrow">Pasiklausykite</p>
+      <h2>Įrašas pasako daugiau nei aprašymas</h2>
+      <p class="lede">Todėl jis čia, o ne puslapio apačioje.</p>
+    </div>
+
+    <a class="media-card reveal" href="https://www.lrt.lt/mediateka/irasas/2000197212/klipvid-2021-elena-daunyte-ryto-ugnis" target="_blank" rel="noopener">
+      <span class="media-play" aria-hidden="true">
+        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M6.5 4.2v11.6L16 10 6.5 4.2Z"/></svg>
+      </span>
+      <span class="media-body">
+        <span class="media-label">LRT Mediateka · KLIPVID 2021</span>
+        <b>Elena Daunytė — „Ryto ugnis“</b>
+        <span class="media-note">Vaizdo klipas Lietuvos nacionalinio radijo ir televizijos mediatekoje.</span>
+      </span>
+      <span class="media-go" aria-hidden="true">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h7v7M13 3 3.5 12.5"/></svg>
+      </span>
+    </a>
+
+    <div class="video-slots reveal">
+      <!-- ĮDĖTI: <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" ...></iframe></div> -->
+      <div class="slot-dark"><strong>Koncerto ištrauka</strong><span>60–90 sek. iš gyvo pasirodymo. Geras garsas svarbiau už vaizdą.</span></div>
+      <div class="slot-dark"><strong>Edukacinis užsiėmimas</strong><span>Trumpa ištrauka iš pamokos, gavus tėvų sutikimus.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ---------- KAM SKIRTA ---------- -->
+<section id="kam">
+  <div class="in">
+    <div class="div reveal"><span></span><svg aria-hidden="true"><use href="#mark"/></svg><span></span></div>
+    <div class="grid3 plain reveal">
+      <div class="who">
+        <span class="n">01</span>
+        <h3>Mokykloms</h3>
+        <p>Edukacijos, atitinkančios Kultūros paso kriterijus. Telpa į vieną pamoką, erdvės pakanka klasės.</p>
+      </div>
+      <div class="who">
+        <span class="n">02</span>
+        <h3>Kultūros centrams</h3>
+        <p>Sezoninės ir kalėdinės programos su aiškia kaina, technine specifikacija ir sutartu grafiku.</p>
+      </div>
+      <div class="who">
+        <span class="n">03</span>
+        <h3>Privatiems renginiams</h3>
+        <p>Dvarai, bažnyčios, viešbučiai, įmonių šventės. Programa derinama pagal erdvę ir svečių skaičių.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ---------- EDUKACIJOS ---------- -->
+<section id="edukacijos" class="band-cream">
+  <div class="in">
+    <div class="head reveal">
+      <p class="eyebrow">Kultūros pasas</p>
+      <h2>Edukaciniai užsiėmimai</h2>
+      <p class="lede">Visa informacija, kurios reikia mokytojui, — vienoje vietoje.</p>
+    </div>
+
+    <div class="edu reveal">
+      <article>
+        <h3>Kaip skamba emocija?</h3>
+        <p>Klausomės, kaip ta pati melodija keičia nuotaiką pakeitus tempą, tembrą ar derinimą. Vaikai violončelę pamato iš arti, o išgirstą emociją patys „nupiešia“.</p>
+        <ul class="facts">
+          <li><b>Amžius</b><span class="fill">įrašyti kl.</span></li>
+          <li><b>Trukmė</b><span>45 min.</span></li>
+          <li><b>Dalyviai</b><span>iki 30</span></li>
+          <li><b>Kaina</b><span class="fill">€/mok.</span></li>
+          <li><b>Vieta</b><span>mokykloje</span></li>
+          <li><b>Nuotoliu</b><span>ne</span></li>
+        </ul>
+      </article>
+
+      <article>
+        <h3><span class="fill">Antro užsiėmimo pavadinimas</span></h3>
+        <p>Du trys sakiniai, ką vaikai veiks ir ką išsineš. Konkrečiai, be bendrų frazių apie kūrybiškumą — mokytojas renkasi pagal tai, ką realiai pamatys klasė.</p>
+        <ul class="facts">
+          <li><b>Amžius</b><span class="fill">įrašyti kl.</span></li>
+          <li><b>Trukmė</b><span class="fill">min.</span></li>
+          <li><b>Dalyviai</b><span class="fill">iki</span></li>
+          <li><b>Kaina</b><span class="fill">€/mok.</span></li>
+          <li><b>Vieta</b><span>mokykloje</span></li>
+          <li><b>Nuotoliu</b><span class="fill">taip / ne</span></li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ---------- PROGRAMOS ---------- -->
+<section id="programos">
+  <div class="in">
+    <div class="head reveal">
+      <p class="eyebrow">Repertuaras</p>
+      <h2>Paruoštos programos</h2>
+      <p class="lede">Šias galima užsakyti iškart — jos turi trukmę, sudėtį ir techninius reikalavimus. Kaina priklauso nuo sudėties ir atstumo.</p>
+    </div>
+
+    <div class="programs reveal">
+      <article class="prog">
+        <div>
+          <h3>Kalėdų vakaras</h3>
+          <p>Šventinė programa kultūros centro ar bendruomenės vakarui: žinomos kalėdinės melodijos, lietuviškos giesmės ir keli netikėti aranžuotės posūkiai.</p>
+        </div>
+        <div class="prog-specs">
+          <div><span class="k">Trukmė</span><span class="v">55 min</span></div>
+          <div><span class="k">Sudėtis</span><span class="v">Solo / duetas / trio</span></div>
+          <div><span class="k">Sezonas</span><span class="v">Lapkritis–sausis</span></div>
+          <div><span class="k">Kaina nuo</span><span class="v"><span class="fill">įrašyti €</span></span></div>
+        </div>
+      </article>
+
+      <article class="prog">
+        <div>
+          <h3>Vasaros klasika</h3>
+          <p>Akustinė programa dvarų kiemams, parkams ir miestų šventėms. Veikia ir lauke — scenos infrastruktūros neprireikia.</p>
+        </div>
+        <div class="prog-specs">
+          <div><span class="k">Trukmė</span><span class="v">60 min</span></div>
+          <div><span class="k">Sudėtis</span><span class="v">Duetas / trio</span></div>
+          <div><span class="k">Sezonas</span><span class="v">Gegužė–rugsėjis</span></div>
+          <div><span class="k">Kaina nuo</span><span class="v"><span class="fill">įrašyti €</span></span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ---------- GALERIJA ---------- -->
+<section id="galerija" class="band-cream">
+  <div class="in">
+    <div class="head reveal">
+      <p class="eyebrow">Galerija</p>
+      <h2>Nuotraukos</h2>
+      <p class="lede">Užsakovas nori pamatyti, kaip atrodysite jo salėje — todėl geriausiai veikia kadrai iš skirtingų erdvių.</p>
+    </div>
+
+    <div class="gallery reveal">
+      <figure class="shot" data-photo>
+        <svg class="ph-empty" viewBox="0 0 100 100" aria-hidden="true"><use href="#mark"/></svg>
+        <img src="assets/img/galerija-1.jpg" alt="Elena Daunytė su violončele" data-optional>
+        <figcaption>Portretas</figcaption>
+      </figure>
+      <figure class="shot" data-photo>
+        <svg class="ph-empty" viewBox="0 0 100 100" aria-hidden="true"><use href="#mark"/></svg>
+        <img src="assets/img/galerija-2.jpg" alt="Koncertas salėje" data-optional>
+        <figcaption>Koncertas salėje</figcaption>
+      </figure>
+      <figure class="shot" data-photo>
+        <svg class="ph-empty" viewBox="0 0 100 100" aria-hidden="true"><use href="#mark"/></svg>
+        <img src="assets/img/galerija-3.jpg" alt="Pasirodymas dvare" data-optional>
+        <figcaption>Dvaras, bažnyčia</figcaption>
+      </figure>
+      <figure class="shot" data-photo>
+        <svg class="ph-empty" viewBox="0 0 100 100" aria-hidden="true"><use href="#mark"/></svg>
+        <img src="assets/img/galerija-4.jpg" alt="Edukacinis užsiėmimas mokykloje" data-optional>
+        <figcaption>Edukacija mokykloje</figcaption>
+      </figure>
+      <figure class="shot" data-photo>
+        <svg class="ph-empty" viewBox="0 0 100 100" aria-hidden="true"><use href="#mark"/></svg>
+        <img src="assets/img/galerija-5.jpg" alt="Pasirodymas lauke" data-optional>
+        <figcaption>Lauko renginys</figcaption>
+      </figure>
+      <figure class="shot" data-photo>
+        <svg class="ph-empty" viewBox="0 0 100 100" aria-hidden="true"><use href="#mark"/></svg>
+        <img src="assets/img/galerija-6.jpg" alt="Violončelės detalė" data-optional>
+        <figcaption>Detalė</figcaption>
       </figure>
     </div>
+  </div>
+</section>
 
-    <div class="hero-facts">
-      <div class="shell">
-        <ul>
-          <li>
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><rect x="2" y="3" width="12" height="11" rx="1.5"/><path d="M2 6.5h12M5.5 1.5v3M10.5 1.5v3"/></svg>
-            Datos rezervuojamos 2–6 mėn. į priekį
-          </li>
-          <li>
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M8 14.5s5-4.2 5-8a5 5 0 1 0-10 0c0 3.8 5 8 5 8Z"/><circle cx="8" cy="6.4" r="1.8"/></svg>
-            Dirbu visoje Lietuvoje
-          </li>
-          <li>
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M3.5 1.8h6l3 3v9.4h-9V1.8Z"/><path d="M9.3 1.8v3.2h3.2M5.6 8.6h4.8M5.6 11.2h4.8"/></svg>
-            Išrašau sąskaitą faktūrą
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec" id="paslaugos">
-    <div class="shell">
-      <div class="sec-head reveal">
-        <p class="eyebrow">Keturios kryptys</p>
-        <h2>Ką galiu padaryti jūsų renginiui</h2>
-        <svg class="rule" viewBox="0 0 46 10" aria-hidden="true"><path d="M0 5c3-6 5 6 8 0s5 6 8 0 5 6 8 0 5 6 8 0 5 6 8 0"/></svg>
-        <p>Kiekviena kryptis turi savo auditoriją, savo trukmę ir savo kainą. Nesirenkate „muzikanto“ — renkatės paruoštą programos formatą.</p>
-      </div>
-
-      <div class="grid-rule reveal">
-        <article class="cell">
-          <div class="cell-top">
-            <svg class="glyph" viewBox="0 0 32 14" aria-hidden="true"><path d="M0 7c3-7 5 7 8 0s5 7 8 0 5 7 8 0 5 7 8 0" stroke="var(--h-amber)"/></svg>
-            <p class="eyebrow" style="color:var(--h-amber)">Kultūros centrams</p>
-          </div>
-          <h3>Sezoninės ir kalėdinės programos</h3>
-          <p>Paruošta programa įstaigos šventei — Kalėdoms, Vasario 16-ajai, Joninėms ar miesto dienoms. Atvažiuoju su repertuaru, garso aparatūra ir vakaro scenarijumi, todėl jums lieka tik data ir salė.</p>
-          <div class="meta">
-            <div><span class="k">Trukmė</span><span>45–70 min</span></div>
-            <div><span class="k">Sudėtis</span><span>Nuo solo iki trio</span></div>
-            <div><span class="k">Sezonas</span><span>Pasiūlymai teikiami birželį–rugsėjį</span></div>
-          </div>
-        </article>
-
-        <article class="cell">
-          <div class="cell-top">
-            <svg class="glyph" viewBox="0 0 32 14" aria-hidden="true"><path d="M0 7c3-7 5 7 8 0s5 7 8 0 5 7 8 0 5 7 8 0" stroke="var(--h-plum)"/></svg>
-            <p class="eyebrow" style="color:var(--h-plum)">Mokykloms</p>
-          </div>
-          <h3>Edukaciniai užsiėmimai</h3>
-          <p>Interaktyvi pamoka: violončelė iš arti, klausymosi užduotys ir pokalbis apie tai, kaip garsas veikia emocijas. Pritaikoma priešmokyklinukams, pradinukams ir 5–12 klasėms.</p>
-          <div class="meta">
-            <div><span class="k">Trukmė</span><span>45 min (viena pamoka)</span></div>
-            <div><span class="k">Grupė</span><span>Iki 30 mokinių</span></div>
-            <div><span class="k">Erdvė</span><span>Aktų salė arba klasė</span></div>
-          </div>
-          <span class="tag">Rengiama Kultūros paso atrankai</span>
-        </article>
-
-        <article class="cell">
-          <div class="cell-top">
-            <svg class="glyph" viewBox="0 0 32 14" aria-hidden="true"><path d="M0 7c3-7 5 7 8 0s5 7 8 0 5 7 8 0 5 7 8 0" stroke="var(--h-olive)"/></svg>
-            <p class="eyebrow" style="color:var(--h-olive)">Salėms, dvarams, bažnyčioms</p>
-          </div>
-          <h3>Koncertinės programos</h3>
-          <p>Autorinė programa, sudaryta kaip vientisas vakaras, o ne kūrinių rinkinys. Repertuaras derinamas prie erdvės akustikos ir progos — nuo kamerinės iki šventinės nuotaikos.</p>
-          <div class="meta">
-            <div><span class="k">Trukmė</span><span>60–80 min</span></div>
-            <div><span class="k">Erdvė</span><span>Akustinė salė arba scena</span></div>
-            <div><span class="k">Kam</span><span>Festivaliams, dvarams, bažnyčioms</span></div>
-          </div>
-        </article>
-
-        <article class="cell">
-          <div class="cell-top">
-            <svg class="glyph" viewBox="0 0 32 14" aria-hidden="true"><path d="M0 7c3-7 5 7 8 0s5 7 8 0 5 7 8 0 5 7 8 0" stroke="var(--h-rust)"/></svg>
-            <p class="eyebrow" style="color:var(--h-rust)">Įmonėms ir savivaldybėms</p>
-          </div>
-          <h3>Renginiai po raktu</h3>
-          <p>Kai reikia ne vieno atlikėjo, o viso vakaro: programa, atlikėjai, garsas, vedėjas ir tikslus grafikas. Vienas atsakingas žmogus ir viena sąskaita vietoj penkių derybų.</p>
-          <div class="meta">
-            <div><span class="k">Trukmė</span><span>Pagal scenarijų</span></div>
-            <div><span class="k">Komanda</span><span>2–8 atlikėjai</span></div>
-            <div><span class="k">Apima</span><span>Garsą, koordinavimą, repeticiją</span></div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec sec-alt" id="programos">
-    <div class="shell">
-      <div class="sec-head reveal">
-        <p class="eyebrow">Repertuaras</p>
-        <h2>Paruoštos programos</h2>
-        <svg class="rule" viewBox="0 0 46 10" aria-hidden="true"><path d="M0 5c3-6 5 6 8 0s5 6 8 0 5 6 8 0 5 6 8 0 5 6 8 0"/></svg>
-        <p>Šias galima užsakyti iškart — jos jau turi trukmę, sudėtį ir techninius reikalavimus. Kaina priklauso nuo sudėties ir atstumo.</p>
-      </div>
-
-      <div class="programs reveal">
-        <article class="prog">
-          <div>
-            <h3>Kalėdų vakaras</h3>
-            <p>Šventinė programa kultūros centro ar bendruomenės vakarui: žinomos kalėdinės melodijos, lietuviškos giesmės ir keli netikėti aranžuotės posūkiai, kad programa nebūtų tokia pati kaip visur.</p>
-          </div>
-          <div class="prog-specs">
-            <div><span class="k">Trukmė</span><span class="v">55 min</span></div>
-            <div><span class="k">Sudėtis</span><span class="v">Solo / duetas / trio</span></div>
-            <div><span class="k">Sezonas</span><span class="v">Lapkritis–sausis</span></div>
-            <div><span class="k">Kaina nuo</span><span class="v"><span class="fill">įrašyti €</span></span></div>
-          </div>
-        </article>
-
-        <article class="prog">
-          <div>
-            <h3>Vasaros klasika</h3>
-            <p>Akustinė programa dvarų kiemams, parkams ir miestų šventėms. Veikia ir lauke — turiu nešiojamą garso sistemą, todėl scenos infrastruktūros neprireikia.</p>
-          </div>
-          <div class="prog-specs">
-            <div><span class="k">Trukmė</span><span class="v">60 min</span></div>
-            <div><span class="k">Sudėtis</span><span class="v">Duetas / trio</span></div>
-            <div><span class="k">Sezonas</span><span class="v">Gegužė–rugsėjis</span></div>
-            <div><span class="k">Kaina nuo</span><span class="v"><span class="fill">įrašyti €</span></span></div>
-          </div>
-        </article>
-
-        <article class="prog">
-          <div>
-            <h3>Kaip skamba emocija?</h3>
-            <p>Edukacinis užsiėmimas mokiniams. Klausomės, kaip ta pati melodija keičia nuotaiką pakeitus tempą, tembrą ar derinimą, o vaikai patys „nupiešia“ išgirstą emociją. Užsiėmimas skirtas <span class="fill">pasirinkti klases</span>.</p>
-          </div>
-          <div class="prog-specs">
-            <div><span class="k">Trukmė</span><span class="v">45 min</span></div>
-            <div><span class="k">Grupė</span><span class="v">Iki 30 mokinių</span></div>
-            <div><span class="k">Formatas</span><span class="v">Mokykloje</span></div>
-            <div><span class="k">Kaina mokiniui</span><span class="v"><span class="fill">įrašyti €</span></span></div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec" id="kam">
-    <div class="shell">
-      <div class="sec-head reveal">
-        <p class="eyebrow">Trys keliai</p>
-        <h2>Kas jums aktualu prieš užsakant</h2>
-        <svg class="rule" viewBox="0 0 46 10" aria-hidden="true"><path d="M0 5c3-6 5 6 8 0s5 6 8 0 5 6 8 0 5 6 8 0 5 6 8 0"/></svg>
-        <p>Kultūros centrui, mokyklai ir įmonei rūpi skirtingi dalykai. Todėl ir atsakymai skirtingi.</p>
-      </div>
-
-      <div class="audience reveal">
-        <article class="aud">
-          <h3>Kultūros centrui</h3>
-          <p>Jums reikia laisvos datos, aiškios kainos ir dokumentų, kurie praeis buhalteriją.</p>
-          <ul>
-            <li><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7.5 5.5 11 12 3.5"/></svg>Fiksuota kaina, be priedų renginio dieną</li>
-            <li><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7.5 5.5 11 12 3.5"/></svg>Atvykstu su savo garso aparatūra</li>
-            <li><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7.5 5.5 11 12 3.5"/></svg>Techninis raideris siunčiamas kartu su pasiūlymu</li>
-            <li><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7.5 5.5 11 12 3.5"/></svg>Sąskaita išrašoma tą pačią savaitę</li>
-          </ul>
-        </article>
-
-        <article class="aud">
-          <h3>Mokyklai</h3>
-          <p>Užsiėmimas turi tilpti į pamokos laiką ir atitikti amžiaus grupę.</p>
-          <ul>
-            <li><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7.5 5.5 11 12 3.5"/></svg>Telpa į vieną 45 min pamoką</li>
-            <li><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7.5 5.5 11 12 3.5"/></svg>Programa pritaikoma pagal klasę</li>
-            <li><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7.5 5.5 11 12 3.5"/></svg>Nereikia specialios erdvės — pakanka klasės</li>
-            <li><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7.5 5.5 11 12 3.5"/></svg>Kultūros paso užsakymas, kai edukacija bus patvirtinta</li>
-          </ul>
-        </article>
-
-        <article class="aud">
-          <h3>Įmonei ar dvarui</h3>
-          <p>Muzika yra vakaro dalis, o ne atskiras punktas — todėl derinama prie scenarijaus.</p>
-          <ul>
-            <li><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7.5 5.5 11 12 3.5"/></svg>Galiu perimti visą muzikinę vakaro dalį</li>
-            <li><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7.5 5.5 11 12 3.5"/></svg>Dirbu ir lauke, ir salėje</li>
-            <li><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7.5 5.5 11 12 3.5"/></svg>Repertuaras derinamas prie svečių ir progos</li>
-            <li><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7.5 5.5 11 12 3.5"/></svg>Vienas kontaktinis asmuo visam vakarui</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec sec-alt" id="eiga">
-    <div class="shell">
-      <div class="sec-head reveal">
-        <p class="eyebrow">Nuo užklausos iki koncerto</p>
-        <h2>Kaip vyksta užsakymas</h2>
-        <svg class="rule" viewBox="0 0 46 10" aria-hidden="true"><path d="M0 5c3-6 5 6 8 0s5 6 8 0 5 6 8 0 5 6 8 0 5 6 8 0"/></svg>
-      </div>
-      <div class="steps reveal">
-        <div class="step">
-          <p class="step-n">01</p>
-          <h3>Užklausa</h3>
-          <p>Parašote datą, erdvę ir progą. Jei datos dar nėra — parašykite mėnesį.</p>
-        </div>
-        <div class="step">
-          <p class="step-n">02</p>
-          <h3>Pasiūlymas</h3>
-          <p>Per dvi darbo dienas gaunate programą, kainą ir techninius reikalavimus viename laiške.</p>
-        </div>
-        <div class="step">
-          <p class="step-n">03</p>
-          <h3>Patvirtinimas</h3>
-          <p>Data rezervuojama pasirašius sutartį. Avansas — pagal susitarimą.</p>
-        </div>
-        <div class="step">
-          <p class="step-n">04</p>
-          <h3>Renginys</h3>
-          <p>Atvykstu likus 1,5 val. iki pradžios, pasiruošiu garsą, po renginio išrašau sąskaitą.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec" id="klausyti">
-    <div class="shell">
-      <div class="sec-head reveal">
-        <p class="eyebrow">Įrašai</p>
-        <h2>Klausyti ir žiūrėti</h2>
-        <svg class="rule" viewBox="0 0 46 10" aria-hidden="true"><path d="M0 5c3-6 5 6 8 0s5 6 8 0 5 6 8 0 5 6 8 0 5 6 8 0"/></svg>
-      </div>
-
-      <a class="media-card reveal" href="https://www.lrt.lt/mediateka/irasas/2000197212/klipvid-2021-elena-daunyte-ryto-ugnis" target="_blank" rel="noopener">
-        <span class="media-play" aria-hidden="true">
-          <svg viewBox="0 0 20 20" fill="currentColor"><path d="M6.5 4.2v11.6L16 10 6.5 4.2Z"/></svg>
-        </span>
-        <span class="media-body">
-          <span class="media-label">LRT Mediateka · KLIPVID 2021</span>
-          <strong>Elena Daunytė — „Ryto ugnis“</strong>
-          <span class="media-note">Vaizdo klipas Lietuvos nacionalinio radijo ir televizijos mediatekoje.</span>
-        </span>
-        <span class="media-go" aria-hidden="true">
-          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h7v7M13 3 3.5 12.5"/></svg>
-        </span>
-      </a>
-
-      <div class="slots reveal" style="margin-top:1.5rem">
-        <div class="slot"><strong>Koncerto ištrauka</strong><span>60–90 sek. iš gyvo koncerto. Geras garsas svarbiau už vaizdą.</span></div>
-        <div class="slot"><strong>Edukacinis užsiėmimas</strong><span>Trumpa ištrauka iš pamokos (gavus tėvų sutikimus).</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec sec-alt" id="galerija">
-    <div class="shell">
-      <div class="sec-head reveal">
-        <p class="eyebrow">Galerija</p>
-        <h2>Nuotraukos</h2>
-        <svg class="rule" viewBox="0 0 46 10" aria-hidden="true"><path d="M0 5c3-6 5 6 8 0s5 6 8 0 5 6 8 0 5 6 8 0 5 6 8 0"/></svg>
-        <p>Užsakovas nori pamatyti, kaip atrodysite jo salėje. Geriausiai veikia nuotraukos iš skirtingų erdvių — koncertų salės, dvaro, bažnyčios ir mokyklos klasės.</p>
-      </div>
-
-      <div class="gallery reveal">
-        <figure class="shot" data-photo>          <img src="assets/img/galerija-1.jpg" alt="Elena Daunytė su violončele" data-optional>
-          <figcaption>Portretas</figcaption>
-        </figure>
-        <figure class="shot" data-photo>          <img src="assets/img/galerija-2.jpg" alt="Koncertas salėje" data-optional>
-          <figcaption>Koncertas salėje</figcaption>
-        </figure>
-        <figure class="shot" data-photo>          <img src="assets/img/galerija-3.jpg" alt="Pasirodymas dvare" data-optional>
-          <figcaption>Dvaras, bažnyčia</figcaption>
-        </figure>
-        <figure class="shot" data-photo>          <img src="assets/img/galerija-4.jpg" alt="Edukacinis užsiėmimas mokykloje" data-optional>
-          <figcaption>Edukacija mokykloje</figcaption>
-        </figure>
-        <figure class="shot" data-photo>          <img src="assets/img/galerija-5.jpg" alt="Pasirodymas lauke" data-optional>
-          <figcaption>Lauko renginys</figcaption>
-        </figure>
-        <figure class="shot" data-photo>          <img src="assets/img/galerija-6.jpg" alt="Violončelės detalė" data-optional>
-          <figcaption>Detalė</figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec sec-alt" id="apie">
-    <div class="shell about reveal">
-      <div class="about-photo" data-photo>        <img src="assets/img/apie.jpg" alt="Elena Daunytė koncerte" width="1000" height="1000" data-optional>
-      </div>
+<!-- ---------- APIE ---------- -->
+<section id="apie">
+  <div class="in">
+    <div class="two about reveal">
       <div>
-        <p class="eyebrow" style="margin-bottom:.9rem">Apie</p>
-        <h2>Kas groja</h2>
-        <svg class="rule" viewBox="0 0 46 10" aria-hidden="true" style="margin-bottom:1.2rem"><path d="M0 5c3-6 5 6 8 0s5 6 8 0 5 6 8 0 5 6 8 0 5 6 8 0"/></svg>
+        <p class="eyebrow">Apie</p>
+        <h2>Muzika, sudėliota taip pat kruopščiai, kaip pajausta</h2>
         <p>Elena Daunytė — violončelininkė, tarptautinių konkursų laureatė ir šeimyninio ansamblio „Regnum Musicale“ narė. Baigiau M. K. Čiurlionio menų mokyklą, studijavau Karališkajame Šiaurės muzikos koledže Mančesteryje ir Lietuvos muzikos ir teatro akademijoje, prof. Rimanto Armono klasėje.</p>
         <p>Grojau su Lietuvos ir užsienio orkestrais, tobulinausi meistriškumo kursuose pas Giovanni Sollimą, Davidą Geringą ir Fransą Helmersoną. Esu gavusi Lietuvos Respublikos Prezidentų Valdo Adamkaus ir Dalios Grybauskaitės padėkas. Vaizdo klipas „Ryto ugnis“ rodytas LRT Mediatekoje, KLIPVID 2021 konkurse.</p>
 
         <ul class="creds">
           <li>M. K. Čiurlionio menų mokykla</li>
-          <li>Royal Northern College of Music, Mančesteris</li>
+          <li>Royal Northern College of Music</li>
           <li>LMTA · prof. R. Armono klasė</li>
-          <li>Ansamblis „Regnum Musicale“</li>
+          <li>„Regnum Musicale“</li>
         </ul>
 
-        <p>FeelHarmonic pradėjo nuo paprasto pastebėjimo: renginių organizatoriams reikia ne tik muzikos, bet ir žmogaus, kuris pats susitvarko su garsu, grafiku ir dokumentais. Todėl kiekviena programa čia turi aiškią trukmę, sudėtį ir kainą — o ne „susitarsime vietoje“.</p>
-        <p>Antra dalis to paties darbo — edukacija. Vaikams muzika įdomiausia tada, kai ją galima paliesti, sustabdyti ir paklausti, kodėl nuo vieno akordo darosi liūdna. Iš to gimė užsiėmimas „Kaip skamba emocija?“.</p>
+        <p>Renginių organizatoriams reikia ne tik muzikos, bet ir žmogaus, kuris pats susitvarko su garsu, grafiku ir dokumentais. Todėl kiekviena programa čia turi aiškią trukmę, sudėtį ir kainą — o ne „susitarsime vietoje“.</p>
+        <a class="btn dark" href="#kontaktai">Susisiekti</a>
+      </div>
+
+      <div class="about-photo" data-photo>
+        <svg class="ph-empty" viewBox="0 0 100 100" aria-hidden="true"><use href="#mark"/></svg>
+        <img src="assets/img/apie.jpg" alt="Elena Daunytė koncerte" data-optional>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="sec" id="atsiliepimai">
-    <div class="shell">
-      <div class="sec-head reveal">
-        <p class="eyebrow">Atsiliepimai</p>
-        <h2>Ką sako užsakovai</h2>
-        <svg class="rule" viewBox="0 0 46 10" aria-hidden="true"><path d="M0 5c3-6 5 6 8 0s5 6 8 0 5 6 8 0 5 6 8 0 5 6 8 0"/></svg>
-        <p>Po kiekvieno renginio paprašykite vienos pastraipos raštu ir leidimo ją paskelbti. Trys tikri atsiliepimai su įstaigos pavadinimu veikia stipriau nei dešimt bendrų frazių.</p>
-      </div>
-      <div class="slots reveal">
-        <div class="slot"><strong>Atsiliepimas 1</strong><span>Kultūros centras — vardas, pareigos, įstaiga, miestas.</span></div>
-        <div class="slot"><strong>Atsiliepimas 2</strong><span>Mokykla — mokytojas arba direktoriaus pavaduotojas.</span></div>
-        <div class="slot"><strong>Atsiliepimas 3</strong><span>Įmonė arba dvaras — renginio organizatorius.</span></div>
-      </div>
+<!-- ---------- ATSILIEPIMAI ---------- -->
+<section id="atsiliepimai" class="band-cream">
+  <div class="in">
+    <div class="head reveal">
+      <p class="eyebrow">Atsiliepimai</p>
+      <h2>Ką sako užsakovai</h2>
+      <p class="lede">Po kiekvieno renginio paprašykite vienos pastraipos raštu ir leidimo ją paskelbti. Trys tikri atsiliepimai veikia stipriau nei dešimt bendrų frazių.</p>
     </div>
-  </section>
-
-  <section class="sec sec-alt" id="duk">
-    <div class="shell">
-      <div class="sec-head reveal">
-        <p class="eyebrow">Praktiniai klausimai</p>
-        <h2>Dažniausiai klausiama</h2>
-        <svg class="rule" viewBox="0 0 46 10" aria-hidden="true"><path d="M0 5c3-6 5 6 8 0s5 6 8 0 5 6 8 0 5 6 8 0 5 6 8 0"/></svg>
-      </div>
-      <div class="faq reveal">
-        <details>
-          <summary>Ar atvykstate su savo garso aparatūra?</summary>
-          <div class="ans">Taip. Turiu nešiojamą garso sistemą, kurios pakanka iki <span class="fill">nurodyti žiūrovų skaičių</span> žmonių salei ir nedideliems lauko renginiams. Akustinėse erdvėse violončelė dažnai skamba geriausiai visai be įgarsinimo.</div>
-        </details>
-        <details>
-          <summary>Kiek iš anksto reikia rezervuoti datą?</summary>
-          <div class="ans">Kalėdiniam sezonui — nuo rugsėjo, nes gruodžio savaitgaliai užsipildo pirmi. Kitu metu užtenka 4–6 savaičių. Jei data laisva, priimu užsakymą ir vėliau.</div>
-        </details>
-        <details>
-          <summary>Ar išrašote sąskaitą faktūrą?</summary>
-          <div class="ans">Taip. Dirbu pagal individualios veiklos pažymą <span class="fill">nr.</span>, todėl išrašau sąskaitą faktūrą ir galiu pasirašyti paslaugų sutartį — tai tinka viešojo sektoriaus įstaigų buhalterijai.</div>
-        </details>
-        <details>
-          <summary>Kiek kainuoja kelionė už miesto ribų?</summary>
-          <div class="ans">Iki <span class="fill">km</span> km nuo <span class="fill">miestas</span> — kelionė įskaičiuota į kainą. Toliau taikomas <span class="fill">€/km</span> įkainis, kuris visada nurodomas pasiūlyme, o ne pridedamas vėliau.</div>
-        </details>
-        <details>
-          <summary>Ar programą galima pritaikyti prie mūsų progos?</summary>
-          <div class="ans">Taip, ir tai įprasta. Repertuaras, trukmė ir kalbėjimo dalis derinami prieš renginį. Jei turite konkretų kūrinį, kurio norėtumėte, pasakykite iš anksto — paruošimui reikia laiko.</div>
-        </details>
-        <details>
-          <summary>Kas nutinka, jei renginys atšaukiamas?</summary>
-          <div class="ans">Atšaukus likus daugiau nei <span class="fill">dienų</span> dienoms iki renginio, avansas grąžinamas arba perkeliamas kitai datai. Vėlesnio atšaukimo sąlygos aprašomos sutartyje, kad nekiltų nesusipratimų.</div>
-        </details>
-      </div>
+    <div class="quotes reveal">
+      <div class="slot"><strong>Atsiliepimas 1</strong><span>Kultūros centras — vardas, pareigos, įstaiga, miestas.</span></div>
+      <div class="slot"><strong>Atsiliepimas 2</strong><span>Mokykla — mokytojas arba direktoriaus pavaduotojas.</span></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="cta-band">
-    <div class="shell cta-in">
-      <div>
-        <h2>Turite datą? Parašykite šiandien.</h2>
-        <p>Atsakau per dvi darbo dienas su konkrečia programa, kaina ir techniniais reikalavimais. Jei datos dar nežinote — užtenka mėnesio.</p>
-      </div>
-      <a class="btn btn-light" href="#kontaktai">Rašyti užklausą
-        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg>
-      </a>
+<!-- ---------- DUK ---------- -->
+<section id="duk">
+  <div class="in">
+    <div class="head reveal">
+      <p class="eyebrow">Praktiniai klausimai</p>
+      <h2>Dažniausiai klausiama</h2>
     </div>
-  </section>
+    <div class="faq reveal">
+      <details>
+        <summary>Ar atvykstate su savo garso aparatūra?</summary>
+        <div class="ans">Taip. Turiu nešiojamą garso sistemą, kurios pakanka iki <span class="fill">nurodyti skaičių</span> žmonių salei ir nedideliems lauko renginiams. Akustinėse erdvėse violončelė dažnai skamba geriausiai visai be įgarsinimo.</div>
+      </details>
+      <details>
+        <summary>Kiek iš anksto reikia rezervuoti datą?</summary>
+        <div class="ans">Kalėdiniam sezonui — nuo rugsėjo, nes gruodžio savaitgaliai užsipildo pirmi. Kitu metu užtenka 4–6 savaičių.</div>
+      </details>
+      <details>
+        <summary>Ar išrašote sąskaitą faktūrą?</summary>
+        <div class="ans">Taip. Dirbu pagal individualios veiklos pažymą <span class="fill">nr.</span>, todėl išrašau sąskaitą faktūrą ir galiu pasirašyti paslaugų sutartį — tai tinka viešojo sektoriaus įstaigų buhalterijai.</div>
+      </details>
+      <details>
+        <summary>Kiek kainuoja kelionė už miesto ribų?</summary>
+        <div class="ans">Iki <span class="fill">km</span> km nuo Vilniaus kelionė įskaičiuota į kainą. Toliau taikomas <span class="fill">€/km</span> įkainis, kuris nurodomas pasiūlyme, o ne pridedamas vėliau.</div>
+      </details>
+      <details>
+        <summary>Ar programą galima pritaikyti prie mūsų progos?</summary>
+        <div class="ans">Taip, ir tai įprasta. Repertuaras, trukmė ir kalbėjimo dalis derinami prieš renginį. Jei turite konkretų kūrinį, pasakykite iš anksto — paruošimui reikia laiko.</div>
+      </details>
+      <details>
+        <summary>Kas nutinka, jei renginys atšaukiamas?</summary>
+        <div class="ans">Atšaukus likus daugiau nei <span class="fill">dienų</span> dienoms iki renginio, avansas grąžinamas arba perkeliamas kitai datai. Vėlesnio atšaukimo sąlygos aprašomos sutartyje.</div>
+      </details>
+    </div>
+  </div>
+</section>
 
-  <section class="sec" id="kontaktai">
-    <div class="shell contact">
-      <div>
-        <div class="sec-head">
-          <p class="eyebrow">Užklausa</p>
-          <h2>Parašykite datą ir progą</h2>
-          <svg class="rule" viewBox="0 0 46 10" aria-hidden="true"><path d="M0 5c3-6 5 6 8 0s5 6 8 0 5 6 8 0 5 6 8 0 5 6 8 0"/></svg>
+<!-- ---------- CTA ---------- -->
+<section class="band-teal cta">
+  <div class="in">
+    <h2>Kalbame apie jūsų renginį?</h2>
+    <p class="lede">Parašykite, kokia proga, kur ir kada — atsakysiu per vieną darbo dieną su konkrečiu pasiūlymu.</p>
+    <a class="btn solid" href="#kontaktai">Parašyti žinutę</a>
+  </div>
+</section>
+
+<!-- ---------- KONTAKTAI ---------- -->
+<section id="kontaktai">
+  <div class="in">
+    <div class="head reveal">
+      <p class="eyebrow">Kontaktai</p>
+      <h2>Susisiekime</h2>
+    </div>
+
+    <div class="two reveal">
+      <form id="uzklausa" novalidate>
+        <div class="row2">
+          <div class="field"><label for="v">Vardas</label><input id="v" name="vardas" type="text" autocomplete="name" required></div>
+          <div class="field"><label for="i">Įstaiga ar įmonė</label><input id="i" name="istaiga" type="text" autocomplete="organization"></div>
         </div>
-
-        <form id="uzklausa" novalidate>
-          <div class="row">
-            <label>Vardas<input type="text" name="vardas" autocomplete="name" required></label>
-            <label>Įstaiga ar įmonė<input type="text" name="istaiga" autocomplete="organization"></label>
+        <div class="row2">
+          <div class="field"><label for="e">El. paštas</label><input id="e" name="pastas" type="email" autocomplete="email" required></div>
+          <div class="field"><label for="t">Telefonas</label><input id="t" name="telefonas" type="tel" autocomplete="tel"></div>
+        </div>
+        <div class="row2">
+          <div class="field">
+            <label for="k">Ko ieškote</label>
+            <select id="k" name="tipas">
+              <option>Koncertinė programa</option>
+              <option>Sezoninė ar kalėdinė programa</option>
+              <option>Edukacinis užsiėmimas mokykloje</option>
+              <option>Renginys po raktu</option>
+              <option>Kita — parašysiu žinutėje</option>
+            </select>
           </div>
-          <div class="row">
-            <label>El. paštas<input type="email" name="pastas" autocomplete="email" required></label>
-            <label>Telefonas<input type="tel" name="telefonas" autocomplete="tel"></label>
-          </div>
-          <div class="row">
-            <label>Ko ieškote
-              <select name="tipas">
-                <option>Sezoninė ar kalėdinė programa</option>
-                <option>Edukacinis užsiėmimas mokykloje</option>
-                <option>Koncertinė programa</option>
-                <option>Renginys po raktu</option>
-                <option>Kita — parašysiu žinutėje</option>
-              </select>
-            </label>
-            <label>Data arba mėnuo<input type="text" name="data" placeholder="pvz. 2026 m. gruodžio 12 d."></label>
-          </div>
-          <label>Žinutė<textarea name="zinute" placeholder="Erdvė, apytikslis žiūrovų skaičius, proga."></textarea></label>
-
-          <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
-
-          <button class="btn" type="submit">Siųsti užklausą</button>
-          <p class="form-msg" id="form-msg" role="status" aria-live="polite"></p>
-        </form>
-      </div>
-
-      <aside class="contact-side">
-        <div class="card-side">
-          <h3>Tiesioginiai kontaktai</h3>
-          <p>
-            <a data-email href="mailto:daunyte.elena@gmail.com">daunyte.elena@gmail.com</a><br>
-            <span class="fill">+370 6xx xxxxx</span>
-          </p>
+          <div class="field"><label for="d">Data arba mėnuo</label><input id="d" name="data" type="text" placeholder="pvz. 2026 m. gruodžio 12 d."></div>
         </div>
-        <div class="card-side">
-          <h3>Socialiniai tinklai</h3>
-          <p><span class="fill">Facebook</span> · <span class="fill">Instagram</span> · <span class="fill">YouTube</span></p>
-        </div>
-        <div class="card-side">
-          <h3>Rekvizitai</h3>
-          <p>Elena Daunytė<br>
-          Individuali veikla <span class="fill">nr.</span><br>
-          <span class="fill">Adresas sąskaitoms</span></p>
-        </div>
-      </aside>
+        <div class="field"><label for="z">Žinutė</label><textarea id="z" name="zinute" placeholder="Erdvė, apytikslis svečių skaičius, proga."></textarea></div>
+
+        <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <button class="btn dark" type="submit">Siųsti užklausą</button>
+        <p class="form-msg" id="form-msg" role="status" aria-live="polite"></p>
+      </form>
+
+      <dl class="direct">
+        <dt>Telefonas</dt>
+        <dd><a href="tel:+37067004184">+370 670 04184</a></dd>
+
+        <dt>El. paštas</dt>
+        <dd><a data-email href="mailto:daunyte.elena@gmail.com">daunyte.elena@gmail.com</a></dd>
+
+        <dt>Veiklos vieta</dt>
+        <dd>Vilnius ir visa Lietuva</dd>
+
+        <dt>Atsakau</dt>
+        <dd>Per vieną darbo dieną</dd>
+      </dl>
     </div>
-  </section>
+  </div>
+</section>
 </main>
 
+<!-- ---------- PORAŠTĖ ---------- -->
 <footer>
-  <div class="shell">
-    <div class="foot-grid">
+  <div class="in">
+    <div class="cols">
       <div>
-        <h4>FeelHarmonic</h4>
-        <p>Violončelės programos renginiams ir edukaciniai užsiėmimai mokykloms. Elena Daunytė, Lietuva.</p>
+        <div class="fbrand">
+          <svg aria-hidden="true"><use href="#mark"/></svg>
+          <div><b>FeelHarmonic</b><span class="tg">Let it come!</span></div>
+        </div>
+        <p style="max-width:34ch;margin:0">Violončelės koncertai, kultūrinės edukacijos ir renginiai visoje Lietuvoje.</p>
       </div>
       <div>
-        <h4>Puslapis</h4>
+        <h4>Puslapiai</h4>
         <ul>
           <li><a href="#paslaugos">Paslaugos</a></li>
+          <li><a href="#edukacijos">Edukacijos</a></li>
           <li><a href="#programos">Programos</a></li>
-          <li><a href="#klausyti">Įrašai</a></li>
-          <li><a href="#duk">DUK</a></li>
+          <li><a href="#apie">Apie</a></li>
+          <li><a href="#kontaktai">Kontaktai</a></li>
         </ul>
       </div>
       <div>
-        <h4>Susisiekti</h4>
+        <h4>Rekvizitai</h4>
         <ul>
+          <li>Elena Daunytė</li>
+          <li>Individuali veikla nr. <span class="fill">000000</span></li>
           <li><a data-email href="mailto:daunyte.elena@gmail.com">daunyte.elena@gmail.com</a></li>
-          <li><a href="#kontaktai">Užklausos forma</a></li>
+          <li><a href="tel:+37067004184">+370 670 04184</a></li>
         </ul>
       </div>
     </div>
-    <div class="foot-bar">
+    <div class="fbot">
       <span>© <span id="year">2026</span> FeelHarmonic</span>
-      <span>Elena Daunytė · violončelė</span>
+      <span>Vilnius, Lietuva</span>
     </div>
   </div>
 </footer>
@@ -557,7 +533,8 @@
       "name": "Elena Daunytė",
       "jobTitle": "Violončelininkė",
       "email": "daunyte.elena@gmail.com",
-      "worksFor": { "@type": "Organization", "name": "FeelHarmonic" },
+      "telephone": "+370 670 04184",
+      "worksFor": { "@type": "Organization", "name": "FeelHarmonic", "slogan": "Let it come!" },
       "knowsAbout": ["Violončelė", "Kamerinė muzika", "Muzikinė edukacija"]
     },
     {
@@ -571,17 +548,12 @@
         {
           "@type": "Question",
           "name": "Kiek iš anksto reikia rezervuoti datą?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Kalėdiniam sezonui — nuo rugsėjo, nes gruodžio savaitgaliai užsipildo pirmi. Kitu metu užtenka 4–6 savaičių." }
+          "acceptedAnswer": { "@type": "Answer", "text": "Kalėdiniam sezonui — nuo rugsėjo. Kitu metu užtenka 4–6 savaičių." }
         },
         {
           "@type": "Question",
           "name": "Ar išrašote sąskaitą faktūrą?",
           "acceptedAnswer": { "@type": "Answer", "text": "Taip. Dirbu pagal individualios veiklos pažymą, todėl išrašau sąskaitą faktūrą ir galiu pasirašyti paslaugų sutartį." }
-        },
-        {
-          "@type": "Question",
-          "name": "Ar programą galima pritaikyti prie mūsų progos?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Taip. Repertuaras, trukmė ir kalbėjimo dalis derinami prieš renginį." }
         }
       ]
     }

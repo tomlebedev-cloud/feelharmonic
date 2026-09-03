@@ -1,704 +1,418 @@
-/* FeelHarmonic — stiliai
-   ------------------------------------------------------------------
-   Balta bazė ir auksas. Visos spalvos — kintamuosiuose žemiau.
-   ------------------------------------------------------------------ */
+/* =====================================================================
+   FeelHarmonic — stiliai
+   Spalvos iš logotipo: tamsi žalsvai mėlyna, auksas, kreminė.
+   Visos reikšmės — kintamuosiuose žemiau.
+   ===================================================================== */
 
-/* ---- ŠVIESI tema (numatytoji): balta + auksas ---- */
 :root{
-  --ground:#FFFFFF;
-  --ground-2:#F8F6F1;
-  --surface:#FFFFFF;
-  --ink:#14120D;
-  --ink-2:#67625A;
-  --ink-3:#7C7668;
-  --line:#E8E4D8;
-  --line-soft:#F2EFE7;
+  --teal:#0B3C41;
+  --teal-deep:#072B2F;
+  --teal-soft:#14535A;
 
-  --accent:#8C6C16;
-  --accent-hover:#6F550F;
-  --accent-bright:#C9A227;
-  --brand-green:#04503B;
-  --accent-grad:linear-gradient(135deg,#E7D083 0%,#C9A227 48%,#9C7817 100%);
-  --accent-grad-hover:linear-gradient(135deg,#D9BE60 0%,#AC8A1B 48%,#7F6110 100%);
-  --accent-glow:rgba(201,162,39,.20);
-  --hero-glow:rgba(201,162,39,.13);
-  --on-accent:#191509;
+  --gold:#CE8E34;        /* dekoracijoms ir tekstui ant tamsaus */
+  --gold-lt:#E2A94F;     /* smulkiam tekstui ant tamsaus */
+  --gold-ink:#8A5E18;    /* tekstui ant šviesaus fono */
 
-  --h-amber:#8C6C16;
-  --h-rust:#8C5A2A;
-  --h-olive:#5B6733;
-  --h-plum:#77455A;
+  --cream:#F6F1E6;
+  --paper:#FCFAF4;
+  --ink:#16292B;
+  --muted:#5A6E71;
+  --line:#D9D0BE;
+  --line-soft:#E7E0D2;
 
-  --fill-line:#DDD3B3;
-  --fill-ink:#8A7A45;
-  --fill-bg:#FAF6E9;
+  --serif:"Playfair Display",Georgia,"Times New Roman",serif;
+  --sans:"Jost",system-ui,"Segoe UI",Arial,sans-serif;
 
-  --ok:#5B6733;
-  --err:#8C4433;
+  --fill-line:#C6B893;
+  --fill-ink:#7A683C;
+  --fill-bg:#F1E9D6;
 
-  --portrait-bg:#16130D;
-  --pad-sec:clamp(4rem,8vw,7rem);
-  --shadow-1:0 1px 2px rgba(20,18,13,.05), 0 8px 24px rgba(20,18,13,.06);
-  --shadow-2:0 2px 4px rgba(20,18,13,.06), 0 18px 44px rgba(20,18,13,.10);
+  --ok:#3D6B4A;
+  --err:#9B3F2C;
+
+  --shadow-1:0 1px 2px rgba(11,60,65,.06), 0 10px 26px rgba(11,60,65,.07);
+  --shadow-2:0 2px 5px rgba(11,60,65,.08), 0 20px 46px rgba(11,60,65,.12);
 }
-
-/* ---- TAMSI tema ---- */
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --ground:#0F0E0A;
-    --ground-2:#15130E;
-    --surface:#1B1811;
-    --ink:#F5F1E6;
-    --ink-2:#A69F8D;
-    --ink-3:#8B8574;
-    --line:#2B2719;
-    --line-soft:#211E14;
-
-    --accent:#DCBB61;
-    --accent-hover:#EBCE81;
-    --accent-bright:#E3C56F;
-    --brand-green:#3CC79C;
-    --accent-grad:linear-gradient(135deg,#F0DA9B 0%,#DCBB61 48%,#B2903A 100%);
-    --accent-grad-hover:linear-gradient(135deg,#F6E4B4 0%,#E9CB78 48%,#C4A24C 100%);
-    --accent-glow:rgba(220,187,97,.20);
-    --hero-glow:rgba(220,187,97,.11);
-    --on-accent:#141107;
-
-    --h-amber:#DCBB61;
-    --h-rust:#CE8F5F;
-    --h-olive:#A3B173;
-    --h-plum:#C68CA1;
-
-    --fill-line:#463F26;
-    --fill-ink:#C4B276;
-    --fill-bg:#1A1810;
-
-    --ok:#A3B173;
-    --err:#CE8F5F;
-
-    --portrait-bg:#14110C;
-    --shadow-1:0 1px 2px rgba(0,0,0,.36), 0 8px 24px rgba(0,0,0,.42);
-    --shadow-2:0 2px 4px rgba(0,0,0,.40), 0 18px 44px rgba(0,0,0,.54);
-  }
-}
-:root[data-theme="dark"]{
-  --ground:#0F0E0A;
-  --ground-2:#15130E;
-  --surface:#1B1811;
-  --ink:#F5F1E6;
-  --ink-2:#A69F8D;
-  --ink-3:#8B8574;
-  --line:#2B2719;
-  --line-soft:#211E14;
-
-  --accent:#DCBB61;
-  --accent-hover:#EBCE81;
-  --accent-bright:#E3C56F;
-  --brand-green:#3CC79C;
-  --accent-grad:linear-gradient(135deg,#F0DA9B 0%,#DCBB61 48%,#B2903A 100%);
-  --accent-grad-hover:linear-gradient(135deg,#F6E4B4 0%,#E9CB78 48%,#C4A24C 100%);
-  --accent-glow:rgba(220,187,97,.20);
-  --hero-glow:rgba(220,187,97,.11);
-  --on-accent:#141107;
-
-  --h-amber:#DCBB61;
-  --h-rust:#CE8F5F;
-  --h-olive:#A3B173;
-  --h-plum:#C68CA1;
-
-  --fill-line:#463F26;
-  --fill-ink:#C4B276;
-  --fill-bg:#1A1810;
-
-  --ok:#A3B173;
-  --err:#CE8F5F;
-
-  --portrait-bg:#14110C;
-  --shadow-1:0 1px 2px rgba(0,0,0,.36), 0 8px 24px rgba(0,0,0,.42);
-  --shadow-2:0 2px 4px rgba(0,0,0,.40), 0 18px 44px rgba(0,0,0,.54);
-}
-
-/* ================= pagrindas ================= */
 
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:5rem}
+
 body{
   margin:0;
-  background:var(--ground);
+  background:var(--paper);
   color:var(--ink);
-  font-family:"Karla","Helvetica Neue",Arial,sans-serif;
-  font-size:17px;
-  line-height:1.62;
+  font-family:var(--sans);
+  font-weight:300;
+  font-size:17.5px;
+  line-height:1.68;
   -webkit-font-smoothing:antialiased;
-  text-rendering:optimizeLegibility;
 }
-h1,h2,h3{
-  font-family:"Fraunces",Georgia,"Times New Roman",serif;
-  font-variation-settings:"SOFT" 24,"WONK" 1;
-  font-weight:600;
-  text-wrap:balance;
-  margin:0;
-  line-height:1.1;
-  letter-spacing:-.018em;
-}
+
+h1,h2,h3,h4{font-family:var(--serif);font-weight:500;letter-spacing:-.01em;margin:0;line-height:1.14}
 p{margin:0}
 img{max-width:100%;height:auto;display:block}
-::selection{background:var(--accent);color:var(--on-accent)}
+::selection{background:var(--gold);color:var(--teal)}
 
-.shell{width:min(1180px,100% - 2.5rem);margin-inline:auto}
+.in{max-width:1120px;margin:0 auto;padding:0 28px}
+section{padding:84px 0}
+
 .skip{position:absolute;left:-9999px}
-.skip:focus{left:1rem;top:1rem;z-index:99;background:var(--accent);color:var(--on-accent);padding:.6rem 1rem;border-radius:3px}
+.skip:focus{left:1rem;top:1rem;z-index:99;background:var(--gold);color:var(--teal);padding:.6rem 1rem}
 
 .eyebrow{
-  font-size:.7rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
-  color:var(--ink-3);margin:0;
+  font-family:var(--sans);font-weight:400;font-size:12px;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--gold-ink);
+  margin:0 0 16px;
 }
-.rule{display:block;width:46px;height:10px;overflow:visible;color:var(--accent-bright)}
-.rule path{fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round}
+.lede{font-size:19px;max-width:56ch;color:var(--muted)}
 
-/* ================= navigacija ================= */
+/* ---------- ženklas ---------- */
+.mark .ray{stroke:var(--gold);stroke-width:1.1;stroke-linecap:round}
+.mark .tri{fill:none;stroke:var(--gold);stroke-width:1.6}
+.mark .dot{fill:var(--gold)}
 
-.nav{
-  position:sticky;top:0;z-index:50;
-  border-bottom:1px solid transparent;
-  transition:background .3s ease,border-color .3s ease;
-}
-.nav.is-stuck{
-  background:color-mix(in srgb,var(--ground) 84%,transparent);
-  backdrop-filter:blur(14px) saturate(140%);
-  border-bottom-color:var(--line);
-}
-.nav-in{display:flex;align-items:center;gap:1.5rem;height:74px;transition:height .3s ease}
-.nav.is-stuck .nav-in{height:62px}
-.brand{
-  display:inline-flex;align-items:center;gap:.6rem;
-  font-family:"Fraunces",Georgia,serif;font-variation-settings:"SOFT" 24,"WONK" 1;
-  font-size:1.62rem;font-weight:600;letter-spacing:-.02em;
-  text-decoration:none;color:inherit;
-}
-.brand-text{color:var(--brand-green);white-space:nowrap}
-.brand-mark{width:24px;height:24px;flex:none;border-radius:6px;background:var(--accent-grad);display:grid;place-items:center}
-.brand-mark svg{width:16px;height:10px;overflow:visible}
-.brand-mark path{fill:none;stroke:var(--on-accent);stroke-width:1.9;stroke-linecap:round}
-.brand em{font-style:normal;color:var(--accent)}
-
-.nav-links{display:none;gap:.2rem;margin-left:auto;font-size:1rem}
-.nav-links a{
-  position:relative;text-decoration:none;color:var(--ink-2);
-  padding:.45rem .62rem;transition:color .2s ease;
-}
-.nav-links a::after{
-  content:"";position:absolute;left:.62rem;right:.62rem;bottom:.1rem;height:1px;
-  background:var(--accent);transform:scaleX(0);transform-origin:left;
-  transition:transform .28s cubic-bezier(.22,1,.36,1);
-}
-.nav-links a:hover{color:var(--ink)}
-.nav-links a:hover::after,
-.nav-links a.is-active::after{transform:scaleX(1)}
-.nav-links a.is-active{color:var(--ink)}
-.nav .btn{margin-left:auto}
-@media(min-width:980px){
-  .nav-links{display:flex}
-  .nav .btn{margin-left:1rem}
-}
-
-/* ================= mygtukai ================= */
-
+/* ---------- mygtukai ---------- */
 .btn{
-  display:inline-flex;align-items:center;justify-content:center;gap:.55rem;
-  font-family:inherit;font-size:.94rem;font-weight:600;letter-spacing:.01em;
-  padding:.82rem 1.45rem;border-radius:3px;border:1px solid transparent;
-  background:var(--accent-grad);color:var(--on-accent);text-decoration:none;cursor:pointer;
-  transition:background .2s ease,border-color .2s ease,transform .2s ease,box-shadow .2s ease;
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  font-family:var(--sans);font-weight:400;font-size:14px;
+  letter-spacing:.1em;text-transform:uppercase;text-decoration:none;
+  padding:14px 30px;border:1px solid var(--gold);color:var(--gold);
+  background:transparent;cursor:pointer;
+  transition:background .2s ease,color .2s ease,border-color .2s ease;
 }
-.btn:hover{background:var(--accent-grad-hover);border-color:transparent;transform:translateY(-1px);box-shadow:var(--shadow-1)}
-.btn:active{transform:translateY(0)}
-.btn[disabled]{opacity:.55;cursor:progress;transform:none}
-.btn svg{width:14px;height:14px;flex:none;transition:transform .2s ease}
+.btn:hover{background:var(--gold);color:var(--teal)}
+.btn.solid{background:var(--gold);color:var(--teal);border-color:var(--gold)}
+.btn.solid:hover{background:var(--gold-lt);border-color:var(--gold-lt)}
+.btn.dark{border-color:var(--teal);color:var(--teal)}
+.btn.dark:hover{background:var(--teal);color:var(--cream)}
+.btn[disabled]{opacity:.55;cursor:progress}
+.btn svg{width:13px;height:13px;flex:none;transition:transform .2s ease}
 .btn:hover svg{transform:translateX(3px)}
-.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
-.btn-ghost:hover{background:var(--surface);border-color:var(--ink-3);box-shadow:none}
-.btn-light{background:var(--on-accent);color:#F0DA9B;border-color:var(--on-accent)}
-.btn-light:hover{background:#fff;border-color:#fff;color:#7A5E12}
 
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{
-  outline:2px solid var(--accent);outline-offset:3px;border-radius:2px;
+  outline:2px solid var(--gold);outline-offset:3px;
 }
 
-/* ================= hero su portretu ================= */
-
-.hero{
-  position:relative;overflow:hidden;
-  border-bottom:1px solid var(--line);
-  background:
-    radial-gradient(66% 50% at 91% 6%, var(--hero-glow), transparent 64%),
-    linear-gradient(180deg, var(--ground) 0%, var(--ground-2) 100%);
+/* ---------- meniu ---------- */
+header{
+  position:sticky;top:0;z-index:40;background:var(--teal);
+  border-bottom:1px solid rgba(206,142,52,.22);
 }
-.hero-grid{
-  position:relative;z-index:2;
-  display:grid;gap:2.5rem;
-  padding-block:clamp(3rem,7vw,5rem) clamp(6rem,12vw,8rem);
-  align-items:center;
+header .in{display:flex;align-items:center;gap:20px;height:70px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;margin-right:auto}
+.brand svg{width:30px;height:30px;flex:none}
+.brand b{font-family:var(--serif);font-weight:500;font-size:21px;color:#fff;letter-spacing:.005em}
+
+nav.main{display:none;gap:24px;align-items:center}
+nav.main a{
+  font-size:13.5px;letter-spacing:.08em;text-transform:uppercase;
+  color:rgba(255,255,255,.78);text-decoration:none;padding:4px 0;
+  border-bottom:1px solid transparent;transition:color .2s ease,border-color .2s ease;
 }
-@media(min-width:940px){
-  .hero-grid{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:4rem;min-height:min(86vh,820px)}
-}
-.hero-text{display:grid;gap:1.6rem;justify-items:start}
-.hero h1{
-  font-size:clamp(2.6rem,6vw,4.5rem);
-  font-variation-settings:"SOFT" 30,"WONK" 1,"opsz" 144;
-  letter-spacing:-.028em;max-width:14ch;
-}
-.hero h1 .accent{color:var(--accent)}
-.hero .lead{font-size:clamp(1.06rem,1.6vw,1.24rem);color:var(--ink-2);max-width:50ch}
-.hero-cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:.4rem}
+nav.main a:hover,nav.main a.is-active{color:var(--gold-lt);border-bottom-color:var(--gold-lt)}
+nav.main .btn{padding:9px 18px;font-size:12px}
+nav.main .btn:hover{border-bottom-color:var(--gold)}
+@media(min-width:1020px){nav.main{display:flex}}
 
-/* portreto rėmas */
-.hero-portrait{
-  position:relative;
-  border-radius:4px;
-  background:var(--portrait-bg);
-  aspect-ratio:1/1;
-  max-width:30rem;width:100%;justify-self:center;
-  overflow:hidden;
-  box-shadow:var(--shadow-2);
-}
-@media(min-width:940px){.hero-portrait{justify-self:end;max-width:none}}
-.hero-portrait img{width:100%;height:100%;object-fit:cover;object-position:center center}
-.hero-portrait::after{
-  content:"";position:absolute;inset:0;pointer-events:none;
-  background:linear-gradient(190deg,transparent 45%,rgba(20,15,11,.55) 100%);
-}
-.portrait-caption{
-  position:absolute;left:0;right:0;bottom:0;z-index:1;
-  padding:1.25rem 1.4rem;
-  color:#F2EBE1;
-  display:grid;gap:.15rem;
-}
-.portrait-caption strong{
-  font-family:"Fraunces",Georgia,serif;font-variation-settings:"SOFT" 24,"WONK" 1;
-  font-size:1.06rem;font-weight:600;letter-spacing:-.01em;
-}
-.portrait-caption span{font-size:.82rem;letter-spacing:.05em;color:rgba(242,235,225,.75)}
-
-/* faktų juosta hero apačioje */
-.hero-facts{
-  position:relative;z-index:2;
-  border-top:1px solid var(--line);
-}
-.hero-facts ul{
-  list-style:none;margin:0;padding:0;
-  display:grid;gap:1px;background:var(--line);
-}
-@media(min-width:780px){.hero-facts ul{grid-template-columns:repeat(3,1fr)}}
-.hero-facts li{
-  background:var(--ground-2);
-  padding:1.1rem .25rem;font-size:.87rem;color:var(--ink-2);
-  display:flex;align-items:center;gap:.65rem;
-}
-@media(min-width:780px){
-  .hero-facts li{padding:1.15rem 1.6rem}
-  .hero-facts li:first-child{padding-left:0}
-  .hero-facts li:last-child{padding-right:0}
-}
-.hero-facts li svg{width:15px;height:15px;flex:none;color:var(--accent)}
-
-/* ================= sekcijos ================= */
-
-.sec{padding-block:var(--pad-sec);border-bottom:1px solid var(--line)}
-.sec-alt{background:var(--ground-2)}
-.sec-head{display:grid;gap:1rem;margin-bottom:3rem;max-width:60ch;justify-items:start}
-.sec-head h2{font-size:clamp(1.9rem,3.8vw,2.75rem)}
-.sec-head p{color:var(--ink-2);font-size:1.02rem}
-
-/* ================= keturios kryptys ================= */
-
-.grid-rule{display:grid;gap:1px;background:var(--line);border-block:1px solid var(--line)}
-@media(min-width:880px){.grid-rule{grid-template-columns:1fr 1fr}}
-.cell{background:var(--ground);padding:2.2rem 0;transition:background .3s ease}
-@media(min-width:880px){
-  .cell{padding:2.7rem 2.9rem}
-  .cell:nth-child(odd){padding-left:0}
-  .cell:nth-child(even){padding-right:0}
-}
-.sec-alt .cell{background:var(--ground-2)}
-.cell:hover{background:var(--surface)}
-.cell-top{display:flex;align-items:center;gap:.8rem;margin-bottom:1.1rem}
-.glyph{flex:none;width:32px;height:14px;overflow:visible}
-.glyph path{
-  fill:none;stroke-width:1.7;stroke-linecap:round;
-  stroke-dasharray:64;stroke-dashoffset:0;
-  transition:stroke-dashoffset .8s cubic-bezier(.22,1,.36,1);
-}
-.cell:hover .glyph path{stroke-dashoffset:128}
-.cell h3{font-size:1.4rem;margin-bottom:.7rem}
-.cell > p{color:var(--ink-2);font-size:.99rem;max-width:46ch}
-.meta{display:grid;gap:0;margin-top:1.6rem;font-size:.86rem}
-.meta div{
-  display:grid;grid-template-columns:7.5rem 1fr;gap:.75rem;
-  padding:.5rem 0;border-top:1px solid var(--line-soft);
-}
-.meta .k{color:var(--ink-3);letter-spacing:.03em}
-.tag{
-  display:inline-flex;align-items:center;gap:.45rem;
-  margin-top:1.4rem;font-size:.72rem;font-weight:700;
-  letter-spacing:.1em;text-transform:uppercase;
-  padding:.38rem .75rem;border:1px solid var(--line);border-radius:99px;color:var(--ink-2);
-}
-.tag::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--accent)}
-
-/* ================= programos ================= */
-
-.programs{display:grid;gap:1px;background:var(--line);border-block:1px solid var(--line)}
-.prog{background:var(--ground);display:grid;gap:1.2rem 3rem;padding:2.3rem 0;transition:background .3s ease}
-.sec-alt .prog{background:var(--ground-2)}
-.prog:hover{background:var(--surface)}
-@media(min-width:900px){.prog{grid-template-columns:minmax(0,1fr) 21rem;align-items:start}}
-.prog h3{font-size:1.6rem;margin-bottom:.7rem}
-.prog > div > p{color:var(--ink-2);font-size:1rem;max-width:54ch}
-.prog-specs{display:grid;font-size:.87rem}
-.prog-specs div{
-  display:flex;justify-content:space-between;gap:1rem;
-  padding:.58rem 0;border-bottom:1px solid var(--line-soft);
-}
-.prog-specs div:first-child{border-top:1px solid var(--line-soft)}
-.prog-specs .k{color:var(--ink-3)}
-.prog-specs .v{text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
-
-/* ================= auditorijos ================= */
-
-.audience{display:grid;gap:1.5rem}
-@media(min-width:920px){.audience{grid-template-columns:repeat(3,1fr)}}
-.aud{
-  background:var(--surface);border:1px solid var(--line);border-radius:4px;
-  padding:2rem 1.85rem;display:grid;gap:1rem;align-content:start;
-  transition:transform .35s cubic-bezier(.22,1,.36,1),box-shadow .35s ease;
-}
-.aud:hover{transform:translateY(-4px);box-shadow:var(--shadow-2)}
-.aud h3{font-size:1.22rem}
-.aud > p{color:var(--ink-2);font-size:.95rem}
-.aud ul{list-style:none;margin:0;padding:0;display:grid;gap:.7rem;font-size:.92rem}
-.aud li{display:grid;grid-template-columns:1.1rem 1fr;gap:.6rem;color:var(--ink-2);align-items:start}
-.aud li svg{width:13px;height:13px;margin-top:.45em;color:var(--accent);flex:none}
-
-/* ================= eiga ================= */
-
-.steps{display:grid;gap:2rem;position:relative}
-@media(min-width:860px){
-  .steps{grid-template-columns:repeat(4,1fr);gap:2.4rem}
-  .steps::before{content:"";position:absolute;left:0;right:0;top:1.05rem;height:1px;background:var(--line)}
-}
-.step{position:relative;display:grid;gap:.6rem;align-content:start}
-@media(min-width:860px){.step{padding-top:3.1rem}}
-.step-n{
-  position:relative;z-index:1;
-  width:2.1rem;height:2.1rem;border-radius:50%;
-  display:grid;place-items:center;
-  background:var(--ground);border:1px solid var(--line);
-  font-family:"Fraunces",Georgia,serif;font-size:.88rem;font-weight:600;
-  color:var(--accent);font-variant-numeric:tabular-nums;
-}
-.sec-alt .step-n{background:var(--ground-2)}
-@media(min-width:860px){.step-n{position:absolute;top:0;left:0}}
-.step h3{font-size:1.1rem}
-.step p{font-size:.93rem;color:var(--ink-2)}
-
-/* ================= vietos turiniui ================= */
-
-.slots{display:grid;gap:1.2rem}
-@media(min-width:820px){.slots{grid-template-columns:repeat(3,1fr)}}
-.slot{
-  border:1px dashed var(--fill-line);border-radius:4px;background:var(--fill-bg);
-  min-height:10rem;display:grid;gap:.55rem;align-content:center;justify-items:start;
-  padding:1.5rem;color:var(--fill-ink);
-}
-.slot strong{font-size:.73rem;letter-spacing:.14em;text-transform:uppercase}
-.slot span{font-size:.9rem;line-height:1.55}
-.fill{
-  display:inline-block;border:1px dashed var(--fill-line);background:var(--fill-bg);
-  color:var(--fill-ink);border-radius:2px;padding:.05em .45em;
-  font-size:.86em;font-weight:600;white-space:nowrap;
-}
-.video{position:relative;aspect-ratio:16/9;border-radius:4px;overflow:hidden;background:var(--surface)}
-.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-
-/* ================= apie ================= */
-
-.about{display:grid;gap:2.5rem}
-@media(min-width:920px){.about{grid-template-columns:22rem minmax(0,1fr);gap:4rem}}
-.about h2{font-size:clamp(1.9rem,3.8vw,2.75rem);margin-bottom:1.4rem}
-.about p{color:var(--ink-2);margin-bottom:1.1rem;max-width:62ch}
-.about-photo{
-  border-radius:4px;overflow:hidden;background:var(--portrait-bg);
-  aspect-ratio:1/1;box-shadow:var(--shadow-1);
-}
-.about-photo img{width:100%;height:100%;object-fit:cover;object-position:center center}
-
-/* ================= DUK ================= */
-
-.faq{border-top:1px solid var(--line);max-width:74ch}
-.faq details{border-bottom:1px solid var(--line)}
-.faq summary{
-  list-style:none;cursor:pointer;padding:1.35rem 2.75rem 1.35rem 0;position:relative;
-  font-weight:600;font-size:1.05rem;transition:color .2s ease;
-}
-.faq summary:hover{color:var(--accent)}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::after,
-.faq summary::before{
-  content:"";position:absolute;right:.6rem;top:50%;
-  width:13px;height:1.5px;background:var(--accent);border-radius:2px;
-  transition:transform .3s cubic-bezier(.22,1,.36,1);
-}
-.faq summary::after{transform:translateY(-50%)}
-.faq summary::before{transform:translateY(-50%) rotate(90deg)}
-.faq details[open] summary::before{transform:translateY(-50%) rotate(0deg)}
-.faq .ans{padding:0 0 1.5rem;color:var(--ink-2);font-size:.98rem}
-
-/* ================= CTA juosta ================= */
-
-.cta-band{background:var(--accent-grad);color:var(--on-accent);padding-block:clamp(3rem,6vw,4.5rem)}
-.cta-in{display:grid;gap:1.6rem}
-@media(min-width:900px){.cta-in{grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:3rem}}
-.cta-band h2{font-size:clamp(1.75rem,3.4vw,2.45rem);color:var(--on-accent);margin-bottom:.7rem}
-.cta-band p{color:color-mix(in srgb,var(--on-accent) 80%,transparent);max-width:52ch}
-.cta-band a.mail{color:var(--on-accent);text-underline-offset:4px}
-
-/* ================= kontaktai ================= */
-
-.contact{display:grid;gap:2.8rem}
-@media(min-width:960px){.contact{grid-template-columns:minmax(0,1fr) 21rem;gap:4rem}}
-form{display:grid;gap:1.1rem}
-.row{display:grid;gap:1.1rem}
-@media(min-width:620px){.row{grid-template-columns:1fr 1fr}}
-label{display:grid;gap:.45rem;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
-input,select,textarea{
-  font-family:inherit;font-size:.97rem;font-weight:400;letter-spacing:normal;text-transform:none;
-  color:var(--ink);
-  background:var(--surface);border:1px solid var(--line);border-radius:3px;
-  padding:.8rem .9rem;width:100%;
-  transition:border-color .2s ease,box-shadow .2s ease;
-}
-input:hover,select:hover,textarea:hover{border-color:var(--ink-3)}
-input:focus,select:focus,textarea:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-glow);outline:none}
-textarea{min-height:7.5rem;resize:vertical;line-height:1.6}
-.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
-.form-msg{font-size:.92rem;min-height:1.4em;color:var(--ink-2)}
-.form-msg[data-state="ok"]{color:var(--ok);font-weight:600}
-.form-msg[data-state="err"]{color:var(--err);font-weight:600}
-
-.contact-side{display:grid;gap:1.2rem;align-content:start}
-.card-side{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:1.6rem}
-.card-side h3{font-size:1rem;margin-bottom:.6rem}
-.card-side p{font-size:.95rem;color:var(--ink-2)}
-.card-side a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px;word-break:break-word}
-
-/* ================= poraštė ================= */
-
-footer{padding-block:3rem 3.6rem;background:var(--ground-2);border-top:1px solid var(--line)}
-.foot-grid{display:grid;gap:2rem;margin-bottom:2.5rem}
-@media(min-width:820px){.foot-grid{grid-template-columns:1.5fr 1fr 1fr}}
-.foot-grid h4{
-  font-size:.7rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
-  color:var(--ink-3);margin:0 0 .85rem;
-}
-.foot-grid p,.foot-grid li{font-size:.9rem;color:var(--ink-2)}
-.foot-grid ul{list-style:none;margin:0;padding:0;display:grid;gap:.45rem}
-.foot-grid a{color:var(--ink-2);text-decoration:none}
-.foot-grid a:hover{color:var(--accent)}
-.foot-bar{
-  display:flex;flex-wrap:wrap;gap:.6rem 2rem;justify-content:space-between;align-items:center;
-  padding-top:1.7rem;border-top:1px solid var(--line);
-  font-size:.83rem;color:var(--ink-3);
-}
-
-/* ================= 404 ================= */
-
-.center-page{min-height:70vh;display:grid;place-content:center;text-align:center;gap:1.2rem;padding:3rem 0;justify-items:center}
-.center-page h1{font-size:clamp(2rem,5vw,3rem)}
-.center-page p{color:var(--ink-2)}
-
-/* ================= animacijos ================= */
-
-.js .reveal{opacity:0;transform:translateY(18px)}
-.js .reveal.is-in{
-  opacity:1;transform:none;
-  transition:opacity .75s cubic-bezier(.22,1,.36,1),transform .75s cubic-bezier(.22,1,.36,1);
-}
-.hero-text > *,.hero-portrait{opacity:0;transform:translateY(18px);animation:rise .95s cubic-bezier(.22,1,.36,1) forwards}
-.hero-text > *:nth-child(1){animation-delay:.06s}
-.hero-text > *:nth-child(2){animation-delay:.15s}
-.hero-text > *:nth-child(3){animation-delay:.24s}
-.hero-text > *:nth-child(4){animation-delay:.33s}
-.hero-portrait{animation-delay:.2s}
-@keyframes rise{to{opacity:1;transform:none}}
-
-@media (prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
-  *,*::before,*::after{animation:none !important;transition:none !important}
-  .js .reveal{opacity:1;transform:none}
-  .hero-text > *,.hero-portrait{opacity:1;transform:none}
-}
-
-/* ================= mobilusis meniu ================= */
-
+/* burger */
 .burger{
-  margin-left:auto;
   width:44px;height:44px;flex:none;
-  display:grid;place-items:center;gap:0;
-  background:transparent;border:1px solid var(--line);border-radius:3px;
-  color:var(--ink);cursor:pointer;
+  display:grid;place-items:center;
+  background:transparent;border:1px solid rgba(255,255,255,.3);
+  color:#fff;cursor:pointer;
 }
-.burger span{
-  display:block;width:18px;height:1.6px;background:currentColor;border-radius:2px;
-  transition:transform .3s cubic-bezier(.22,1,.36,1),opacity .2s ease;
-}
+.burger span{display:block;width:18px;height:1.4px;background:currentColor;transition:transform .3s ease,opacity .2s ease}
 .burger span + span{margin-top:4px}
-.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(5.6px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(5.4px) rotate(45deg)}
 .burger[aria-expanded="true"] span:nth-child(2){opacity:0}
-.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-5.6px) rotate(-45deg)}
-@media(min-width:980px){.burger{display:none}}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-5.4px) rotate(-45deg)}
+@media(min-width:1020px){.burger{display:none}}
 
 .mobile-nav{
-  position:fixed;inset:0;z-index:45;
-  background:var(--ground);
-  padding:6rem 1.25rem 2rem;
-  display:grid;align-content:start;gap:.25rem;
-  overflow-y:auto;
+  position:fixed;inset:0;z-index:35;background:var(--teal);
+  padding:96px 24px 40px;display:grid;align-content:start;gap:0;overflow-y:auto;
   opacity:0;visibility:hidden;transform:translateY(-8px);
   transition:opacity .25s ease,transform .25s ease,visibility .25s;
 }
 .mobile-nav.is-open{opacity:1;visibility:visible;transform:none}
 .mobile-nav a{
   display:flex;align-items:center;justify-content:space-between;
-  padding:1rem .25rem;font-size:1.15rem;font-weight:600;
-  color:var(--ink);text-decoration:none;
-  border-bottom:1px solid var(--line);
+  padding:18px 2px;font-size:19px;color:#fff;text-decoration:none;
+  border-bottom:1px solid rgba(255,255,255,.14);
 }
 .mobile-nav a::after{
-  content:"";width:7px;height:7px;border-right:1.5px solid var(--accent);
-  border-bottom:1.5px solid var(--accent);transform:rotate(-45deg);
+  content:"";width:7px;height:7px;flex:none;
+  border-right:1.4px solid var(--gold);border-bottom:1.4px solid var(--gold);
+  transform:rotate(-45deg);
 }
-.mobile-nav .btn{margin-top:1.5rem;justify-content:center;padding-block:1rem}
+.mobile-nav .btn{margin-top:26px;justify-content:center}
 .mobile-nav .btn::after{content:none}
 body.no-scroll{overflow:hidden}
-@media(min-width:980px){.mobile-nav{display:none}}
+@media(min-width:1020px){.mobile-nav{display:none}}
 
-/* ================= LRT / įrašo kortelė ================= */
+/* ---------- hero ---------- */
+.hero{
+  background:var(--teal);color:#fff;position:relative;overflow:hidden;
+  padding:96px 0 104px;
+}
+.hero .halo{
+  position:absolute;right:-160px;top:-120px;width:620px;height:620px;
+  opacity:.13;pointer-events:none;
+}
+.hero .in{position:relative;display:grid;gap:56px;align-items:center}
+@media(min-width:940px){.hero .in{grid-template-columns:1.15fr .85fr}}
+.tagline{font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold-lt);margin:0 0 22px}
+.hero h1{font-size:clamp(40px,5.6vw,66px);line-height:1.08;color:#fff;margin-bottom:20px}
+.hero h1 em{font-style:italic;color:var(--gold-lt)}
+.hero p.sub{color:rgba(255,255,255,.84);max-width:46ch;font-size:19px}
+.hero .acts{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.hero-facts{
+  display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:34px;
+  font-size:13.5px;color:rgba(255,255,255,.74);
+}
+.hero-facts span{display:inline-flex;align-items:center;gap:9px}
+.hero-facts span::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--gold);flex:none}
 
+/* portretas */
+.portrait{
+  position:relative;margin:0;overflow:hidden;
+  aspect-ratio:1/1;background:var(--teal-deep);
+  border:1px solid rgba(206,142,52,.35);
+}
+.portrait img{width:100%;height:100%;object-fit:cover}
+.portrait figcaption{
+  position:absolute;left:0;right:0;bottom:0;padding:18px 20px;
+  background:linear-gradient(0deg,rgba(7,43,47,.92),transparent);
+  display:grid;gap:2px;
+}
+.portrait figcaption b{font-family:var(--serif);font-weight:500;font-size:19px;color:#fff}
+.portrait figcaption span{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-lt)}
+
+/* ---------- juostos ---------- */
+.band-cream{background:var(--cream)}
+.band-teal{background:var(--teal);color:#fff}
+.band-teal h2,.band-teal h3{color:#fff}
+.band-teal .lede{color:rgba(255,255,255,.76)}
+.band-teal .eyebrow{color:var(--gold-lt)}
+
+.head{margin-bottom:46px;max-width:60ch}
+.head h2{font-size:clamp(30px,4vw,42px);line-height:1.14;margin-bottom:14px}
+
+.div{display:flex;align-items:center;gap:18px;margin:0 0 46px}
+.div span{flex:1;height:1px;background:var(--line)}
+.band-teal .div span{background:rgba(206,142,52,.3)}
+.div svg{width:22px;height:22px;flex:none}
+
+/* ---------- paslaugos ---------- */
+.grid3{display:grid;grid-template-columns:1fr;gap:30px}
+@media(min-width:760px){.grid3{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--paper);border:1px solid var(--line);display:flex;flex-direction:column}
+.card .shot{aspect-ratio:3/2}
+.card .tx{padding:26px 26px 28px;display:flex;flex-direction:column;flex:1}
+.card h3{font-size:23px;margin-bottom:10px}
+.card p{font-size:16.5px;color:var(--muted);margin-bottom:18px}
+.card .more{
+  font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--gold-ink);text-decoration:none;border-bottom:1px solid var(--gold);
+  padding-bottom:3px;align-self:flex-start;margin-top:auto;
+}
+.card .more:hover{color:var(--teal);border-bottom-color:var(--teal)}
+
+/* ---------- kam skirta ---------- */
+.grid3.plain{gap:44px}
+.who h3{font-size:21px;margin-bottom:8px}
+.who .n{font-family:var(--serif);font-size:15px;color:var(--gold-ink);display:block;margin-bottom:10px}
+.who p{font-size:16.5px;color:var(--muted);margin:0}
+
+/* ---------- įrašai ---------- */
 .media-card{
-  display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:1.1rem;
-  padding:1.35rem 1.4rem;
-  background:var(--surface);border:1px solid var(--line);border-radius:4px;
-  text-decoration:none;color:inherit;
-  transition:transform .3s cubic-bezier(.22,1,.36,1),box-shadow .3s ease,border-color .3s ease;
+  display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:20px;
+  padding:24px 26px;text-decoration:none;color:#fff;
+  border:1px solid rgba(206,142,52,.4);background:rgba(255,255,255,.04);
+  transition:border-color .25s ease,background .25s ease,transform .25s ease;
 }
-.media-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-2);border-color:var(--accent)}
-.media-play{
-  width:48px;height:48px;flex:none;border-radius:50%;
-  display:grid;place-items:center;
-  background:var(--accent-grad);color:var(--on-accent);
-}
+.media-card:hover{border-color:var(--gold);background:rgba(255,255,255,.07);transform:translateY(-2px)}
+.media-play{width:52px;height:52px;flex:none;border-radius:50%;display:grid;place-items:center;background:var(--gold);color:var(--teal)}
 .media-play svg{width:20px;height:20px;margin-left:2px}
-.media-body{display:grid;gap:.2rem;min-width:0}
-.media-label{font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
-.media-body strong{
-  font-family:"Fraunces",Georgia,serif;font-variation-settings:"SOFT" 24,"WONK" 1;
-  font-size:1.18rem;font-weight:600;letter-spacing:-.012em;
-}
-.media-note{font-size:.9rem;color:var(--ink-2)}
-.media-go{color:var(--ink-3);flex:none}
+.media-body{display:grid;gap:4px;min-width:0}
+.media-label{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-lt)}
+.media-body b{font-family:var(--serif);font-weight:500;font-size:21px}
+.media-note{font-size:15px;color:rgba(255,255,255,.72)}
+.media-go{color:rgba(255,255,255,.65);flex:none}
 .media-go svg{width:16px;height:16px}
-.media-card:hover .media-go{color:var(--accent)}
-@media(max-width:560px){
-  .media-card{grid-template-columns:auto 1fr;gap:.9rem;padding:1.15rem}
-  .media-go{display:none}
-  .media-note{display:none}
+@media(max-width:620px){
+  .media-card{grid-template-columns:auto 1fr;gap:16px;padding:20px}
+  .media-go,.media-note{display:none}
 }
+.video-slots{display:grid;gap:22px;margin-top:26px;grid-template-columns:1fr}
+@media(min-width:760px){.video-slots{grid-template-columns:1fr 1fr}}
+.slot-dark{
+  border:1px dashed rgba(206,142,52,.45);color:rgba(226,169,79,.9);
+  padding:24px;display:grid;gap:8px;align-content:center;min-height:150px;
+}
+.slot-dark strong{font-size:12px;letter-spacing:.16em;text-transform:uppercase}
+.slot-dark span{font-size:15px;line-height:1.5;color:rgba(255,255,255,.62)}
 
-/* ================= galerija ================= */
+/* ---------- programos ---------- */
+.programs{display:grid;gap:0;border-top:1px solid var(--line)}
+.prog{display:grid;gap:14px 44px;padding:30px 0;border-bottom:1px solid var(--line)}
+@media(min-width:860px){.prog{grid-template-columns:minmax(0,1fr) 20rem;align-items:start}}
+.prog h3{font-size:24px;margin-bottom:8px}
+.prog p{font-size:16.5px;color:var(--muted);max-width:54ch}
+.prog-specs{display:grid;font-size:14.5px}
+.prog-specs div{display:flex;justify-content:space-between;gap:16px;padding:8px 0;border-bottom:1px solid var(--line-soft)}
+.prog-specs div:first-child{border-top:1px solid var(--line-soft)}
+.prog-specs .k{color:var(--muted);font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+.prog-specs .v{text-align:right;font-variant-numeric:tabular-nums}
 
-.gallery{display:grid;gap:1rem}
+/* ---------- edukacijos ---------- */
+.edu{display:grid;grid-template-columns:1fr;gap:26px}
+@media(min-width:820px){.edu{grid-template-columns:1fr 1fr}}
+.edu article{border:1px solid var(--line);background:var(--paper);padding:28px}
+.edu h3{font-size:22px;margin-bottom:8px}
+.edu p{font-size:16.5px;color:var(--muted)}
+.facts{
+  list-style:none;margin:18px 0 0;padding:16px 0 0;border-top:1px solid var(--line);
+  display:grid;grid-template-columns:1fr 1fr;gap:9px 20px;
+}
+@media(max-width:560px){.facts{grid-template-columns:1fr}}
+.facts li{font-size:14.5px;color:var(--ink);display:flex;justify-content:space-between;gap:10px}
+.facts b{font-weight:400;color:var(--muted);font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+
+/* ---------- galerija ---------- */
+.gallery{display:grid;gap:22px;grid-template-columns:1fr}
 @media(min-width:640px){.gallery{grid-template-columns:repeat(2,1fr)}}
 @media(min-width:960px){.gallery{grid-template-columns:repeat(3,1fr)}}
-.shot{
-  position:relative;margin:0;overflow:hidden;border-radius:4px;
-  background:var(--portrait-bg);aspect-ratio:4/5;
-}
+.shot{position:relative;margin:0;overflow:hidden;background:var(--teal-deep);aspect-ratio:4/5}
 .shot img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.22,1,.36,1)}
 .shot:hover img{transform:scale(1.03)}
 .shot figcaption{
-  position:absolute;left:0;right:0;bottom:0;
-  padding:.9rem 1rem;font-size:.82rem;color:#F2EBE1;
-  background:linear-gradient(0deg,rgba(20,15,11,.78),transparent);
-}
-.shot-empty{
-  position:absolute;inset:0;display:grid;align-content:center;gap:.4rem;
-  padding:1.4rem;color:var(--fill-ink);
-}
-.shot-empty strong{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase}
-.shot-empty span{font-size:.88rem;line-height:1.5}
-
-/* ================= smulkūs ekranai ================= */
-
-@media(max-width:520px){
-  body{font-size:16px}
-  .nav-in{height:64px}
-  .meta div{grid-template-columns:6.4rem 1fr;gap:.6rem}
-  .prog-specs div{font-size:.85rem}
-  .sec-head{margin-bottom:2.2rem}
-  .aud{padding:1.6rem 1.4rem}
-  .card-side{padding:1.35rem}
-  .faq summary{font-size:1rem;padding-right:2.4rem}
-  .hero-portrait{max-width:100%}
-  .hero-cta{width:100%}
-  .hero-cta .btn,
-  .cta-band .btn,
-  .mobile-nav .btn,
-  form .btn{width:100%}
-  .nav .btn{padding:.6rem .85rem;font-size:.86rem}
-  .nav-in{gap:.6rem}
-  .brand{font-size:1.32rem}
+  position:absolute;left:0;right:0;bottom:0;padding:14px 16px;font-size:13px;color:#fff;
+  background:linear-gradient(0deg,rgba(7,43,47,.85),transparent);
 }
 
-/* ================= tuščios nuotraukų vietos ================= */
-
-/* ================= kredencialų juosta ================= */
-
-.creds{
-  list-style:none;margin:0 0 1.6rem;padding:0;
-  display:flex;flex-wrap:wrap;gap:.5rem;
-}
-.creds li{
-  font-size:.78rem;font-weight:600;letter-spacing:.02em;color:var(--ink-2);
-  padding:.4rem .8rem;border:1px solid var(--line);border-radius:99px;
-  background:var(--ground);
-}
-.sec-alt .creds li{background:var(--surface)}
-
-/* ================= kai nuotraukos dar nėra ================= */
-
+/* tuščios nuotraukų vietos — rodomas ženklas, ne tuščias rėmelis */
 [data-photo]{position:relative}
+[data-photo] .ph-empty{display:none}
+[data-photo].is-empty{background:var(--teal-deep);display:grid;place-items:center}
+[data-photo].is-empty .ph-empty{display:block;width:44%;max-width:140px;opacity:.42}
+[data-photo].is-empty figcaption{display:none}
 
-/* vietoj tuščio rėmelio — tamsi plokštuma su bangos ženklu */
-[data-photo].is-empty{
-  background:
-    radial-gradient(120% 90% at 50% 30%, var(--accent-glow), transparent 62%),
-    var(--portrait-bg);
-  display:grid;place-items:center;
-}
-[data-photo].is-empty::before{
-  content:"";
-  width:min(58%,220px);aspect-ratio:46/10;
-  background:currentColor;color:var(--accent-bright);
-  -webkit-mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 46 10'><path d='M0 5c3-6 5 6 8 0s5 6 8 0 5 6 8 0 5 6 8 0 5 6 8 0' fill='none' stroke='black' stroke-width='1.2' stroke-linecap='round'/></svg>") center/contain no-repeat;
-  mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 46 10'><path d='M0 5c3-6 5 6 8 0s5 6 8 0 5 6 8 0 5 6 8 0 5 6 8 0' fill='none' stroke='black' stroke-width='1.2' stroke-linecap='round'/></svg>") center/contain no-repeat;
-}
-[data-photo].is-empty::after{content:none}
-[data-photo].is-empty figcaption:not(.portrait-caption){display:none}
+/* ---------- apie ---------- */
+.two{display:grid;grid-template-columns:1fr;gap:44px}
+@media(min-width:900px){.two{grid-template-columns:1fr 1fr;gap:56px}}
+.about h2{font-size:clamp(28px,3.6vw,38px);line-height:1.16;margin-bottom:18px}
+.about p{color:var(--muted);margin-bottom:16px;max-width:58ch}
+.creds{list-style:none;margin:0 0 24px;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.creds li{font-size:13px;color:var(--muted);padding:6px 14px;border:1px solid var(--line);background:var(--paper)}
+.about-photo{aspect-ratio:4/5;background:var(--teal-deep);overflow:hidden}
+.about-photo img{width:100%;height:100%;object-fit:cover}
 
-/* „Apie“ skiltis be nuotraukos — tekstas per visą plotį */
-.about.no-photo{grid-template-columns:minmax(0,1fr)}
-.about.no-photo .about-photo{display:none}
+/* ---------- atsiliepimai ---------- */
+.quotes{display:grid;grid-template-columns:1fr;gap:26px}
+@media(min-width:820px){.quotes{grid-template-columns:1fr 1fr}}
+.slot{
+  border:1px dashed var(--fill-line);background:var(--fill-bg);color:var(--fill-ink);
+  padding:24px;display:grid;gap:8px;align-content:center;min-height:150px;
+}
+.slot strong{font-size:12px;letter-spacing:.16em;text-transform:uppercase}
+.slot span{font-size:15px;line-height:1.5}
+.fill{
+  display:inline-block;border:1px dashed var(--fill-line);background:var(--fill-bg);
+  color:var(--fill-ink);padding:.05em .45em;font-size:.9em;white-space:nowrap;
+}
+
+/* ---------- DUK ---------- */
+.faq{border-top:1px solid var(--line);max-width:74ch}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{
+  list-style:none;cursor:pointer;padding:22px 44px 22px 0;position:relative;
+  font-family:var(--serif);font-size:20px;transition:color .2s ease;
+}
+.faq summary:hover{color:var(--gold-ink)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after,.faq summary::before{
+  content:"";position:absolute;right:6px;top:50%;width:13px;height:1.4px;background:var(--gold);
+  transition:transform .3s ease;
+}
+.faq summary::after{transform:translateY(-50%)}
+.faq summary::before{transform:translateY(-50%) rotate(90deg)}
+.faq details[open] summary::before{transform:translateY(-50%) rotate(0)}
+.faq .ans{padding:0 0 24px;color:var(--muted);font-size:16.5px}
+
+/* ---------- CTA ---------- */
+.cta{text-align:center;padding:96px 0}
+.cta h2{font-size:clamp(30px,4.4vw,46px);margin-bottom:16px}
+.cta .lede{margin-left:auto;margin-right:auto;margin-bottom:30px}
+
+/* ---------- kontaktai ---------- */
+.field{margin-bottom:18px}
+.field label{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+.field input,.field select,.field textarea{
+  width:100%;font-family:var(--sans);font-size:16.5px;font-weight:300;color:var(--ink);
+  background:var(--paper);border:1px solid var(--line);padding:12px 14px;border-radius:0;
+}
+.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--gold);outline-offset:-2px}
+.field textarea{min-height:120px;resize:vertical}
+.row2{display:grid;grid-template-columns:1fr;gap:0 18px}
+@media(min-width:620px){.row2{grid-template-columns:1fr 1fr}}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.form-msg{font-size:15px;min-height:1.4em;color:var(--muted);margin-top:14px}
+.form-msg[data-state="ok"]{color:var(--ok)}
+.form-msg[data-state="err"]{color:var(--err)}
+
+.direct dt{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.direct dd{margin:0 0 22px;font-size:19px;font-family:var(--serif)}
+.direct a{text-decoration:none;border-bottom:1px solid var(--gold);color:var(--ink)}
+.direct a:hover{color:var(--gold-ink)}
+
+/* ---------- poraštė ---------- */
+footer{background:var(--teal-deep);color:rgba(255,255,255,.76);padding:64px 0 40px;font-size:15px}
+footer .cols{display:grid;grid-template-columns:1fr;gap:34px;margin-bottom:44px}
+@media(min-width:820px){footer .cols{grid-template-columns:1.4fr 1fr 1fr;gap:40px}}
+footer h4{font-family:var(--sans);font-weight:400;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-lt);margin:0 0 14px}
+footer a{color:rgba(255,255,255,.84);text-decoration:none}
+footer a:hover{color:var(--gold-lt)}
+footer ul{list-style:none;margin:0;padding:0}
+footer li{margin-bottom:7px}
+.fbrand{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.fbrand svg{width:34px;height:34px;flex:none}
+.fbrand b{font-family:var(--serif);font-weight:500;font-size:21px;color:#fff}
+.fbrand .tg{font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-lt);display:block}
+.fbot{
+  border-top:1px solid rgba(255,255,255,.14);padding-top:22px;
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;
+}
+
+/* ---------- animacijos ---------- */
+.js .reveal{opacity:0;transform:translateY(16px)}
+.js .reveal.is-in{opacity:1;transform:none;transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .7s cubic-bezier(.22,1,.36,1)}
 
 [hidden]{display:none !important}
+
+/* ---------- 404 ---------- */
+.center-page{min-height:70vh;display:grid;place-content:center;justify-items:center;text-align:center;gap:18px;padding:60px 0}
+.center-page h1{font-size:clamp(30px,5vw,46px)}
+.center-page p{color:var(--muted)}
+
+@media (max-width:900px){
+  section{padding:64px 0}
+  .hero{padding:64px 0 72px}
+  .hero .portrait{aspect-ratio:3/2}
+}
+@media (max-width:560px){
+  body{font-size:16.5px}
+  .in{padding:0 20px}
+  .hero .acts{width:100%}
+  .hero .acts .btn,.cta .btn,.mobile-nav .btn,form .btn{width:100%}
+}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none !important;transition:none !important}
+  .js .reveal{opacity:1;transform:none}
+}
+
+/* „Apie“ be nuotraukos — tekstas per visą plotį */
+.two.about.no-photo{grid-template-columns:1fr}
+.two.about.no-photo .about-photo{display:none}
