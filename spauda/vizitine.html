@@ -60,6 +60,10 @@ body{
   display:flex;flex-direction:column;justify-content:space-between;
 }
 
+/* fonas piesiamas SVG figura, ne CSS fonu — taip jis spausdinamas
+   visada, net jei naršyklėje išjungta „Background graphics“ */
+.bg{position:absolute;inset:0;width:100%;height:100%;display:block}
+
 /* ženklas */
 .mk .ray{stroke:var(--gold);stroke-width:1.1;stroke-linecap:round}
 .mk .tri{fill:none;stroke:var(--gold);stroke-width:1.6}
@@ -69,12 +73,6 @@ body{
 
 .front{background:var(--paper)}
 
-/* auksinė juostelė — išeina per kraštą, po pjovimo lieka 1,4 mm */
-.front::after{
-  content:"";position:absolute;left:0;right:0;bottom:0;
-  height:calc(1.4mm + var(--bleed));
-  background:var(--gold);
-}
 
 .logo{display:flex;align-items:center;gap:2.4mm}
 .logo svg{width:9mm;height:9mm;flex:none}
@@ -94,7 +92,7 @@ body{
 }
 .person__tag{
   font-size:2.4mm;letter-spacing:.3em;text-transform:uppercase;
-  color:var(--muted);margin:1.5mm 0 0;
+  color:var(--gold-ink);margin:2mm 0 0 11.4mm;
 }
 
 /* ---------- galinė pusė ---------- */
@@ -195,15 +193,18 @@ body{
   <div class="pair">
     <figure class="stack">
       <div class="card front">
+        <svg class="bg" viewBox="0 0 91 61" preserveAspectRatio="none" aria-hidden="true"><rect width="91" height="61" fill="#FCFAF4"/><rect y="56.6" width="91" height="4.4" fill="#CE8E34"/></svg>
         <div class="card__inner">
-          <div class="logo">
-            <svg><use href="#mark"/></svg>
-            <b>FeelHarmonic</b>
+          <div>
+            <div class="logo">
+              <svg><use href="#mark"/></svg>
+              <b>FeelHarmonic</b>
+            </div>
+            <p class="person__tag">Let it come!</p>
           </div>
           <div class="person">
             <p class="person__name">Elena Daunytė</p>
             <p class="person__role">Violončelė</p>
-            <p class="person__tag">Let it come!</p>
           </div>
         </div>
         <div class="guide"></div>
@@ -213,6 +214,7 @@ body{
 
     <figure class="stack">
       <div class="card back">
+        <svg class="bg" viewBox="0 0 91 61" preserveAspectRatio="none" aria-hidden="true"><rect width="91" height="61" fill="#0B3C41"/></svg>
         <div class="card__inner">
           <div class="back__top">
             <svg><use href="#mark"/></svg>
@@ -246,6 +248,7 @@ body{
 
   <div class="notes">
     <h1>Kaip iš šio failo padaryti spaudai tinkamą PDF</h1>
+    <p><strong>Paruoštas PDF jau yra:</strong> <code>FeelHarmonic-vizitine.pdf</code> šalia šio failo. Žemiau — kaip jį pasidaryti iš naujo, ką nors pakeitus.</p>
     <p>Raudona punktyrinė linija — apipjovimo vieta, mėlyna — saugi zona. Ekrane jos matomos, spausdinant — ne. Auksinė juostelė tyčia išeina už raudonos linijos: ta dalis nupjaunama, kad po pjovimo juostelė būtų lygiai prigludusi prie krašto.</p>
 
     <h2>Eksportas</h2>
@@ -254,7 +257,7 @@ body{
       <li>Paskirtis: <strong>Save as PDF</strong>.</li>
       <li>Mastelis: <strong>100 %</strong> (ne „Fit to page“).</li>
       <li>Paraštės: <strong>None</strong>.</li>
-      <li><strong>Background graphics: įjungta</strong> — kitaip nugarėlė išeis balta.</li>
+      <li><strong>Background graphics</strong> — palikti įjungta nebūtina: fonai nupiešti vektorine figūra, todėl spausdinami visada.</li>
     </ul>
     <p>Gausi dviejų puslapių PDF: 1 puslapis — priekis, 2 — nugarėlė.</p>
 
