@@ -26,11 +26,21 @@ Naudoti tik tas nuotraukas, kurių teisės priklauso Elenai arba dėl kurių sus
 
 ## 2. Skaičiai ir rekvizitai
 
-- [ ] **Kainos „nuo“** trims programoms → `index.html`, skiltis „Programos“
-- [ ] **Individualios veiklos pažymos nr.** ir adresas sąskaitoms
-- [ ] **DUK skaičiai** — kiek žmonių salei pakanka aparatūros, kelionės įkainis, atšaukimo terminas
+Įrašyta 2026-09-05 pagal verslo plano kainoraštį:
+
+- [x] **Kainos „nuo“** — „Kalėdų vakaras“ 450 €, „Vasaros klasika“ 650 €
+- [x] **Edukacijos kaina** — 5 €/mok. (Kultūros paso riba 2026 m. — 14 €/mok. per metus)
+- [x] **Kelionė** — iki 60 km nuo Vilniaus įskaičiuota, toliau 0,25 €/km
+- [x] **Atšaukimo terminas** — 14 dienų *(pasiūlymas; jei sutartyje kitaip, pataisyti)*
+- [x] **Edukacijos amžiaus grupė** — 1–8 kl. *(pasiūlymas; patvirtinti su Elena)*
+
+Dar reikia — šių įrašyti negalima be tikrų duomenų:
+
+- [ ] **Individualios veiklos pažymos nr.** ir adresas sąskaitoms → DUK ir poraštės rekvizitai
+- [ ] **Aparatūros pajėgumas** — kiek žmonių salei pakanka turimos garso sistemos
+- [ ] **Antras edukacinis užsiėmimas** — pavadinimas, aprašas, amžius, trukmė, dalyviai, kaina.
+      Be jo ta pati mokykla per Kultūros pasą gali pirkti tik kartą
 - [ ] **Socialinių tinklų nuorodos**
-- [ ] **Edukacijos amžiaus grupė** — kurioms klasėms skirtas užsiėmimas „Kaip skamba emocija?“
 
 ## 3. Forma
 
