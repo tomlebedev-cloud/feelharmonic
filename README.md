@@ -123,3 +123,12 @@ nuorodą užsakovams jas reikia pakeisti tikru turiniu.
 Atidaryk Chrome ir spausk `Ctrl + P` → Save as PDF, mastelis 100 %, paraštės None,
 „Background graphics“ įjungta. Gausi dviejų puslapių PDF, kurį priima spaustuvės.
 Visos instrukcijos ir CMYK reikšmės surašytos pačiame faile.
+
+---
+
+## 8. Perdavimas ir priežiūra
+
+- **[ADMIN.md](ADMIN.md)** — instrukcija savininkei: kaip pačiai keisti tekstą,
+  kainas, nuotraukas ir atsiliepimus per GitHub svetainę, be programavimo.
+- **[HANDOVER.md](HANDOVER.md)** — techninis aprašymas tam, kas prižiūrės
+  puslapį toliau: struktūra, dizaino sistema, hostingas, sprendimų motyvai.
