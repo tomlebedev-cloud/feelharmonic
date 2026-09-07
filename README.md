@@ -61,6 +61,8 @@ GitHub → repozitorija `feelharmonic` → **Settings** → **Pages**:
 Po 1–2 min. svetainė bus adresu:
 `https://tomlebedev-cloud.github.io/feelharmonic/`
 
+Prijungus domeną (žr. 5 skyrių) tas adresas persiunčia į `https://www.feelharmonic.lt/`.
+
 Pastaba: GitHub Pages nemokamai veikia tik **viešose** repozitorijose.
 
 ---
@@ -77,7 +79,7 @@ Kad užklausos ateitų automatiškai:
 
 ```js
 var CONFIG = {
-  email: "daunyte.elena@gmail.com",
+  email: "elena.daunyte@feelharmonic.lt",
   formEndpoint: "https://formspree.io/f/xxxxxxxx"
 };
 ```
@@ -88,12 +90,34 @@ Pirmą užklausą Formspree paprašys patvirtinti el. paštu. Būtinai išsiųsk
 
 ---
 
-## 5. Savas domenas — vėliau
+## 5. Domenas feelharmonic.lt
 
-Puslapis parašytas be jokių prisirišimų prie adreso: visos nuorodos reliatyvios,
-todėl jis vienodai veikia atidarytas iš failo, GitHub Pages adresu ar bet kuriame
-kitame hostinge. Nusipirkus domeną nieko perrašinėti nereikės — užteks jį prijungti
-GitHub Pages nustatymuose ir pridėti `robots.txt` bei `sitemap.xml`.
+Domenas nupirktas Hostingeryje 2026-09-07. Pagrindinis adresas — **`www.feelharmonic.lt`**;
+šakninis `feelharmonic.lt` į jį persiunčiamas paties GitHub.
+
+**Repozitorijoje** jau yra `CNAME` failas su eilute `www.feelharmonic.lt`. Jo trinti negalima:
+be jo GitHub nežino, kurią repozitoriją rodyti tuo adresu.
+
+> Jei GitHub Pages nustatymuose įrašysi domeną per naršyklę, GitHub `CNAME` failą sukurs pats —
+> tada prieš kitą `git push` būtina `git pull`, kitaip pushinsi be to failo ir domenas nustos veikti.
+
+**Hostinger DNS zonoje** (Domains → feelharmonic.lt → DNS / Nameservers) turi būti:
+
+| Tipas | Pavadinimas | Reikšmė |
+|---|---|---|
+| A | `@` | `185.199.108.153` |
+| A | `@` | `185.199.109.153` |
+| A | `@` | `185.199.110.153` |
+| A | `@` | `185.199.111.153` |
+| CNAME | `www` | `tomlebedev-cloud.github.io` |
+
+MX ir TXT įrašų, kuriuos Hostingeris sukūrė paštui, **liesti negalima** — jie nesusiję su puslapiu.
+
+**GitHub** → Settings → Pages → Custom domain: `www.feelharmonic.lt` → Save.
+Palaukus, kol atsiras varnelė „DNS check successful", įjungti **Enforce HTTPS**.
+Sertifikatas išduodamas per 15 min – kelias valandas.
+
+Kaip visa tai veikia ir kur genda, paaiškinta faile `../domeno-schema.html`.
 
 ---
 

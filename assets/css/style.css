@@ -220,6 +220,8 @@ body.no-scroll{overflow:hidden}
 
 /* ---------- kam skirta ---------- */
 .grid3.plain{gap:44px}
+@media(min-width:760px){.grid3.plain.who4{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1080px){.grid3.plain.who4{grid-template-columns:repeat(4,1fr)}}
 .who h3{font-size:21px;margin-bottom:8px}
 .who .n{font-family:var(--serif);font-size:15px;color:var(--gold-ink);display:block;margin-bottom:10px}
 .who p{font-size:16.5px;color:var(--muted);margin:0}
@@ -271,6 +273,7 @@ body.no-scroll{overflow:hidden}
 .edu article{border:1px solid var(--line);background:var(--paper);padding:28px}
 .edu h3{font-size:22px;margin-bottom:8px}
 .edu p{font-size:16.5px;color:var(--muted)}
+.after-note{margin-top:30px;font-size:15px;line-height:1.65;color:var(--muted);max-width:62ch}
 .facts{
   list-style:none;margin:18px 0 0;padding:16px 0 0;border-top:1px solid var(--line);
   display:grid;grid-template-columns:1fr 1fr;gap:9px 20px;
