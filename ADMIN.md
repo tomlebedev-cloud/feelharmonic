@@ -3,7 +3,7 @@
 Ši instrukcija skirta Elenai. Programuoti nereikia — viską galima padaryti
 naršyklėje, GitHub svetainėje. Kompiuteryje nieko diegti nereikia.
 
-Puslapis: **https://tomlebedev-cloud.github.io/feelharmonic/**
+Puslapis: **https://www.feelharmonic.lt/**
 Kodas: **https://github.com/tomlebedev-cloud/feelharmonic**
 
 ---
@@ -44,7 +44,7 @@ Po minutės atnaujink puslapį naršyklėje — pakeitimas jau ten.
 | Programos kainos | `įrašyti €` |
 | Edukacijos duomenys | `Kaip skamba emocija` |
 | Telefonas | `+370 670 04184` |
-| El. paštas | `daunyte.elena@gmail.com` |
+| El. paštas | `elena.daunyte@feelharmonic.lt` |
 | Individualios veiklos nr. | `Individuali veikla nr.` |
 | Tekstas apie save | `Elena Daunytė — violončelininkė` |
 

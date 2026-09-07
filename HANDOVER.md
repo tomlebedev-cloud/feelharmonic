@@ -77,7 +77,8 @@ ant `<html>`), todėl be JS turinys matomas iš karto.
 ## Hostingas
 
 GitHub Pages, šaka `main`, aplankas `/` (root).
-Adresas: https://tomlebedev-cloud.github.io/feelharmonic/
+Adresas: https://www.feelharmonic.lt/ (senasis
+https://tomlebedev-cloud.github.io/feelharmonic/ persiunčia į jį).
 
 Failas `.nojekyll` išjungia Jekyll apdorojimą.
 Visos nuorodos reliatyvios, todėl puslapis vienodai veikia atidarytas iš failo,
@@ -85,14 +86,21 @@ GitHub Pages adresu arba bet kuriame kitame hostinge.
 
 Įkėlus pakeitimą į `main`, puslapis persikuria automatiškai per ~1 min.
 
-## Prijungiant savo domeną
+## Domenas
 
-1. DNS: keturi A įrašai į `185.199.108–111.153`, `CNAME www` į
-   `<paskyra>.github.io.`
-2. Repozitorijoje sukurti failą `CNAME` su viena eilute — domenu.
-3. GitHub → Settings → Pages → Custom domain, tada **Enforce HTTPS**.
-4. `index.html` pakeisti `og:image` kelią į absolutų, pridėti `robots.txt`
-   ir `sitemap.xml` (dabar jų nėra, nes be domeno jie beprasmiai).
+`feelharmonic.lt` nupirktas Hostingeryje 2026-09-07. Pagrindinis adresas —
+`www.feelharmonic.lt`; šakninį domeną GitHub persiunčia pats.
+
+- DNS Hostingerio zonoje: keturi A įrašai į `185.199.108–111.153` ir
+  `CNAME www` į `tomlebedev-cloud.github.io.` MX ir TXT įrašai priklauso
+  paštui — jų liesti negalima.
+- Repozitorijos šaknyje `CNAME` su eilute `www.feelharmonic.lt`.
+  **Trinti negalima.** Jei domenas įrašomas per GitHub sąsają, GitHub šį failą
+  sukuria pats — tada prieš kitą `git push` būtinas `git pull`, kitaip
+  pushinsi be jo ir domenas nustos veikti.
+- GitHub → Settings → Pages → Custom domain, tada **Enforce HTTPS**.
+- `og:image`, `canonical`, `robots.txt` ir `sitemap.xml` jau nurodo į
+  `https://www.feelharmonic.lt/`.
 
 ## Vizitinės
 
@@ -125,7 +133,6 @@ python -m http.server 8000
   kartus per metus. Jei prireiktų, tinkamiausias kelias: hostingą perkelti į
   Netlify (ta pati repozitorija, nemokamai) ir uždėti Decap CMS.
 - **Tamsios temos** — dizainas sąmoningai vienspalvis, paimtas iš logotipo.
-- **robots.txt / sitemap.xml** — bus prasmingi tik atsiradus domenui.
 
 ## Kas dar neužbaigta
 
