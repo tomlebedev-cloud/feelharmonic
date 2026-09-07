@@ -28,7 +28,8 @@ Naudoti tik tas nuotraukas, kurių teisės priklauso Elenai arba dėl kurių sus
 
 Įrašyta 2026-09-05 pagal verslo plano kainoraštį:
 
-- [x] **Kainos „nuo“** — „Kalėdų vakaras“ 450 €, „Vasaros klasika“ 650 €
+- [x] **Kainos „nuo“** — pagal sudėtį: „Kalėdų vakaras“ 450 / 700 / 950 €,
+      „Vasaros klasika“ 650 / 900 €, ceremonija nuo 350 €, renginys „po raktu“ nuo 1 500 €
 - [x] **Edukacijos kaina** — 5 €/mok. (Kultūros paso riba 2026 m. — 14 €/mok. per metus)
 - [x] **Kelionė** — iki 60 km nuo Vilniaus įskaičiuota, toliau 0,25 €/km
 - [x] **Atšaukimo terminas** — 14 dienų *(pasiūlymas; jei sutartyje kitaip, pataisyti)*
@@ -38,9 +39,16 @@ Dar reikia — šių įrašyti negalima be tikrų duomenų:
 
 - [ ] **Individualios veiklos pažymos nr.** ir adresas sąskaitoms → DUK ir poraštės rekvizitai
 - [ ] **Aparatūros pajėgumas** — kiek žmonių salei pakanka turimos garso sistemos
-- [ ] **Antras edukacinis užsiėmimas** — pavadinimas, aprašas, amžius, trukmė, dalyviai, kaina.
-      Be jo ta pati mokykla per Kultūros pasą gali pirkti tik kartą
-- [ ] **Socialinių tinklų nuorodos**
+- [ ] **Socialinių tinklų nuorodos** — kai bus sukurti profiliai (žr. kanalų planą)
+
+Padaryta 2026-09-07:
+
+- [x] **Antras edukacinis užsiėmimas** — „Garso partitūra“, 2–8 kl., 45 min, iki 30, 5 €/mok.
+      Tekstas iš Kultūros paso paraiškos; teikiama nuo 2027-01, atrinkus paraišką
+- [x] **Domenas** — `www.feelharmonic.lt`; šakninis persiunčia į www. Paštas
+      `elena.daunyte@feelharmonic.lt` įrašytas puslapyje, poraštėje ir vizitinėje
+- [x] **Segmentai** — pridėti dvarai/erdvės ir įmonės/agentūros
+- [ ] **Enforce HTTPS** — GitHub → Settings → Pages, pažymėti kai išduos sertifikatą
 
 ## 3. Forma
 
@@ -59,7 +67,8 @@ Dar reikia — šių įrašyti negalima be tikrų duomenų:
 
 ## Terminai
 
-- **Rugsėjis** — nuotraukos, kainos, rekvizitai. Kalėdinius pasiūlymus kultūros centrams
-  reikia siųsti su veikiančia nuoroda.
+- **Rugsėjis** — nuotraukos, veiklos nr., aparatūros skaičius. Kainos ir nuoroda jau
+  tvarkoje, tad kalėdinius pasiūlymus kultūros centrams galima siųsti nelaukiant nuotraukų —
+  laiške svarbiausia kaina ir laisvos datos, o ne galerija.
 - **Spalis** — Kultūros paso kvietimas. Iki jo puslapis turi būti gyvas: vertinant
   tikrinama, ar teikėjas realus. Tikslias datas pasitikrinti kulturospasas.lt.
