@@ -215,6 +215,13 @@ Tada http://localhost:8000/ — veikia ir kalbų perjungiklis. Dukart spustelėj
 - JSON laukuose leidžiamas paprastas HTML (`<em>`, `<span class="fill">`),
   todėl tekstas neekranuojamas. Į turinį nedėti nepatikimo teksto.
 - Sekcijų `id` keisti negalima nekeičiant `nav`/`footer` nuorodų visose kalbose.
+- **`loading="lazy"` prie `data-optional` nuotraukų dėti negalima.** Trūkstamų
+  nuotraukų tvarkymas `main.js` remiasi `error` įvykiu; atidėta nuotrauka
+  niekada nepradeda krautis, tad įvykio nesulaukia — galerija lieka nepaslėpta
+  su tuščiomis dėžėmis, o firminis ženklas neatsiranda. Kai visos nuotraukos
+  bus įkeltos ir atsarginio varianto nebereikės, `lazy` galima grąžinti.
+- `.about-photo` klasę naudoja ir studijos, ir „Apie“ skiltis, o studija
+  puslapyje yra anksčiau — todėl `main.js` jos ieško tik `.about` viduje.
 
 ## Kas dar neužbaigta
 
