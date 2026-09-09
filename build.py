@@ -206,7 +206,7 @@ def services(lang, c):
     s = c["services"]
     cards = []
     for it in s["items"]:
-        tag = '<span class="tag-new">%s</span>' % it["tag"] if it.get("tag") else ""
+        tag = ' <span class="tag-new">%s</span>' % it["tag"] if it.get("tag") else ""
         cards.append("""<article class="card">
         %(fig)s
         <div class="tx">
@@ -343,7 +343,7 @@ def programs(lang, c):
     p = c["programs"]
     arts = []
     for a in p["items"]:
-        tag = '<span class="tag-new">%s</span>' % a["tag"] if a.get("tag") else ""
+        tag = ' <span class="tag-new">%s</span>' % a["tag"] if a.get("tag") else ""
         specs = "\n          ".join(
             '<div><span class="k">%s</span><span class="v">%s</span></div>' % (s["k"], s["v"])
             for s in a["specs"])
