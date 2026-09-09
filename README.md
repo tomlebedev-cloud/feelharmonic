@@ -1,28 +1,50 @@
 # FeelHarmonic
 
-Vieno puslapio svetainė: koncertinės programos, sezoninės šventės kultūros centrams,
-edukaciniai užsiėmimai mokykloms ir renginiai po raktu.
+Vieno puslapio svetainė **trimis kalbomis** (lietuvių, anglų, italų):
+koncertai ir performansai, edukacijos ir mokymai, terapiniai bei sąmoningumo
+renginiai, šventės nuo A iki Z.
 
-Statinis puslapis — jokių duomenų bazių, jokio WordPress. Trys failai, kuriuos redaguoji:
+Statinis puslapis — jokių duomenų bazių, jokio WordPress. Redaguojami failai:
 
 | Failas | Kam |
 |---|---|
-| `index.html` | Visas tekstas ir turinys |
+| `turinys/lt.json` | **Visas lietuviško puslapio tekstas** |
+| `turinys/en.json` | Angliško |
+| `turinys/it.json` | Itališko |
 | `assets/js/main.js` | `CONFIG` blokas viršuje: el. paštas ir formos adresas |
 | `assets/css/style.css` | Spalvos (`:root` blokas viršuje) |
+| `build.py` | Puslapio karkasas (HTML) — retai |
+
+Failai `index.html`, `en/index.html`, `it/index.html` ir `sitemap.xml`
+**sukuriami automatiškai** — ranka jų neredaguoti.
+
+| Kalba | Adresas | Failas |
+|---|---|---|
+| Lietuvių | https://www.feelharmonic.lt/ | `index.html` |
+| Anglų | https://www.feelharmonic.lt/en/ | `en/index.html` |
+| Italų | https://www.feelharmonic.lt/it/ | `it/index.html` |
 
 ---
 
-## 1. Paleisti lokaliai
+## 1. Perkurti puslapius ir paleisti lokaliai
 
-Užtenka du kartus spustelėti `index.html` — atsidarys naršyklėje ir viskas veiks.
-Pakeitęs tekstą, faile paspausk `Ctrl+S`, naršyklėje `Ctrl+F5`.
+Pakeitus tekstą `turinys/*.json`:
 
-Jei kada įsidiegsi Python arba Node, gali paleisti ir tikrą serverį:
+```bash
+python build.py
+```
+
+Perrašo visus tris puslapius ir `sitemap.xml`. Reikia tik Python 3, jokių
+bibliotekų. Įkėlus pakeitimą į GitHub tą patį padaro ir GitHub Actions, tad
+komandos paleisti nebūtina.
+
+Peržiūrai reikia serverio (kitaip neveiks kalbų perjungiklis):
 
 ```bash
 python -m http.server 8000
 ```
+
+Tada http://localhost:8000/
 
 ---
 
@@ -129,7 +151,13 @@ git commit -m "Atnaujintas turinys"
 git push
 ```
 
-GitHub Pages perkuria puslapį per ~1 min.
+Jei keitei `turinys/**` arba `build.py`, GitHub Actions veiksmas
+(`.github/workflows/build.yml`) pats perkuria HTML ir įrašo jį atgal į šaką;
+tada GitHub Pages paskelbia puslapį. Iš viso ~2 min.
+
+Sugadinus JSON (pamiršta kabutė ar kablelis) veiksmas nulūžta, o gyvas puslapis
+lieka nepakitęs. Būseną matyti čia:
+https://github.com/tomlebedev-cloud/feelharmonic/actions
 
 ---
 

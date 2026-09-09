@@ -1,0 +1,533 @@
+{
+  "meta": {
+    "title": "FeelHarmonic — Elena Daunytė, violončelė",
+    "description": "Koncertai ir performansai, edukacijos, terapiniai bei sąmoningumo renginiai ir šventės nuo A iki Z — mokykloms, kultūros centrams, dvarams, įmonėms ir privatiems užsakovams visoje Lietuvoje.",
+    "ogDescription": "Koncertai, performansai, edukacijos, terapiniai renginiai ir šventės nuo A iki Z visoje Lietuvoje."
+  },
+
+  "skip": "Pereiti prie turinio",
+  "navAria": "Pagrindinė navigacija",
+  "menuAria": "Meniu telefone",
+  "menuBtnAria": "Meniu",
+  "langAria": "Kalba",
+  "navCta": "Susisiekti",
+
+  "nav": [
+    { "href": "#paslaugos", "label": "Paslaugos" },
+    { "href": "#edukacijos", "label": "Edukacijos" },
+    { "href": "#programos", "label": "Programos" },
+    { "href": "#studija", "label": "Studija" },
+    { "href": "#apie", "label": "Apie" }
+  ],
+
+  "mobileNav": [
+    { "href": "#paslaugos", "label": "Paslaugos" },
+    { "href": "#irasai", "label": "Įrašai" },
+    { "href": "#edukacijos", "label": "Edukacijos" },
+    { "href": "#programos", "label": "Programos" },
+    { "href": "#studija", "label": "Studija" },
+    { "href": "#galerija", "label": "Galerija" },
+    { "href": "#apie", "label": "Apie" },
+    { "href": "#duk", "label": "DUK" }
+  ],
+
+  "hero": {
+    "h1": "Gyva muzika, kuri <em>lieka</em> ilgiau nei vakaras",
+    "sub": "Violončelės koncertai ir alternatyvūs performansai, kultūrinės edukacijos, terapiniai bei sąmoningumo renginiai ir šventės nuo A iki Z — mokykloms, kultūros centrams, dvarams, įmonėms ir privatiems užsakovams visoje Lietuvoje.",
+    "ctaPrimary": "Užsakyti pasirodymą",
+    "ctaSecondary": "Peržiūrėti programas",
+    "facts": [
+      "Datos rezervuojamos 2–6 mėn. į priekį",
+      "Išrašau sąskaitą faktūrą",
+      "Dirbu lietuvių, anglų ir italų kalbomis"
+    ],
+    "portraitAlt": "Elena Daunytė su violončele",
+    "portraitRole": "Violončelė"
+  },
+
+  "services": {
+    "eyebrow": "Ką siūlau",
+    "h2": "Šešios kryptys, viena kokybė",
+    "lede": "Kiekviena programa pritaikoma erdvei, progai ir auditorijai — nuo mokyklos salės iki dvaro kiemo ar jogos studijos.",
+    "items": [
+      {
+        "img": "paslauga-koncertai.jpg",
+        "alt": "Koncertas salėje",
+        "h3": "Koncertai ir performansai",
+        "p": "Klasikinės programos šventėms ir minėjimams. Alternatyvūs koncertai — performansai, kuriuose jungiasi muzika, poezija, šokis ir vaizdas. Trukmė, sudėtis ir repertuaras derinami iš anksto.",
+        "more": "Teirautis programų",
+        "moreHref": "#programos"
+      },
+      {
+        "img": "paslauga-edukacijos.jpg",
+        "alt": "Edukacinis užsiėmimas mokykloje",
+        "h3": "Edukacija ir mokymai",
+        "p": "Edukaciniai koncertai ir kultūrinės edukacijos mokykloms — apmokamos Kultūros paso lėšomis. Kūrybinės dirbtuvės ir grojimo pasirinktu instrumentu mokymai vaikams ir suaugusiems.",
+        "more": "Žiūrėti užsiėmimus",
+        "moreHref": "#edukacijos"
+      },
+      {
+        "img": "paslauga-renginiai.jpg",
+        "alt": "Renginys dvare",
+        "h3": "Renginiai nuo A iki Z",
+        "p": "Meninė dalis vestuvėms, jubiliejams ir įmonių šventėms arba visas renginys po raktu: programa, atlikėjai, scena, garsas, maitinimas, fotografas. Vienas kontaktas ir viena sąskaita vietoj penkių.",
+        "more": "Aptarti renginį",
+        "moreHref": "#kontaktai"
+      },
+      {
+        "img": "paslauga-terapija.jpg",
+        "alt": "Terapinis muzikos užsiėmimas",
+        "h3": "Terapiniai ir sąmoningumo renginiai",
+        "p": "Muzikos, žodžio, kvapų ir šokio terapijos suaugusiems. Jogos ir meditacijų paketas, sąmoningumo praktikos, seminarai pasirinkta tema ir retreat‘ai su gyvu garsu.",
+        "more": "Sudaryti paketą",
+        "moreHref": "#programos"
+      },
+      {
+        "img": "paslauga-interaktyvu.jpg",
+        "alt": "Interaktyvus koncertas su publika",
+        "h3": "Interaktyvūs koncertai",
+        "tag": "NEW",
+        "p": "Renginiai, kuriuose žiūrovai ne tik klauso: dalyvauja, renkasi, kartais patys suskamba. Tinka bendruomenėms, įmonių komandoms ir šeimų šventėms.",
+        "more": "Kaip tai vyksta",
+        "moreHref": "#programos"
+      },
+      {
+        "img": "paslauga-pokalbiai.jpg",
+        "alt": "Pokalbis su atlikėju po koncerto",
+        "h3": "„Dive into personality“",
+        "p": "Gyvi, jaukūs pokalbiai su atlikėjais iškart po koncerto — kai scena dar neatvėsusi. Filmuojama ir įrašoma; įrašas lieka organizatoriui. Taip pat — atlikėjų paieška ir ryšininkavimas jūsų šventei.",
+        "more": "Papasakoti daugiau",
+        "moreHref": "#programos"
+      }
+    ]
+  },
+
+  "media": {
+    "eyebrow": "Pasiklausykite",
+    "h2": "Įrašas pasako daugiau nei aprašymas",
+    "lede": "Todėl jis čia, o ne puslapio apačioje.",
+    "cardLabel": "LRT Mediateka · KLIPVID 2021",
+    "cardNote": "Vaizdo klipas Lietuvos nacionalinio radijo ir televizijos mediatekoje.",
+    "videos": [],
+    "slots": [
+      { "t": "Koncerto ištrauka", "d": "60–90 sek. iš gyvo pasirodymo. Geras garsas svarbiau už vaizdą." },
+      { "t": "Edukacinis užsiėmimas", "d": "Trumpa ištrauka iš pamokos, gavus tėvų sutikimus." }
+    ]
+  },
+
+  "who": {
+    "items": [
+      {
+        "n": "01",
+        "h3": "Mokykloms",
+        "p": "Edukacijos, atitinkančios Kultūros paso kriterijus. Telpa į vieną pamoką, erdvės pakanka klasės."
+      },
+      {
+        "n": "02",
+        "h3": "Kultūros centrams ir koncertų salėms",
+        "p": "Sezoninės, kalėdinės ir alternatyvios programos su aiškia kaina, technine specifikacija ir sutartu grafiku."
+      },
+      {
+        "n": "03",
+        "h3": "Dvarams ir alternatyvioms erdvėms",
+        "p": "Akustinė programa kiemui, salei, bažnyčiai ar netipinei erdvei — be scenos ir be elektros. Galiu būti nuolatinė jūsų sezono pasiūlymo dalis."
+      },
+      {
+        "n": "04",
+        "h3": "Įmonėms ir agentūroms",
+        "p": "Meninė vakaro dalis, įmonės šventė arba visas renginys po raktu. Agentūroms — paruošta pozicija kalėdinių pasiūlymų kataloge."
+      },
+      {
+        "n": "05",
+        "h3": "Vestuvėms ir šeimos šventėms",
+        "p": "Ceremonijos muzika ir meninė vakaro dalis. Prireikus surandu ir kitus atlikėjus — šokėjus, vokalistus, aktorius."
+      },
+      {
+        "n": "06",
+        "h3": "Retreat‘ų ir gerovės programų organizatoriams",
+        "p": "Gyvas garsas jogos, meditacijų ir sąmoningumo praktikoms. Muzikos, žodžio, kvapų ir šokio terapijos sesijos suaugusiems."
+      }
+    ]
+  },
+
+  "edu": {
+    "eyebrow": "Edukacija",
+    "h2": "Užsiėmimai, dirbtuvės ir mokymai",
+    "lede": "Pirmi du užsiėmimai teikiami Kultūros paso tvarka mokykloms. Dirbtuvės ir mokymai užsakomi tiesiogiai — ir vaikams, ir suaugusiems.",
+    "items": [
+      {
+        "h3": "Kaip skamba emocija?",
+        "p": "Klausomės, kaip ta pati melodija keičia nuotaiką pakeitus tempą, tembrą ar derinimą. Vaikai violončelę pamato iš arti, o išgirstą emociją patys „nupiešia“.",
+        "facts": [
+          { "k": "Amžius", "v": "1–8 kl." },
+          { "k": "Trukmė", "v": "45 min." },
+          { "k": "Dalyviai", "v": "iki 30" },
+          { "k": "Kaina", "v": "5 €/mok." },
+          { "k": "Vieta", "v": "mokykloje" },
+          { "k": "Nuotoliu", "v": "ne" }
+        ]
+      },
+      {
+        "h3": "Garso partitūra",
+        "p": "Prieš šimtą metų kompozitoriai pradėjo užrašinėti muziką ne natomis, o linijomis ir ženklais. Grupelės sukuria savo grafinę partitūrą ir tą pačią pamoką išgirsta, kaip ją violončele įgroja atlikėja. Muzikinio raštingumo nereikia — reikia sprendimų.",
+        "facts": [
+          { "k": "Amžius", "v": "2–8 kl." },
+          { "k": "Trukmė", "v": "45 min." },
+          { "k": "Dalyviai", "v": "iki 30" },
+          { "k": "Kaina", "v": "5 €/mok." },
+          { "k": "Vieta", "v": "mokykloje" },
+          { "k": "Nuotoliu", "v": "ne" }
+        ]
+      },
+      {
+        "h3": "Kūrybinės dirbtuvės",
+        "p": "Menų sintezės dirbtuvės, kuriose muzika susitinka su žodžiu ir judesiu. Dalyviai ne stebi, o kuria: iš garso, teksto ir tylos sudėliojama trumpa bendra pjesė. Tinka klasei, komandai ar šeimos šventei.",
+        "facts": [
+          { "k": "Amžius", "v": "vaikams ir suaugusiems" },
+          { "k": "Trukmė", "v": "60–90 min." },
+          { "k": "Dalyviai", "v": "iki 20" },
+          { "k": "Kaina", "v": "sutartinė" },
+          { "k": "Vieta", "v": "pas jus" },
+          { "k": "Nuotoliu", "v": "ne" }
+        ]
+      },
+      {
+        "h3": "Grojimo ir menų mokymai",
+        "p": "Individualūs ir grupiniai užsiėmimai: violončelė arba kitas pasirinktas instrumentas, muzikos pažinimas ir scenos jausena. Nuo pirmo prisilietimo iki pasirodymo — vaikams ir suaugusiems, be amžiaus ribos.",
+        "facts": [
+          { "k": "Amžius", "v": "nuo 6 m. iki suaugusių" },
+          { "k": "Trukmė", "v": "45 min." },
+          { "k": "Dalyviai", "v": "individualiai ar grupėje" },
+          { "k": "Kaina", "v": "sutartinė" },
+          { "k": "Vieta", "v": "derinama" },
+          { "k": "Nuotoliu", "v": "taip" }
+        ]
+      }
+    ],
+    "notes": [
+      "Kultūros paso lėšomis pirmuosius du užsiėmimus bus galima užsakyti nuo 2027 m. sausio, atrinkus paraišką. Iki tol — pagal tiesioginę sutartį su mokykla: viena diena, trys užsiėmimai skirtingoms klasėms, 420 €.",
+      "Dirbtuvių ir mokymų kaina priklauso nuo dalyvių skaičiaus, trukmės ir vietos — konkretų skaičių atsiunčiu pasiūlyme per vieną darbo dieną."
+    ]
+  },
+
+  "programs": {
+    "eyebrow": "Repertuaras",
+    "h2": "Paruoštos programos",
+    "lede": "Šias galima užsakyti iškart — jos turi trukmę, sudėtį ir techninius reikalavimus. Kaina priklauso nuo sudėties ir atstumo.",
+    "items": [
+      {
+        "h3": "Kalėdų vakaras",
+        "p": "Šventinė programa kultūros centro ar bendruomenės vakarui: žinomos kalėdinės melodijos, lietuviškos giesmės ir keli netikėti aranžuotės posūkiai.",
+        "specs": [
+          { "k": "Trukmė", "v": "55 min" },
+          { "k": "Sudėtis", "v": "Solo / duetas / trio" },
+          { "k": "Sezonas", "v": "Lapkritis–sausis" },
+          { "k": "Kaina nuo", "v": "450 / 700 / 950 €" }
+        ]
+      },
+      {
+        "h3": "Vasaros klasika",
+        "p": "Akustinė programa dvarų kiemams, parkams ir miestų šventėms. Veikia ir lauke — scenos infrastruktūros neprireikia.",
+        "specs": [
+          { "k": "Trukmė", "v": "60 min" },
+          { "k": "Sudėtis", "v": "Duetas / trio" },
+          { "k": "Sezonas", "v": "Gegužė–rugsėjis" },
+          { "k": "Kaina nuo", "v": "650 / 900 €" }
+        ]
+      },
+      {
+        "h3": "Ceremonija",
+        "p": "Vestuvių ceremonija, minėjimas, apdovanojimų ar atidarymo muzikinė dalis. Bažnyčiose ir dvarų salėse akustika dažnai tokia, kad įgarsinimo visai neprireikia.",
+        "specs": [
+          { "k": "Trukmė", "v": "iki 40 min" },
+          { "k": "Sudėtis", "v": "Solo / duetas" },
+          { "k": "Sezonas", "v": "Ištisus metus" },
+          { "k": "Kaina nuo", "v": "350 €" }
+        ]
+      },
+      {
+        "h3": "Alternatyvus koncertas — performansas",
+        "p": "Menų sintezė: violončelė, poezija ar kiti tekstai, šokis ir vaizdas viename kūrinyje. Programa kuriama konkrečiai erdvei, o ne perkeliama į ją — todėl dvaro rūsys ar tuščias fabriko cechas čia yra privalumas, ne kliūtis.",
+        "specs": [
+          { "k": "Trukmė", "v": "60–75 min" },
+          { "k": "Sudėtis", "v": "2–5 atlikėjai" },
+          { "k": "Sezonas", "v": "Ištisus metus" },
+          { "k": "Kaina", "v": "Sutartinė" }
+        ]
+      },
+      {
+        "h3": "Interaktyvus koncertas",
+        "tag": "NEW",
+        "p": "Programa, kurioje žiūrovai yra dalis kūrinio: renkasi, ką skambinsime toliau, atlieka paprastas garso partijas, kuria ritmą. Iš koncerto išeinama ne su įspūdžiu, o su patirtimi.",
+        "specs": [
+          { "k": "Trukmė", "v": "50–70 min" },
+          { "k": "Sudėtis", "v": "Solo / duetas / trio" },
+          { "k": "Sezonas", "v": "Ištisus metus" },
+          { "k": "Kaina", "v": "Sutartinė" }
+        ]
+      },
+      {
+        "h3": "Terapinis renginys",
+        "p": "Muzikos, žodžio, kvapų ir šokio terapijos elementai vienoje sesijoje suaugusiems. Ne pramoga, o būsena: gyvas garsas, kvėpavimas, kvapai ir judesys sudėlioti taip, kad po pusantros valandos žmogus išeitų kitoks nei atėjo.",
+        "specs": [
+          { "k": "Trukmė", "v": "90 min" },
+          { "k": "Sudėtis", "v": "Atlikėja ir terapeutas" },
+          { "k": "Dalyviai", "v": "8–25" },
+          { "k": "Kaina", "v": "Sutartinė" }
+        ]
+      },
+      {
+        "h3": "Retreat‘as ir sąmoningumo praktikos",
+        "p": "Jogos, meditacijų ir gyvo garso paketas savaitgaliui: rytinė praktika, seminaras pasirinkta tema, vakaro koncertas ir tylos sesija. Sudarome kartu su erdvės šeimininkais — nuo vienos dienos iki trijų.",
+        "specs": [
+          { "k": "Trukmė", "v": "1–3 dienos" },
+          { "k": "Sudėtis", "v": "Pagal programą" },
+          { "k": "Dalyviai", "v": "10–40" },
+          { "k": "Kaina", "v": "Sutartinė" }
+        ]
+      },
+      {
+        "h3": "„Dive into personality“",
+        "p": "Gyvas pokalbis su atlikėju iškart po koncerto, prieš publiką. Po pasirodymo žmogus dar būna atviras kaip retai kada — todėl čia nuskamba dalykai, kurių nebūna interviu. Filmuojama ir įrašoma; įrašas lieka organizatoriui.",
+        "specs": [
+          { "k": "Trukmė", "v": "30–45 min" },
+          { "k": "Sudėtis", "v": "Pokalbis + įrašas" },
+          { "k": "Sezonas", "v": "Ištisus metus" },
+          { "k": "Kaina", "v": "Sutartinė" }
+        ]
+      },
+      {
+        "h3": "Renginys „po raktu“",
+        "p": "Visas renginys nuo A iki Z vienose rankose: programa, atlikėjai, scena, garso aparatūra, maitinimas, fotografas ir vakaro eiga. Organizatoriui lieka vienas kontaktas ir viena sąskaita vietoj penkių.",
+        "specs": [
+          { "k": "Trukmė", "v": "2–4 val." },
+          { "k": "Sudėtis", "v": "Pagal erdvę ir progą" },
+          { "k": "Sezonas", "v": "Ištisus metus" },
+          { "k": "Kaina nuo", "v": "1 500 €" }
+        ]
+      }
+    ],
+    "note": "Kainos nurodytos be kelionės už 60 km nuo Vilniaus spindulio — toliau taikomas 0,25 €/km įkainis, kuris įrašomas į pasiūlymą. Programos, pažymėtos „Sutartinė“, kainuojamos pagal sudėtį, trukmę ir erdvę — konkrečią sumą atsiunčiu per vieną darbo dieną. Individualiai aranžuotas kūrinys ir gruodžio savaitgaliai kainuojami atskirai; tikslią sumą matote pasiūlyme prieš pasirašant."
+  },
+
+  "studio": {
+    "eyebrow": "Rengiama",
+    "h2": "Atvira erdvė — studija",
+    "lede": "Vieta, kurioje repeticija, dirbtuvės ir kamerinis koncertas telpa po vienu stogu. Ne salė su eilėmis, o atvira erdvė, kurią kiekvienas vakaras persidėlioja pagal save.",
+    "points": [
+      "Kameriniai koncertai ir performansai",
+      "Kūrybinės dirbtuvės ir mokymai",
+      "Jogos, meditacijų ir terapinės sesijos",
+      "Pokalbių ir garso įrašai",
+      "Repeticijos ir rezidencijos"
+    ],
+    "cta": "Domina bendradarbiavimas",
+    "alt": "Atvira studijos erdvė"
+  },
+
+  "gallery": {
+    "eyebrow": "Galerija",
+    "h2": "Nuotraukos",
+    "lede": "Užsakovas nori pamatyti, kaip atrodysite jo salėje — todėl geriausiai veikia kadrai iš skirtingų erdvių.",
+    "items": [
+      { "img": "galerija-1.jpg", "alt": "Elena Daunytė su violončele", "cap": "Portretas" },
+      { "img": "galerija-2.jpg", "alt": "Koncertas salėje", "cap": "Koncertas salėje" },
+      { "img": "galerija-3.jpg", "alt": "Pasirodymas dvare", "cap": "Dvaras, bažnyčia" },
+      { "img": "galerija-4.jpg", "alt": "Edukacinis užsiėmimas mokykloje", "cap": "Edukacija mokykloje" },
+      { "img": "galerija-5.jpg", "alt": "Pasirodymas lauke", "cap": "Lauko renginys" },
+      { "img": "galerija-6.jpg", "alt": "Violončelės detalė", "cap": "Detalė" }
+    ]
+  },
+
+  "about": {
+    "eyebrow": "Apie",
+    "h2": "Muzika, sudėliota taip pat kruopščiai, kaip pajausta",
+    "paras": [
+      "Elena Daunytė — violončelininkė, tarptautinių konkursų laureatė ir šeimyninio ansamblio „Regnum Musicale“ narė. Baigiau M. K. Čiurlionio menų mokyklą, studijavau Karališkajame Šiaurės muzikos koledže Mančesteryje ir Lietuvos muzikos ir teatro akademijoje, prof. Rimanto Armono klasėje.",
+      "Grojau su Lietuvos ir užsienio orkestrais, tobulinausi meistriškumo kursuose pas Giovanni Sollimą, Davidą Geringą ir Fransą Helmersoną. Esu gavusi Lietuvos Respublikos Prezidentų Valdo Adamkaus ir Dalios Grybauskaitės padėkas. Vaizdo klipas „Ryto ugnis“ rodytas LRT Mediatekoje, KLIPVID 2021 konkurse."
+    ],
+    "creds": [
+      "M. K. Čiurlionio menų mokykla",
+      "Royal Northern College of Music",
+      "LMTA · prof. R. Armono klasė",
+      "„Regnum Musicale“"
+    ],
+    "closing": "Renginių organizatoriams reikia ne tik muzikos, bet ir žmogaus, kuris pats susitvarko su garsu, grafiku ir dokumentais. Todėl kiekviena programa čia turi aiškią trukmę, sudėtį ir kainą — o ne „susitarsime vietoje“.",
+    "cta": "Susisiekti",
+    "alt": "Elena Daunytė koncerte"
+  },
+
+  "quotes": {
+    "eyebrow": "Atsiliepimai",
+    "h2": "Ką sako užsakovai",
+    "lede": "Po kiekvieno renginio paprašykite vienos pastraipos raštu ir leidimo ją paskelbti. Trys tikri atsiliepimai veikia stipriau nei dešimt bendrų frazių.",
+    "slots": [
+      { "t": "Atsiliepimas 1", "d": "Kultūros centras — vardas, pareigos, įstaiga, miestas." },
+      { "t": "Atsiliepimas 2", "d": "Mokykla — mokytojas arba direktoriaus pavaduotojas." }
+    ]
+  },
+
+  "faq": {
+    "eyebrow": "Praktiniai klausimai",
+    "h2": "Dažniausiai klausiama",
+    "items": [
+      {
+        "q": "Ar atvykstate su savo garso aparatūra?",
+        "a": "Taip. Turiu nešiojamą garso sistemą, kurios pakanka iki <span class=\"fill\">nurodyti skaičių</span> žmonių salei ir nedideliems lauko renginiams. Akustinėse erdvėse violončelė dažnai skamba geriausiai visai be įgarsinimo."
+      },
+      {
+        "q": "Ar galite pasirūpinti visu renginiu, ne tik muzika?",
+        "a": "Taip — tai vadinu renginiu nuo A iki Z. Programa, atlikėjai, scena, garsas, maitinimas ir fotografas suderinami per mane, o jūs gaunate vieną kontaktą ir vieną sąskaitą. Jei reikia tik meninės dalies vestuvėms ar įmonės šventei — taip pat įprasta."
+      },
+      {
+        "q": "Ieškau atlikėjų savo šventei. Ar galite padėti?",
+        "a": "Taip. Ryšininkavimas — atskira paslauga: pagal progą, erdvę ir biudžetą parenku muzikantus, šokėjus, vokalistus ar aktorius ir suderinu jų grafikus. Jums lieka pasirinkti iš paruoštų variantų."
+      },
+      {
+        "q": "Ar mokote groti?",
+        "a": "Taip — individualiai ir grupėse, vaikus ir suaugusiuosius. Violončelė arba kitas pasirinktas instrumentas, muzikos pažinimas, scenos jausena. Pradedantiesiems ankstesnio pasiruošimo nereikia."
+      },
+      {
+        "q": "Kuo terapinis renginys skiriasi nuo koncerto?",
+        "a": "Koncerte klausotės, terapinėje sesijoje dalyvaujate. Muzika, žodis, kvapai ir judesys sudėlioti ne dėl įspūdžio, o dėl būsenos, todėl grupė mažesnė (8–25 žmonės), o programa vedama kartu su terapeutu."
+      },
+      {
+        "q": "Kiek iš anksto reikia rezervuoti datą?",
+        "a": "Kalėdiniam sezonui — nuo rugsėjo, nes gruodžio savaitgaliai užsipildo pirmi. Kitu metu užtenka 4–6 savaičių."
+      },
+      {
+        "q": "Ar išrašote sąskaitą faktūrą?",
+        "a": "Taip. Dirbu pagal individualios veiklos pažymą <span class=\"fill\">nr.</span>, todėl išrašau sąskaitą faktūrą ir galiu pasirašyti paslaugų sutartį — tai tinka viešojo sektoriaus įstaigų buhalterijai."
+      },
+      {
+        "q": "Kiek kainuoja kelionė už miesto ribų?",
+        "a": "Iki 60 km nuo Vilniaus kelionė įskaičiuota į kainą. Toliau taikomas 0,25 €/km įkainis, kuris nurodomas pasiūlyme, o ne pridedamas vėliau."
+      },
+      {
+        "q": "Ar programą galima pritaikyti prie mūsų progos?",
+        "a": "Taip, ir tai įprasta. Repertuaras, trukmė ir kalbėjimo dalis derinami prieš renginį. Jei turite konkretų kūrinį, pasakykite iš anksto — paruošimui reikia laiko."
+      },
+      {
+        "q": "Kokiomis kalbomis vedate renginius?",
+        "a": "Lietuvių, anglų ir italų. Užsienio svečiams skirtus koncertus, edukacijas ir pokalbius galiu vesti angliškai arba itališkai be vertėjo."
+      },
+      {
+        "q": "Kas nutinka, jei renginys atšaukiamas?",
+        "a": "Atšaukus likus daugiau nei 14 dienų iki renginio, avansas grąžinamas arba perkeliamas kitai datai. Vėlesnio atšaukimo sąlygos aprašomos sutartyje."
+      }
+    ]
+  },
+
+  "cta": {
+    "h2": "Kalbame apie jūsų renginį?",
+    "lede": "Parašykite, kokia proga, kur ir kada — atsakysiu per vieną darbo dieną su konkrečiu pasiūlymu.",
+    "btn": "Parašyti žinutę"
+  },
+
+  "contact": {
+    "eyebrow": "Kontaktai",
+    "h2": "Susisiekime",
+    "fields": {
+      "name": "Vardas",
+      "org": "Įstaiga ar įmonė",
+      "email": "El. paštas",
+      "phone": "Telefonas",
+      "type": "Ko ieškote",
+      "date": "Data arba mėnuo",
+      "datePlaceholder": "pvz. 2026 m. gruodžio 12 d.",
+      "message": "Žinutė",
+      "messagePlaceholder": "Erdvė, apytikslis svečių skaičius, proga."
+    },
+    "options": [
+      "Koncertinė programa",
+      "Sezoninė ar kalėdinė programa",
+      "Alternatyvus koncertas ar performansas",
+      "Interaktyvus koncertas",
+      "Edukacinis užsiėmimas mokykloje",
+      "Kūrybinės dirbtuvės ar mokymai",
+      "Terapinis ar sąmoningumo renginys",
+      "Retreat‘as",
+      "Vestuvės ar šeimos šventė",
+      "Renginys nuo A iki Z",
+      "Atlikėjų paieška",
+      "Kita — parašysiu žinutėje"
+    ],
+    "submit": "Siųsti užklausą",
+    "direct": [
+      { "k": "Telefonas", "type": "tel" },
+      { "k": "El. paštas", "type": "email" },
+      { "k": "Veiklos vieta", "type": "text", "v": "Vilnius ir visa Lietuva" },
+      { "k": "Kalbos", "type": "text", "v": "Lietuvių, anglų, italų" },
+      { "k": "Atsakau", "type": "text", "v": "Per vieną darbo dieną" }
+    ]
+  },
+
+  "js": {
+    "msg-invalid": "Užpildykite vardą ir el. paštą — be jų negalėsiu atsakyti.",
+    "msg-sending": "Siunčiama…",
+    "msg-ok": "Ačiū — užklausa gauta. Atsakysiu per vieną darbo dieną.",
+    "msg-fail": "Nepavyko išsiųsti. Parašykite tiesiai adresu",
+    "msg-mailto": "Atidaryta jūsų el. pašto programa. Jei nieko neįvyko, rašykite adresu",
+    "mail-subject": "Užklausa dėl",
+    "mail-fallback": "programos",
+    "mail-name": "Vardas",
+    "mail-org": "Įstaiga",
+    "mail-email": "El. paštas",
+    "mail-phone": "Telefonas",
+    "mail-type": "Ko ieško",
+    "mail-date": "Data"
+  },
+
+  "footer": {
+    "about": "Koncertai, performansai, edukacijos, terapiniai renginiai ir šventės nuo A iki Z visoje Lietuvoje.",
+    "colPages": "Puslapiai",
+    "pages": [
+      { "href": "#paslaugos", "label": "Paslaugos" },
+      { "href": "#edukacijos", "label": "Edukacijos" },
+      { "href": "#programos", "label": "Programos" },
+      { "href": "#studija", "label": "Studija" },
+      { "href": "#galerija", "label": "Galerija" },
+      { "href": "#apie", "label": "Apie" },
+      { "href": "#kontaktai", "label": "Kontaktai" }
+    ],
+    "colDetails": "Rekvizitai",
+    "details": [
+      "Elena Daunytė",
+      "Individuali veikla nr. <span class=\"fill\">000000</span>"
+    ],
+    "city": "Vilnius, Lietuva"
+  },
+
+  "schema": {
+    "jobTitle": "Violončelininkė",
+    "knowsAbout": [
+      "Violončelė",
+      "Kamerinė muzika",
+      "Muzikinė edukacija",
+      "Renginių organizavimas",
+      "Muzikos terapija"
+    ],
+    "faq": [
+      {
+        "q": "Ar atvykstate su savo garso aparatūra?",
+        "a": "Taip. Turiu nešiojamą garso sistemą nedidelėms salėms ir lauko renginiams. Akustinėse erdvėse violončelė dažnai skamba geriausiai visai be įgarsinimo."
+      },
+      {
+        "q": "Ar galite pasirūpinti visu renginiu, ne tik muzika?",
+        "a": "Taip. Programa, atlikėjai, scena, garsas, maitinimas ir fotografas suderinami per vieną kontaktą, o užsakovas gauna vieną sąskaitą."
+      },
+      {
+        "q": "Ar mokote groti?",
+        "a": "Taip — individualiai ir grupėse, vaikus ir suaugusiuosius. Violončelė arba kitas pasirinktas instrumentas."
+      },
+      {
+        "q": "Kiek iš anksto reikia rezervuoti datą?",
+        "a": "Kalėdiniam sezonui — nuo rugsėjo. Kitu metu užtenka 4–6 savaičių."
+      },
+      {
+        "q": "Ar išrašote sąskaitą faktūrą?",
+        "a": "Taip. Dirbu pagal individualios veiklos pažymą, todėl išrašau sąskaitą faktūrą ir galiu pasirašyti paslaugų sutartį."
+      }
+    ]
+  }
+}

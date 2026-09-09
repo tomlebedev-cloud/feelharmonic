@@ -1,0 +1,533 @@
+{
+  "meta": {
+    "title": "FeelHarmonic — Elena Daunytė, violoncello",
+    "description": "Concerti e performance, laboratori ed educazione musicale, eventi terapeutici e di consapevolezza, organizzazione completa di eventi — per scuole, centri culturali, dimore storiche, aziende e privati in tutta la Lituania.",
+    "ogDescription": "Concerti, performance, educazione musicale, eventi terapeutici e organizzazione completa di eventi in tutta la Lituania."
+  },
+
+  "skip": "Vai al contenuto",
+  "navAria": "Navigazione principale",
+  "menuAria": "Menu mobile",
+  "menuBtnAria": "Menu",
+  "langAria": "Lingua",
+  "navCta": "Contattami",
+
+  "nav": [
+    { "href": "#paslaugos", "label": "Servizi" },
+    { "href": "#edukacijos", "label": "Educazione" },
+    { "href": "#programos", "label": "Programmi" },
+    { "href": "#studija", "label": "Studio" },
+    { "href": "#apie", "label": "Chi sono" }
+  ],
+
+  "mobileNav": [
+    { "href": "#paslaugos", "label": "Servizi" },
+    { "href": "#irasai", "label": "Registrazioni" },
+    { "href": "#edukacijos", "label": "Educazione" },
+    { "href": "#programos", "label": "Programmi" },
+    { "href": "#studija", "label": "Studio" },
+    { "href": "#galerija", "label": "Galleria" },
+    { "href": "#apie", "label": "Chi sono" },
+    { "href": "#duk", "label": "FAQ" }
+  ],
+
+  "hero": {
+    "h1": "Musica dal vivo che <em>resta</em> più a lungo della serata",
+    "sub": "Concerti per violoncello e performance alternative, educazione culturale, eventi terapeutici e di consapevolezza, feste organizzate dalla A alla Z — per scuole, centri culturali, dimore storiche, aziende e privati in tutta la Lituania.",
+    "ctaPrimary": "Prenota un'esibizione",
+    "ctaSecondary": "Vedi i programmi",
+    "facts": [
+      "Le date si prenotano con 2–6 mesi di anticipo",
+      "Emetto regolare fattura",
+      "Lavoro in lituano, inglese e italiano"
+    ],
+    "portraitAlt": "Elena Daunytė con il violoncello",
+    "portraitRole": "Violoncello"
+  },
+
+  "services": {
+    "eyebrow": "Che cosa offro",
+    "h2": "Sei direzioni, un'unica qualità",
+    "lede": "Ogni programma si adatta allo spazio, all'occasione e al pubblico — dall'aula magna di una scuola al cortile di una dimora storica o a uno studio di yoga.",
+    "items": [
+      {
+        "img": "paslauga-koncertai.jpg",
+        "alt": "Concerto in sala",
+        "h3": "Concerti e performance",
+        "p": "Programmi classici per feste e commemorazioni. Concerti alternativi — performance in cui si incontrano musica, poesia, danza e immagine. Durata, organico e repertorio si concordano in anticipo.",
+        "more": "Chiedi i programmi",
+        "moreHref": "#programos"
+      },
+      {
+        "img": "paslauga-edukacijos.jpg",
+        "alt": "Laboratorio didattico a scuola",
+        "h3": "Educazione e lezioni",
+        "p": "Concerti didattici e laboratori culturali per le scuole, finanziati dal programma statale lituano Culture Passport. Laboratori creativi e lezioni di strumento per bambini e adulti.",
+        "more": "Vedi i laboratori",
+        "moreHref": "#edukacijos"
+      },
+      {
+        "img": "paslauga-renginiai.jpg",
+        "alt": "Evento in una dimora storica",
+        "h3": "Eventi dalla A alla Z",
+        "p": "La parte artistica di un matrimonio, di un anniversario o di una festa aziendale, oppure l'intero evento chiavi in mano: programma, artisti, palco, audio, catering, fotografo. Un solo referente e una sola fattura invece di cinque.",
+        "more": "Parliamo dell'evento",
+        "moreHref": "#kontaktai"
+      },
+      {
+        "img": "paslauga-terapija.jpg",
+        "alt": "Sessione terapeutica con la musica",
+        "h3": "Eventi terapeutici e di consapevolezza",
+        "p": "Terapia con la musica, la parola, i profumi e la danza per adulti. Pacchetto yoga e meditazione, pratiche di consapevolezza, seminari su un tema scelto e ritiri con suono dal vivo.",
+        "more": "Componi un pacchetto",
+        "moreHref": "#programos"
+      },
+      {
+        "img": "paslauga-interaktyvu.jpg",
+        "alt": "Concerto interattivo con il pubblico",
+        "h3": "Concerti interattivi",
+        "tag": "NEW",
+        "p": "Eventi in cui il pubblico non si limita ad ascoltare: partecipa, sceglie e a volte suona. Adatti a comunità, team aziendali e feste di famiglia.",
+        "more": "Come funziona",
+        "moreHref": "#programos"
+      },
+      {
+        "img": "paslauga-pokalbiai.jpg",
+        "alt": "Conversazione con un artista dopo il concerto",
+        "h3": "«Dive into personality»",
+        "p": "Conversazioni dal vivo, intime, con gli artisti subito dopo il concerto — quando il palco è ancora caldo. Riprese e registrazione incluse; la registrazione resta all'organizzatore. Su richiesta, anche ricerca e scritturazione di artisti per la vostra festa.",
+        "more": "Raccontami di più",
+        "moreHref": "#programos"
+      }
+    ]
+  },
+
+  "media": {
+    "eyebrow": "Ascolta",
+    "h2": "Una registrazione dice più di una descrizione",
+    "lede": "Per questo si trova qui e non in fondo alla pagina.",
+    "cardLabel": "LRT Mediateka · KLIPVID 2021",
+    "cardNote": "Videoclip nell'archivio della radiotelevisione nazionale lituana.",
+    "videos": [],
+    "slots": [
+      { "t": "Estratto di concerto", "d": "60–90 secondi da un'esibizione dal vivo. Conta più l'audio dell'immagine." },
+      { "t": "Laboratorio didattico", "d": "Breve estratto da una lezione, con il consenso dei genitori." }
+    ]
+  },
+
+  "who": {
+    "items": [
+      {
+        "n": "01",
+        "h3": "Per le scuole",
+        "p": "Laboratori conformi ai criteri del Culture Passport. Rientrano in una sola ora di lezione e basta lo spazio di un'aula."
+      },
+      {
+        "n": "02",
+        "h3": "Per centri culturali e sale da concerto",
+        "p": "Programmi stagionali, natalizi e alternativi con prezzo chiaro, scheda tecnica e calendario concordato."
+      },
+      {
+        "n": "03",
+        "h3": "Per dimore storiche e spazi non convenzionali",
+        "p": "Programma acustico per cortile, sala, chiesa o spazio insolito — senza palco e senza corrente. Posso diventare una voce fissa della vostra proposta stagionale."
+      },
+      {
+        "n": "04",
+        "h3": "Per aziende e agenzie",
+        "p": "La parte artistica della serata, la festa aziendale o l'intero evento chiavi in mano. Per le agenzie — una voce già pronta nel catalogo delle proposte natalizie."
+      },
+      {
+        "n": "05",
+        "h3": "Per matrimoni e feste di famiglia",
+        "p": "Musica per la cerimonia e parte artistica della serata. Se serve, trovo anche gli altri artisti — ballerini, cantanti, attori."
+      },
+      {
+        "n": "06",
+        "h3": "Per organizzatori di ritiri e programmi di benessere",
+        "p": "Suono dal vivo per yoga, meditazione e pratiche di consapevolezza. Sessioni di terapia con musica, parola, profumi e danza per adulti."
+      }
+    ]
+  },
+
+  "edu": {
+    "eyebrow": "Educazione",
+    "h2": "Laboratori, workshop e lezioni",
+    "lede": "I primi due laboratori vengono proposti alle scuole tramite il programma Culture Passport. Workshop e lezioni si prenotano direttamente — per bambini e adulti.",
+    "items": [
+      {
+        "h3": "Che suono ha un'emozione?",
+        "p": "Ascoltiamo come la stessa melodia cambia umore cambiando tempo, timbro o accordatura. I bambini vedono il violoncello da vicino e poi disegnano l'emozione che hanno sentito.",
+        "facts": [
+          { "k": "Età", "v": "1ª–8ª classe" },
+          { "k": "Durata", "v": "45 min" },
+          { "k": "Gruppo", "v": "fino a 30" },
+          { "k": "Prezzo", "v": "5 € / alunno" },
+          { "k": "Sede", "v": "a scuola" },
+          { "k": "Online", "v": "no" }
+        ]
+      },
+      {
+        "h3": "Partitura grafica",
+        "p": "Cent'anni fa i compositori iniziarono a scrivere la musica non con le note, ma con linee e segni. A piccoli gruppi si crea una partitura grafica e, nella stessa lezione, la si ascolta eseguita al violoncello. Non serve alfabetizzazione musicale — servono decisioni.",
+        "facts": [
+          { "k": "Età", "v": "2ª–8ª classe" },
+          { "k": "Durata", "v": "45 min" },
+          { "k": "Gruppo", "v": "fino a 30" },
+          { "k": "Prezzo", "v": "5 € / alunno" },
+          { "k": "Sede", "v": "a scuola" },
+          { "k": "Online", "v": "no" }
+        ]
+      },
+      {
+        "h3": "Laboratori creativi",
+        "p": "Laboratori di sintesi delle arti, dove la musica incontra la parola e il movimento. I partecipanti non guardano: costruiscono. Da suono, testo e silenzio nasce un breve pezzo comune. Adatto a una classe, a un team o a una festa di famiglia.",
+        "facts": [
+          { "k": "Età", "v": "bambini e adulti" },
+          { "k": "Durata", "v": "60–90 min" },
+          { "k": "Gruppo", "v": "fino a 20" },
+          { "k": "Prezzo", "v": "su richiesta" },
+          { "k": "Sede", "v": "da voi" },
+          { "k": "Online", "v": "no" }
+        ]
+      },
+      {
+        "h3": "Lezioni di strumento e di arti",
+        "p": "Lezioni individuali e di gruppo: violoncello o altro strumento a scelta, comprensione musicale e presenza scenica. Dal primo contatto fino all'esibizione — per bambini e adulti, senza limiti di età.",
+        "facts": [
+          { "k": "Età", "v": "da 6 anni agli adulti" },
+          { "k": "Durata", "v": "45 min" },
+          { "k": "Gruppo", "v": "individuale o di gruppo" },
+          { "k": "Prezzo", "v": "su richiesta" },
+          { "k": "Sede", "v": "da concordare" },
+          { "k": "Online", "v": "sì" }
+        ]
+      }
+    ],
+    "notes": [
+      "I primi due laboratori saranno prenotabili con i fondi del Culture Passport da gennaio 2027, una volta approvata la candidatura. Fino ad allora — per accordo diretto con la scuola: una giornata, tre laboratori per classi diverse, 420 €.",
+      "Il prezzo di workshop e lezioni dipende dal numero di partecipanti, dalla durata e dalla sede — invio una cifra precisa con il preventivo entro un giorno lavorativo."
+    ]
+  },
+
+  "programs": {
+    "eyebrow": "Repertorio",
+    "h2": "Programmi pronti",
+    "lede": "Questi si possono prenotare subito: hanno una durata, un organico e una scheda tecnica definiti. Il prezzo dipende dall'organico e dalla distanza.",
+    "items": [
+      {
+        "h3": "Serata di Natale",
+        "p": "Programma festivo per la serata di un centro culturale o di una comunità: melodie natalizie conosciute, canti lituani e qualche svolta inattesa negli arrangiamenti.",
+        "specs": [
+          { "k": "Durata", "v": "55 min" },
+          { "k": "Organico", "v": "Solo / duo / trio" },
+          { "k": "Stagione", "v": "Novembre–gennaio" },
+          { "k": "Prezzo da", "v": "450 / 700 / 950 €" }
+        ]
+      },
+      {
+        "h3": "Classici d'estate",
+        "p": "Programma acustico per cortili di dimore storiche, parchi e feste cittadine. Funziona anche all'aperto: non serve alcuna infrastruttura di palco.",
+        "specs": [
+          { "k": "Durata", "v": "60 min" },
+          { "k": "Organico", "v": "Duo / trio" },
+          { "k": "Stagione", "v": "Maggio–settembre" },
+          { "k": "Prezzo da", "v": "650 / 900 €" }
+        ]
+      },
+      {
+        "h3": "Cerimonia",
+        "p": "Cerimonia di matrimonio, commemorazione, parte musicale di una premiazione o di un'inaugurazione. Nelle chiese e nelle sale delle dimore storiche l'acustica è spesso tale da non richiedere alcuna amplificazione.",
+        "specs": [
+          { "k": "Durata", "v": "fino a 40 min" },
+          { "k": "Organico", "v": "Solo / duo" },
+          { "k": "Stagione", "v": "Tutto l'anno" },
+          { "k": "Prezzo da", "v": "350 €" }
+        ]
+      },
+      {
+        "h3": "Concerto alternativo — performance",
+        "p": "Sintesi delle arti: violoncello, poesia o altri testi, danza e immagine in un'unica opera. Il programma nasce per uno spazio preciso invece di esservi trasferito — così una cantina di dimora storica o un capannone vuoto diventano un vantaggio, non un ostacolo.",
+        "specs": [
+          { "k": "Durata", "v": "60–75 min" },
+          { "k": "Organico", "v": "2–5 artisti" },
+          { "k": "Stagione", "v": "Tutto l'anno" },
+          { "k": "Prezzo", "v": "Su richiesta" }
+        ]
+      },
+      {
+        "h3": "Concerto interattivo",
+        "tag": "NEW",
+        "p": "Un programma in cui il pubblico è parte dell'opera: sceglie che cosa suoneremo dopo, esegue semplici parti sonore, costruisce il ritmo. Dal concerto non si esce con un'impressione, ma con un'esperienza.",
+        "specs": [
+          { "k": "Durata", "v": "50–70 min" },
+          { "k": "Organico", "v": "Solo / duo / trio" },
+          { "k": "Stagione", "v": "Tutto l'anno" },
+          { "k": "Prezzo", "v": "Su richiesta" }
+        ]
+      },
+      {
+        "h3": "Evento terapeutico",
+        "p": "Elementi di terapia con musica, parola, profumi e danza in un'unica sessione per adulti. Non intrattenimento, ma uno stato: suono dal vivo, respiro, profumi e movimento disposti in modo che dopo novanta minuti si esca diversi da come si è entrati.",
+        "specs": [
+          { "k": "Durata", "v": "90 min" },
+          { "k": "Conduzione", "v": "Musicista e terapeuta" },
+          { "k": "Gruppo", "v": "8–25" },
+          { "k": "Prezzo", "v": "Su richiesta" }
+        ]
+      },
+      {
+        "h3": "Ritiro e pratiche di consapevolezza",
+        "p": "Pacchetto di fine settimana con yoga, meditazione e suono dal vivo: pratica mattutina, seminario su un tema scelto, concerto serale e sessione di silenzio. Si costruisce insieme ai padroni di casa dello spazio — da uno a tre giorni.",
+        "specs": [
+          { "k": "Durata", "v": "1–3 giorni" },
+          { "k": "Organico", "v": "Secondo programma" },
+          { "k": "Gruppo", "v": "10–40" },
+          { "k": "Prezzo", "v": "Su richiesta" }
+        ]
+      },
+      {
+        "h3": "«Dive into personality»",
+        "p": "Conversazione dal vivo con l'artista subito dopo il concerto, davanti al pubblico. Appena scesi dal palco le persone sono aperte come raramente accade: qui si dicono cose che in un'intervista non emergono mai. Riprese e registrazione incluse; la registrazione resta all'organizzatore.",
+        "specs": [
+          { "k": "Durata", "v": "30–45 min" },
+          { "k": "Formato", "v": "Conversazione + registrazione" },
+          { "k": "Stagione", "v": "Tutto l'anno" },
+          { "k": "Prezzo", "v": "Su richiesta" }
+        ]
+      },
+      {
+        "h3": "Evento chiavi in mano",
+        "p": "L'intero evento dalla A alla Z in un'unica regia: programma, artisti, palco, impianto audio, catering, fotografo e scaletta della serata. All'organizzatore restano un solo referente e una sola fattura invece di cinque.",
+        "specs": [
+          { "k": "Durata", "v": "2–4 ore" },
+          { "k": "Organico", "v": "In base a spazio e occasione" },
+          { "k": "Stagione", "v": "Tutto l'anno" },
+          { "k": "Prezzo da", "v": "1 500 €" }
+        ]
+      }
+    ],
+    "note": "I prezzi non comprendono il viaggio oltre un raggio di 60 km da Vilnius: oltre tale distanza si applica una tariffa di 0,25 €/km, indicata nel preventivo. I programmi contrassegnati «Su richiesta» vengono quotati in base a organico, durata e spazio — invio la cifra esatta entro un giorno lavorativo. Gli arrangiamenti su misura e i fine settimana di dicembre si quotano a parte; l'importo preciso è indicato nel preventivo prima della firma."
+  },
+
+  "studio": {
+    "eyebrow": "In preparazione",
+    "h2": "Spazio aperto — lo studio",
+    "lede": "Un luogo in cui una prova, un laboratorio e un concerto da camera stanno sotto lo stesso tetto. Non una sala con file di sedie, ma uno spazio aperto che ogni sera si ricompone a modo suo.",
+    "points": [
+      "Concerti da camera e performance",
+      "Laboratori creativi e lezioni",
+      "Sessioni di yoga, meditazione e terapia",
+      "Registrazioni di conversazioni e di suono",
+      "Prove e residenze"
+    ],
+    "cta": "Mi interessa collaborare",
+    "alt": "Spazio aperto dello studio"
+  },
+
+  "gallery": {
+    "eyebrow": "Galleria",
+    "h2": "Fotografie",
+    "lede": "Il committente vuole vedere come apparirete nella sua sala: per questo funzionano meglio gli scatti in spazi diversi.",
+    "items": [
+      { "img": "galerija-1.jpg", "alt": "Elena Daunytė con il violoncello", "cap": "Ritratto" },
+      { "img": "galerija-2.jpg", "alt": "Concerto in sala", "cap": "Concerto in sala" },
+      { "img": "galerija-3.jpg", "alt": "Esibizione in una dimora storica", "cap": "Dimora, chiesa" },
+      { "img": "galerija-4.jpg", "alt": "Laboratorio didattico a scuola", "cap": "Educazione a scuola" },
+      { "img": "galerija-5.jpg", "alt": "Esibizione all'aperto", "cap": "Evento all'aperto" },
+      { "img": "galerija-6.jpg", "alt": "Dettaglio del violoncello", "cap": "Dettaglio" }
+    ]
+  },
+
+  "about": {
+    "eyebrow": "Chi sono",
+    "h2": "Musica costruita con la stessa cura con cui è sentita",
+    "paras": [
+      "Elena Daunytė è violoncellista, vincitrice di concorsi internazionali e membro dell'ensemble familiare Regnum Musicale. Si è diplomata alla Scuola d'arte M. K. Čiurlionis e ha studiato al Royal Northern College of Music di Manchester e all'Accademia lituana di musica e teatro, nella classe del prof. Rimantas Armonas.",
+      "Ha suonato con orchestre lituane e straniere e si è perfezionata in masterclass con Giovanni Sollima, David Geringas e Frans Helmerson. Ha ricevuto attestati di ringraziamento dai Presidenti della Repubblica di Lituania Valdas Adamkus e Dalia Grybauskaitė. Il videoclip «Ryto ugnis» è stato trasmesso nell'archivio LRT nell'ambito del concorso KLIPVID 2021."
+    ],
+    "creds": [
+      "Scuola d'arte M. K. Čiurlionis",
+      "Royal Northern College of Music",
+      "LMTA · classe del prof. R. Armonas",
+      "Regnum Musicale"
+    ],
+    "closing": "Chi organizza eventi non ha bisogno solo di musica, ma di una persona che si occupi da sé dell'audio, del calendario e dei documenti. Per questo ogni programma qui ha una durata, un organico e un prezzo definiti — e non un «ci accordiamo sul posto».",
+    "cta": "Contattami",
+    "alt": "Elena Daunytė in concerto"
+  },
+
+  "quotes": {
+    "eyebrow": "Testimonianze",
+    "h2": "Che cosa dicono i committenti",
+    "lede": "Dopo ogni evento chiedete un paragrafo per iscritto e il permesso di pubblicarlo. Tre testimonianze vere valgono più di dieci frasi generiche.",
+    "slots": [
+      { "t": "Testimonianza 1", "d": "Centro culturale — nome, ruolo, ente, città." },
+      { "t": "Testimonianza 2", "d": "Scuola — insegnante o vicepreside." }
+    ]
+  },
+
+  "faq": {
+    "eyebrow": "Domande pratiche",
+    "h2": "Domande frequenti",
+    "items": [
+      {
+        "q": "Portate il vostro impianto audio?",
+        "a": "Sì. Dispongo di un impianto portatile sufficiente per una sala fino a <span class=\"fill\">indicare il numero</span> persone e per piccoli eventi all'aperto. Negli spazi acustici il violoncello suona spesso al meglio senza alcuna amplificazione."
+      },
+      {
+        "q": "Potete occuparvi dell'intero evento, non solo della musica?",
+        "a": "Sì — lo chiamo evento dalla A alla Z. Programma, artisti, palco, audio, catering e fotografo si coordinano tramite me, e voi avete un solo referente e una sola fattura. Se invece serve solo la parte artistica di un matrimonio o di una festa aziendale, è altrettanto normale."
+      },
+      {
+        "q": "Cerco artisti per la mia festa. Potete aiutarmi?",
+        "a": "Sì. La ricerca e la scritturazione di artisti è un servizio a sé: in base all'occasione, allo spazio e al budget seleziono musicisti, ballerini, cantanti o attori e coordino i loro calendari. A voi resta solo scegliere tra le opzioni preparate."
+      },
+      {
+        "q": "Insegnate a suonare?",
+        "a": "Sì — individualmente e in gruppo, a bambini e adulti. Violoncello o altro strumento a scelta, comprensione musicale, presenza scenica. Per i principianti non serve alcuna preparazione precedente."
+      },
+      {
+        "q": "In che cosa un evento terapeutico è diverso da un concerto?",
+        "a": "A un concerto si ascolta; in una sessione terapeutica si partecipa. Musica, parola, profumi e movimento sono disposti non per l'effetto ma per lo stato, perciò il gruppo è più piccolo (8–25 persone) e la sessione è condotta insieme a un terapeuta."
+      },
+      {
+        "q": "Con quanto anticipo va prenotata la data?",
+        "a": "Per la stagione natalizia — da settembre, perché i fine settimana di dicembre si riempiono per primi. Nel resto dell'anno bastano 4–6 settimane."
+      },
+      {
+        "q": "Emettete fattura?",
+        "a": "Sì. Lavoro con certificato di attività individuale <span class=\"fill\">n.</span>, quindi emetto fattura e posso firmare un contratto di servizi — cosa che va bene alle amministrazioni degli enti pubblici."
+      },
+      {
+        "q": "Quanto costa la trasferta fuori città?",
+        "a": "Entro 60 km da Vilnius la trasferta è compresa nel prezzo. Oltre, si applica una tariffa di 0,25 €/km, indicata nel preventivo e non aggiunta in seguito."
+      },
+      {
+        "q": "Il programma può essere adattato alla nostra occasione?",
+        "a": "Sì, ed è la norma. Repertorio, durata e parti parlate si concordano prima dell'evento. Se avete in mente un brano preciso, ditelo per tempo: la preparazione richiede tempo."
+      },
+      {
+        "q": "In quali lingue conducete gli eventi?",
+        "a": "Lituano, inglese e italiano. Concerti, laboratori e conversazioni per ospiti stranieri possono essere condotti in inglese o in italiano senza interprete."
+      },
+      {
+        "q": "Che cosa succede se l'evento viene annullato?",
+        "a": "In caso di annullamento più di 14 giorni prima dell'evento, l'acconto viene restituito o spostato a un'altra data. Le condizioni per annullamenti successivi sono indicate nel contratto."
+      }
+    ]
+  },
+
+  "cta": {
+    "h2": "Parliamo del vostro evento?",
+    "lede": "Scrivetemi l'occasione, il luogo e la data — rispondo entro un giorno lavorativo con una proposta concreta.",
+    "btn": "Scrivi un messaggio"
+  },
+
+  "contact": {
+    "eyebrow": "Contatti",
+    "h2": "Mettiamoci in contatto",
+    "fields": {
+      "name": "Nome",
+      "org": "Ente o azienda",
+      "email": "Email",
+      "phone": "Telefono",
+      "type": "Che cosa cercate",
+      "date": "Data o mese",
+      "datePlaceholder": "es. 12 dicembre 2026",
+      "message": "Messaggio",
+      "messagePlaceholder": "Spazio, numero approssimativo di ospiti, occasione."
+    },
+    "options": [
+      "Programma da concerto",
+      "Programma stagionale o natalizio",
+      "Concerto alternativo o performance",
+      "Concerto interattivo",
+      "Laboratorio didattico a scuola",
+      "Laboratorio creativo o lezioni",
+      "Evento terapeutico o di consapevolezza",
+      "Ritiro",
+      "Matrimonio o festa di famiglia",
+      "Evento dalla A alla Z",
+      "Ricerca di artisti",
+      "Altro — lo scrivo nel messaggio"
+    ],
+    "submit": "Invia la richiesta",
+    "direct": [
+      { "k": "Telefono", "type": "tel" },
+      { "k": "Email", "type": "email" },
+      { "k": "Sede", "type": "text", "v": "Vilnius, in tutta la Lituania" },
+      { "k": "Lingue", "type": "text", "v": "Lituano, inglese, italiano" },
+      { "k": "Risposta", "type": "text", "v": "Entro un giorno lavorativo" }
+    ]
+  },
+
+  "js": {
+    "msg-invalid": "Inserite nome ed email — senza di essi non potrò rispondere.",
+    "msg-sending": "Invio in corso…",
+    "msg-ok": "Grazie — la richiesta è arrivata. Rispondo entro un giorno lavorativo.",
+    "msg-fail": "Invio non riuscito. Scrivete direttamente a",
+    "msg-mailto": "Si è aperto il vostro programma di posta. Se non è successo nulla, scrivete a",
+    "mail-subject": "Richiesta per",
+    "mail-fallback": "un programma",
+    "mail-name": "Nome",
+    "mail-org": "Ente",
+    "mail-email": "Email",
+    "mail-phone": "Telefono",
+    "mail-type": "Cerca",
+    "mail-date": "Data"
+  },
+
+  "footer": {
+    "about": "Concerti, performance, educazione, eventi terapeutici e feste dalla A alla Z in tutta la Lituania.",
+    "colPages": "Sezioni",
+    "pages": [
+      { "href": "#paslaugos", "label": "Servizi" },
+      { "href": "#edukacijos", "label": "Educazione" },
+      { "href": "#programos", "label": "Programmi" },
+      { "href": "#studija", "label": "Studio" },
+      { "href": "#galerija", "label": "Galleria" },
+      { "href": "#apie", "label": "Chi sono" },
+      { "href": "#kontaktai", "label": "Contatti" }
+    ],
+    "colDetails": "Dati",
+    "details": [
+      "Elena Daunytė",
+      "Certificato di attività individuale n. <span class=\"fill\">000000</span>"
+    ],
+    "city": "Vilnius, Lituania"
+  },
+
+  "schema": {
+    "jobTitle": "Violoncellista",
+    "knowsAbout": [
+      "Violoncello",
+      "Musica da camera",
+      "Educazione musicale",
+      "Organizzazione di eventi",
+      "Musicoterapia"
+    ],
+    "faq": [
+      {
+        "q": "Portate il vostro impianto audio?",
+        "a": "Sì. Dispongo di un impianto portatile per sale piccole ed eventi all'aperto. Negli spazi acustici il violoncello suona spesso al meglio senza alcuna amplificazione."
+      },
+      {
+        "q": "Potete occuparvi dell'intero evento, non solo della musica?",
+        "a": "Sì. Programma, artisti, palco, audio, catering e fotografo si coordinano tramite un solo referente e il committente riceve un'unica fattura."
+      },
+      {
+        "q": "Insegnate a suonare?",
+        "a": "Sì — individualmente e in gruppo, a bambini e adulti. Violoncello o altro strumento a scelta."
+      },
+      {
+        "q": "Con quanto anticipo va prenotata la data?",
+        "a": "Per la stagione natalizia — da settembre. Nel resto dell'anno bastano 4–6 settimane."
+      },
+      {
+        "q": "Emettete fattura?",
+        "a": "Sì. Lavoro con certificato di attività individuale, quindi emetto fattura e posso firmare un contratto di servizi."
+      }
+    ]
+  }
+}

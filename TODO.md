@@ -3,16 +3,26 @@
 Puslapyje neužpildytos vietos pažymėtos punktyriniu rėmeliu — jos matomos ir lankytojui.
 Sąrašas surikiuotas pagal tai, kas labiausiai lemia užsakymą.
 
+Tekstas keičiamas **`turinys/lt.json`, `turinys/en.json`, `turinys/it.json`**, ne
+`index.html` (žr. [ADMIN.md](ADMIN.md)).
+
 ## 1. Nuotraukos — svarbiausia
 
-Visos nuotraukos dedamos į aplanką `assets/img/` su **tiksliai tokiais pavadinimais**:
+Visos nuotraukos dedamos į aplanką `assets/img/` su **tiksliai tokiais pavadinimais**.
+Jos bendros visoms trims kalboms — įkelti reikia tik kartą.
 
 | Failas | Kas tai |
 |---|---|
 | `elena.jpg` | Portretas su violončele — rodomas pirmame ekrane |
 | `apie.jpg` | Antra nuotrauka skiltyje „Apie“ (koncertinė) |
 | `galerija-1.jpg` … `galerija-6.jpg` | Galerija: portretas, koncertas salėje, dvaras ar bažnyčia, edukacija mokykloje, lauko renginys, instrumento detalė |
-| `paslauga-koncertai.jpg`, `paslauga-edukacijos.jpg`, `paslauga-renginiai.jpg` | Trys paslaugų kortelės (horizontalios, 3:2) |
+| `paslauga-koncertai.jpg` | Kortelė „Koncertai ir performansai“ (horizontali, 3:2) |
+| `paslauga-edukacijos.jpg` | Kortelė „Edukacija ir mokymai“ |
+| `paslauga-renginiai.jpg` | Kortelė „Renginiai nuo A iki Z“ |
+| `paslauga-terapija.jpg` | Kortelė „Terapiniai ir sąmoningumo renginiai“ *(nauja)* |
+| `paslauga-interaktyvu.jpg` | Kortelė „Interaktyvūs koncertai“ *(nauja)* |
+| `paslauga-pokalbiai.jpg` | Kortelė „Dive into personality“ *(nauja)* |
+| `studija.jpg` | Skiltis „Atvira erdvė — studija“ *(nauja)* |
 | `og.jpg` | Nuotrauka, matoma dalinantis nuoroda (1200×630 px) |
 
 Kol failų nėra, puslapis prisitaiko pats: nuotraukų vietose rodomas firminis
@@ -24,7 +34,24 @@ Rekomendacijos: kvadratinės arba vertikalios, ne mažesnės kaip 1200 px ploči
 suspaustos iki ~300 KB (tinka [squoosh.app](https://squoosh.app)).
 Naudoti tik tas nuotraukas, kurių teisės priklauso Elenai arba dėl kurių susitarta su fotografu.
 
-## 2. Skaičiai ir rekvizitai
+## 2. Naujų paslaugų kainos
+
+2026-09-09 pridėtos naujos kryptys. Jų programose kol kas parašyta „Sutartinė“ —
+tai teisinga, bet silpniau parduoda nei skaičius. Kai bus aišku, įrašyti „nuo … €“
+visose trijose kalbose (`programs` ir `edu` blokai):
+
+- [ ] **Alternatyvus koncertas — performansas** (2–5 atlikėjai)
+- [ ] **Interaktyvus koncertas**
+- [ ] **Terapinis renginys** (90 min, 8–25 dalyviai) — kartu nuspręsti,
+      kas yra terapeutas ir kaip dalijamas honoraras
+- [ ] **Retreat‘as** (1–3 dienos) — greičiausiai lieka sutartinė, nes labai skiriasi
+- [ ] **„Dive into personality“** — atskirai ar kaip priedas prie koncerto
+- [ ] **Kūrybinės dirbtuvės** ir **grojimo mokymai** — valandinis įkainis
+
+Kol kainos sutartinės, DUK ir programų prieraše paaiškinta, kad konkreti suma
+atsiunčiama per vieną darbo dieną — to užtenka, kad užklausa neužstrigtų.
+
+## 3. Skaičiai ir rekvizitai
 
 Įrašyta 2026-09-05 pagal verslo plano kainoraštį:
 
@@ -38,6 +65,7 @@ Naudoti tik tas nuotraukas, kurių teisės priklauso Elenai arba dėl kurių sus
 Dar reikia — šių įrašyti negalima be tikrų duomenų:
 
 - [ ] **Individualios veiklos pažymos nr.** ir adresas sąskaitoms → DUK ir poraštės rekvizitai
+      (trijuose failuose: `faq` ir `footer.details`)
 - [ ] **Aparatūros pajėgumas** — kiek žmonių salei pakanka turimos garso sistemos
 - [ ] **Socialinių tinklų nuorodos** — kai bus sukurti profiliai (žr. kanalų planą)
 
@@ -50,15 +78,46 @@ Padaryta 2026-09-07:
 - [x] **Segmentai** — pridėti dvarai/erdvės ir įmonės/agentūros
 - [ ] **Enforce HTTPS** — GitHub → Settings → Pages, pažymėti kai išduos sertifikatą
 
-## 3. Forma
+Padaryta 2026-09-09:
+
+- [x] **Puslapio papildymai** pagal `FeelHarmonic_Papildymai.docx`: alternatyvūs
+      koncertai-performansai, interaktyvūs koncertai, terapiniai ir sąmoningumo
+      renginiai, joga/meditacijos/retreat‘ai, kūrybinės dirbtuvės ir mokymai,
+      atlikėjų paieška (ryšininkavimas), renginys nuo A iki Z, „Dive into
+      personality“, atvira erdvė (studija), vestuvių ir įmonių segmentai
+- [x] **Trys kalbos** — lietuvių `/`, anglų `/en/`, italų `/it/` su `hreflang`,
+      kalbų perjungikliu ir atskiru `sitemap.xml` įrašu kiekvienai
+
+## 4. Studija (atvira erdvė)
+
+Skiltis paskelbta su žyma **„Rengiama“**, nes erdvės dar nėra. Kai paaiškės:
+
+- [ ] Adresas ir kada atsidaro → pakeisti `studio.eyebrow` iš „Rengiama“ į
+      „Mus rasite“ ir įrašyti adresą į kontaktus
+- [ ] Nuotrauka `studija.jpg`
+- [ ] Jei erdvės atsisakoma — visą `studio` bloką ir nuorodą meniu pašalinti
+      (`build.py` funkcija `studio()` ir `nav` / `mobileNav` / `footer.pages` įrašai)
+
+## 5. Kalbos
+
+- [ ] **Vertimų peržiūra** — anglišką ir itališką tekstą verta duoti perskaityti
+      gimtakalbiam prieš siunčiant nuorodą užsienio partneriams. Ypač: programų
+      pavadinimai ir DUK.
+- [ ] **Kultūros pasas** angliškai ir itališkai paaiškintas kaip valstybinė
+      mokyklų programa. Jei atsiras oficialus angliškas pavadinimas, suvienodinti.
+- [ ] Pridedant naują tekstą **visada** pildyti visus tris failus — kitaip
+      generatorius nulūš ir puslapis neatsinaujins.
+
+## 6. Forma
 
 - [ ] **Formspree adresas** → `assets/js/main.js`, `CONFIG.formEndpoint`.
       Kol neįrašytas, mygtukas atidaro el. pašto programą su paruoštu laišku.
+      Formos pranešimai visomis kalbomis jau paruošti (`js` blokas turinio failuose).
 
-## 4. Kai atsiras
+## 7. Kai atsiras
 
 - [ ] **Vaizdo įrašai** — koncerto ištrauka ir edukacinis užsiėmimas.
-      Įterpimo kodas paruoštas komentare `index.html` skiltyje „Klausyti ir žiūrėti“.
+      Įrašo kodą pakanka įrašyti į `"videos": []` turinio failuose (žr. ADMIN.md, 4 sk.).
 - [ ] **Trys atsiliepimai** su vardu, pareigomis ir įstaiga.
       Prašyti raštu iškart po renginio, kartu prašant leidimo paskelbti.
       Nesugalvotų atsiliepimų nerašyti — kultūros įstaigose žmonės pažįsta vieni kitus.

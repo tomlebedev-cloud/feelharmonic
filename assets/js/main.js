@@ -70,7 +70,7 @@ var CONFIG = {
   }
 
   /* ---------- aktyvi nuoroda meniu ---------- */
-  var navLinks = Array.prototype.slice.call(document.querySelectorAll(".nav-links a[href^='#']"));
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll("nav.main a[href^='#']"));
   if (navLinks.length && "IntersectionObserver" in window) {
     var sections = navLinks
       .map(function (a) { return document.querySelector(a.getAttribute("href")); })
@@ -158,6 +158,13 @@ var CONFIG = {
   var msg = document.getElementById("form-msg");
   var btn = form.querySelector("button[type=submit]");
 
+  /* Formos tekstai ateina iš paties puslapio (data-* atributai), todėl
+     lietuviškas, angliškas ir itališkas puslapiai naudoja tą patį failą.
+     Tekstus keisti turinys/<kalba>.json bloke "js", po to paleisti build.py. */
+  function t(key) {
+    return form.getAttribute("data-" + key) || "";
+  }
+
   function say(text, state) {
     if (!msg) return;
     msg.textContent = text;
@@ -166,22 +173,24 @@ var CONFIG = {
 
   function mailtoFallback(data) {
     var body = [
-      "Vardas: " + (data.get("vardas") || ""),
-      "Įstaiga: " + (data.get("istaiga") || ""),
-      "El. paštas: " + (data.get("pastas") || ""),
-      "Telefonas: " + (data.get("telefonas") || ""),
-      "Ko ieško: " + (data.get("tipas") || ""),
-      "Data: " + (data.get("data") || ""),
+      t("mail-name") + ": " + (data.get("vardas") || ""),
+      t("mail-org") + ": " + (data.get("istaiga") || ""),
+      t("mail-email") + ": " + (data.get("pastas") || ""),
+      t("mail-phone") + ": " + (data.get("telefonas") || ""),
+      t("mail-type") + ": " + (data.get("tipas") || ""),
+      t("mail-date") + ": " + (data.get("data") || ""),
       "",
       data.get("zinute") || ""
     ].join("\n");
 
+    var subject = t("mail-subject") + " " + (data.get("tipas") || t("mail-fallback"));
+
     window.location.href =
       "mailto:" + CONFIG.email +
-      "?subject=" + encodeURIComponent("Užklausa dėl " + (data.get("tipas") || "programos")) +
+      "?subject=" + encodeURIComponent(subject) +
       "&body=" + encodeURIComponent(body);
 
-    say("Atidaryta jūsų el. pašto programa. Jei nieko neįvyko, rašykite adresu " + CONFIG.email, "");
+    say(t("msg-mailto") + " " + CONFIG.email, "");
   }
 
   form.addEventListener("submit", function (e) {
@@ -191,7 +200,7 @@ var CONFIG = {
     if (honeypot && honeypot.value) return;
 
     if (!form.checkValidity()) {
-      say("Užpildykite vardą ir el. paštą — be jų negalėsiu atsakyti.", "err");
+      say(t("msg-invalid"), "err");
       form.reportValidity();
       return;
     }
@@ -204,7 +213,7 @@ var CONFIG = {
     }
 
     btn.disabled = true;
-    say("Siunčiama…", "");
+    say(t("msg-sending"), "");
 
     fetch(CONFIG.formEndpoint, {
       method: "POST",
@@ -214,10 +223,10 @@ var CONFIG = {
       .then(function (r) {
         if (!r.ok) throw new Error("HTTP " + r.status);
         form.reset();
-        say("Ačiū — užklausa gauta. Atsakysiu per dvi darbo dienas.", "ok");
+        say(t("msg-ok"), "ok");
       })
       .catch(function () {
-        say("Nepavyko išsiųsti. Parašykite tiesiai adresu " + CONFIG.email, "err");
+        say(t("msg-fail") + " " + CONFIG.email, "err");
       })
       .then(function () {
         btn.disabled = false;

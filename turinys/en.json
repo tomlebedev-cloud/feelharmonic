@@ -1,0 +1,533 @@
+{
+  "meta": {
+    "title": "FeelHarmonic — Elena Daunytė, cellist",
+    "description": "Concerts and performance art, workshops and music education, therapeutic and mindfulness events, and full event production — for schools, cultural centres, manor houses, companies and private clients across Lithuania.",
+    "ogDescription": "Concerts, performance art, education, therapeutic events and full event production across Lithuania."
+  },
+
+  "skip": "Skip to content",
+  "navAria": "Main navigation",
+  "menuAria": "Mobile menu",
+  "menuBtnAria": "Menu",
+  "langAria": "Language",
+  "navCta": "Get in touch",
+
+  "nav": [
+    { "href": "#paslaugos", "label": "Services" },
+    { "href": "#edukacijos", "label": "Education" },
+    { "href": "#programos", "label": "Programmes" },
+    { "href": "#studija", "label": "Studio" },
+    { "href": "#apie", "label": "About" }
+  ],
+
+  "mobileNav": [
+    { "href": "#paslaugos", "label": "Services" },
+    { "href": "#irasai", "label": "Recordings" },
+    { "href": "#edukacijos", "label": "Education" },
+    { "href": "#programos", "label": "Programmes" },
+    { "href": "#studija", "label": "Studio" },
+    { "href": "#galerija", "label": "Gallery" },
+    { "href": "#apie", "label": "About" },
+    { "href": "#duk", "label": "FAQ" }
+  ],
+
+  "hero": {
+    "h1": "Live music that <em>stays</em> longer than the evening",
+    "sub": "Cello concerts and alternative performances, cultural education, therapeutic and mindfulness events, and celebrations produced from A to Z — for schools, cultural centres, manor houses, companies and private clients across Lithuania.",
+    "ctaPrimary": "Book a performance",
+    "ctaSecondary": "See the programmes",
+    "facts": [
+      "Dates are booked 2–6 months ahead",
+      "Invoices issued for institutions",
+      "Working in Lithuanian, English and Italian"
+    ],
+    "portraitAlt": "Elena Daunytė with her cello",
+    "portraitRole": "Cello"
+  },
+
+  "services": {
+    "eyebrow": "What I offer",
+    "h2": "Six directions, one standard",
+    "lede": "Every programme is adapted to the space, the occasion and the audience — from a school hall to a manor courtyard or a yoga studio.",
+    "items": [
+      {
+        "img": "paslauga-koncertai.jpg",
+        "alt": "Concert in a hall",
+        "h3": "Concerts and performances",
+        "p": "Classical programmes for celebrations and commemorations. Alternative concerts — performances that bring together music, poetry, dance and image. Length, line-up and repertoire agreed in advance.",
+        "more": "Ask about programmes",
+        "moreHref": "#programos"
+      },
+      {
+        "img": "paslauga-edukacijos.jpg",
+        "alt": "Educational session at a school",
+        "h3": "Education and lessons",
+        "p": "Educational concerts and cultural sessions for schools, funded through Lithuania's Culture Passport scheme. Creative workshops and instrument lessons for children and adults alike.",
+        "more": "See the sessions",
+        "moreHref": "#edukacijos"
+      },
+      {
+        "img": "paslauga-renginiai.jpg",
+        "alt": "Event at a manor house",
+        "h3": "Events from A to Z",
+        "p": "The artistic part of a wedding, anniversary or company celebration — or the whole event turnkey: programme, performers, stage, sound, catering, photographer. One contact and one invoice instead of five.",
+        "more": "Discuss an event",
+        "moreHref": "#kontaktai"
+      },
+      {
+        "img": "paslauga-terapija.jpg",
+        "alt": "Therapeutic music session",
+        "h3": "Therapeutic and mindfulness events",
+        "p": "Music, word, scent and dance therapy for adults. A yoga and meditation package, mindfulness practices, seminars on a chosen theme, and retreats with live sound.",
+        "more": "Build a package",
+        "moreHref": "#programos"
+      },
+      {
+        "img": "paslauga-interaktyvu.jpg",
+        "alt": "Interactive concert with the audience",
+        "h3": "Interactive concerts",
+        "tag": "NEW",
+        "p": "Events where the audience does more than listen: they take part, they choose, and sometimes they sound. A good fit for communities, company teams and family celebrations.",
+        "more": "How it works",
+        "moreHref": "#programos"
+      },
+      {
+        "img": "paslauga-pokalbiai.jpg",
+        "alt": "Conversation with a performer after a concert",
+        "h3": "“Dive into personality”",
+        "p": "Warm, live conversations with performers straight after a concert — while the stage is still warm. Filmed and recorded; the recording stays with the organiser. Also available: finding and booking performers for your celebration.",
+        "more": "Tell me more",
+        "moreHref": "#programos"
+      }
+    ]
+  },
+
+  "media": {
+    "eyebrow": "Have a listen",
+    "h2": "A recording says more than a description",
+    "lede": "Which is why it is here, and not at the bottom of the page.",
+    "cardLabel": "LRT Mediateka · KLIPVID 2021",
+    "cardNote": "Music video in the archive of Lithuanian National Radio and Television.",
+    "videos": [],
+    "slots": [
+      { "t": "Concert excerpt", "d": "60–90 seconds from a live performance. Good sound matters more than good picture." },
+      { "t": "Educational session", "d": "A short excerpt from a lesson, with parental consent." }
+    ]
+  },
+
+  "who": {
+    "items": [
+      {
+        "n": "01",
+        "h3": "For schools",
+        "p": "Sessions that meet the Culture Passport criteria. They fit into a single lesson, and a classroom is space enough."
+      },
+      {
+        "n": "02",
+        "h3": "For cultural centres and concert halls",
+        "p": "Seasonal, Christmas and alternative programmes with a clear price, a technical rider and an agreed schedule."
+      },
+      {
+        "n": "03",
+        "h3": "For manor houses and unconventional venues",
+        "p": "An acoustic programme for a courtyard, a hall, a church or an unusual space — no stage and no power needed. I can be a standing part of your seasonal offer."
+      },
+      {
+        "n": "04",
+        "h3": "For companies and agencies",
+        "p": "The artistic part of an evening, a company celebration, or the whole event turnkey. For agencies — a ready-made entry in your Christmas catalogue."
+      },
+      {
+        "n": "05",
+        "h3": "For weddings and family celebrations",
+        "p": "Ceremony music and the artistic part of the evening. If needed, I also find the other performers — dancers, vocalists, actors."
+      },
+      {
+        "n": "06",
+        "h3": "For retreat and wellbeing organisers",
+        "p": "Live sound for yoga, meditation and mindfulness practice. Music, word, scent and dance therapy sessions for adults."
+      }
+    ]
+  },
+
+  "edu": {
+    "eyebrow": "Education",
+    "h2": "Sessions, workshops and lessons",
+    "lede": "The first two sessions are delivered to schools through the Culture Passport scheme. Workshops and lessons are booked directly — for children and adults.",
+    "items": [
+      {
+        "h3": "What does an emotion sound like?",
+        "p": "We listen to how the same melody changes mood when the tempo, timbre or tuning changes. The children see the cello up close, then draw the emotion they heard.",
+        "facts": [
+          { "k": "Age", "v": "years 1–8" },
+          { "k": "Length", "v": "45 min" },
+          { "k": "Group", "v": "up to 30" },
+          { "k": "Price", "v": "€5 / pupil" },
+          { "k": "Venue", "v": "at the school" },
+          { "k": "Online", "v": "no" }
+        ]
+      },
+      {
+        "h3": "Graphic score",
+        "p": "A hundred years ago composers began writing music down not in notes, but in lines and signs. Small groups create their own graphic score and, in the same lesson, hear it played back on the cello. No musical literacy required — only decisions.",
+        "facts": [
+          { "k": "Age", "v": "years 2–8" },
+          { "k": "Length", "v": "45 min" },
+          { "k": "Group", "v": "up to 30" },
+          { "k": "Price", "v": "€5 / pupil" },
+          { "k": "Venue", "v": "at the school" },
+          { "k": "Online", "v": "no" }
+        ]
+      },
+      {
+        "h3": "Creative workshops",
+        "p": "Workshops in the synthesis of the arts, where music meets word and movement. Participants do not watch — they build: a short shared piece assembled out of sound, text and silence. Suits a class, a team or a family gathering.",
+        "facts": [
+          { "k": "Age", "v": "children and adults" },
+          { "k": "Length", "v": "60–90 min" },
+          { "k": "Group", "v": "up to 20" },
+          { "k": "Price", "v": "on request" },
+          { "k": "Venue", "v": "at your place" },
+          { "k": "Online", "v": "no" }
+        ]
+      },
+      {
+        "h3": "Instrument and arts lessons",
+        "p": "Individual and group lessons: cello or another instrument of your choice, musical understanding and a feel for the stage. From the first touch to a performance — for children and adults, with no upper age limit.",
+        "facts": [
+          { "k": "Age", "v": "from 6 to adult" },
+          { "k": "Length", "v": "45 min" },
+          { "k": "Group", "v": "one-to-one or group" },
+          { "k": "Price", "v": "on request" },
+          { "k": "Venue", "v": "to be agreed" },
+          { "k": "Online", "v": "yes" }
+        ]
+      }
+    ],
+    "notes": [
+      "The first two sessions will be bookable with Culture Passport funding from January 2027, once the application is approved. Until then — by direct agreement with the school: one day, three sessions for different classes, €420.",
+      "The price of workshops and lessons depends on the number of participants, the length and the venue — I send a concrete figure with the quote within one working day."
+    ]
+  },
+
+  "programs": {
+    "eyebrow": "Repertoire",
+    "h2": "Ready-made programmes",
+    "lede": "These can be booked straight away — each has a length, a line-up and a technical rider. The price depends on the line-up and the distance.",
+    "items": [
+      {
+        "h3": "Christmas evening",
+        "p": "A festive programme for a cultural centre or community evening: familiar Christmas melodies, Lithuanian carols and a few unexpected turns in the arrangements.",
+        "specs": [
+          { "k": "Length", "v": "55 min" },
+          { "k": "Line-up", "v": "Solo / duo / trio" },
+          { "k": "Season", "v": "November–January" },
+          { "k": "Price from", "v": "€450 / 700 / 950" }
+        ]
+      },
+      {
+        "h3": "Summer classics",
+        "p": "An acoustic programme for manor courtyards, parks and town festivals. It works outdoors — no stage infrastructure required.",
+        "specs": [
+          { "k": "Length", "v": "60 min" },
+          { "k": "Line-up", "v": "Duo / trio" },
+          { "k": "Season", "v": "May–September" },
+          { "k": "Price from", "v": "€650 / 900" }
+        ]
+      },
+      {
+        "h3": "Ceremony",
+        "p": "A wedding ceremony, a commemoration, or the musical part of an awards evening or opening. In churches and manor halls the acoustics are often such that no amplification is needed at all.",
+        "specs": [
+          { "k": "Length", "v": "up to 40 min" },
+          { "k": "Line-up", "v": "Solo / duo" },
+          { "k": "Season", "v": "All year" },
+          { "k": "Price from", "v": "€350" }
+        ]
+      },
+      {
+        "h3": "Alternative concert — performance",
+        "p": "A synthesis of the arts: cello, poetry or other texts, dance and image in one work. The programme is built for a specific space rather than moved into it — so a manor cellar or an empty factory floor is an advantage here, not an obstacle.",
+        "specs": [
+          { "k": "Length", "v": "60–75 min" },
+          { "k": "Line-up", "v": "2–5 performers" },
+          { "k": "Season", "v": "All year" },
+          { "k": "Price", "v": "On request" }
+        ]
+      },
+      {
+        "h3": "Interactive concert",
+        "tag": "NEW",
+        "p": "A programme in which the audience is part of the work: they choose what comes next, play simple sound parts, build the rhythm. People leave with an experience rather than an impression.",
+        "specs": [
+          { "k": "Length", "v": "50–70 min" },
+          { "k": "Line-up", "v": "Solo / duo / trio" },
+          { "k": "Season", "v": "All year" },
+          { "k": "Price", "v": "On request" }
+        ]
+      },
+      {
+        "h3": "Therapeutic event",
+        "p": "Elements of music, word, scent and dance therapy in one session for adults. Not entertainment but a state: live sound, breath, scent and movement arranged so that after ninety minutes a person leaves different from how they arrived.",
+        "specs": [
+          { "k": "Length", "v": "90 min" },
+          { "k": "Line-up", "v": "Performer and therapist" },
+          { "k": "Group", "v": "8–25" },
+          { "k": "Price", "v": "On request" }
+        ]
+      },
+      {
+        "h3": "Retreat and mindfulness practice",
+        "p": "A weekend package of yoga, meditation and live sound: morning practice, a seminar on a chosen theme, an evening concert and a session of silence. Built together with the hosts of the venue — from one day to three.",
+        "specs": [
+          { "k": "Length", "v": "1–3 days" },
+          { "k": "Line-up", "v": "According to programme" },
+          { "k": "Group", "v": "10–40" },
+          { "k": "Price", "v": "On request" }
+        ]
+      },
+      {
+        "h3": "“Dive into personality”",
+        "p": "A live conversation with a performer straight after the concert, in front of the audience. Having just come off stage, people are open in a way they rarely are otherwise — so things are said here that never make it into an interview. Filmed and recorded; the recording stays with the organiser.",
+        "specs": [
+          { "k": "Length", "v": "30–45 min" },
+          { "k": "Format", "v": "Conversation + recording" },
+          { "k": "Season", "v": "All year" },
+          { "k": "Price", "v": "On request" }
+        ]
+      },
+      {
+        "h3": "Turnkey event",
+        "p": "The whole event from A to Z in one pair of hands: programme, performers, stage, sound equipment, catering, photographer and the running order of the evening. The organiser is left with one contact and one invoice instead of five.",
+        "specs": [
+          { "k": "Length", "v": "2–4 hours" },
+          { "k": "Line-up", "v": "To suit space and occasion" },
+          { "k": "Season", "v": "All year" },
+          { "k": "Price from", "v": "€1,500" }
+        ]
+      }
+    ],
+    "note": "Prices exclude travel beyond a 60 km radius of Vilnius — past that a rate of €0.25/km applies and is written into the quote. Programmes marked “On request” are priced by line-up, length and venue — I send the exact figure within one working day. Individually arranged pieces and December weekends are priced separately; you see the exact sum in the quote before signing."
+  },
+
+  "studio": {
+    "eyebrow": "In preparation",
+    "h2": "Open space — the studio",
+    "lede": "A place where a rehearsal, a workshop and a chamber concert fit under one roof. Not a hall with rows of seats, but an open space that each evening rearranges to suit itself.",
+    "points": [
+      "Chamber concerts and performances",
+      "Creative workshops and lessons",
+      "Yoga, meditation and therapy sessions",
+      "Conversation and sound recordings",
+      "Rehearsals and residencies"
+    ],
+    "cta": "Interested in collaborating",
+    "alt": "Open studio space"
+  },
+
+  "gallery": {
+    "eyebrow": "Gallery",
+    "h2": "Photographs",
+    "lede": "A client wants to see how you will look in their hall — which is why shots from a range of spaces work best.",
+    "items": [
+      { "img": "galerija-1.jpg", "alt": "Elena Daunytė with her cello", "cap": "Portrait" },
+      { "img": "galerija-2.jpg", "alt": "Concert in a hall", "cap": "Concert in a hall" },
+      { "img": "galerija-3.jpg", "alt": "Performance at a manor house", "cap": "Manor, church" },
+      { "img": "galerija-4.jpg", "alt": "Educational session at a school", "cap": "Education at school" },
+      { "img": "galerija-5.jpg", "alt": "Outdoor performance", "cap": "Outdoor event" },
+      { "img": "galerija-6.jpg", "alt": "Detail of a cello", "cap": "Detail" }
+    ]
+  },
+
+  "about": {
+    "eyebrow": "About",
+    "h2": "Music put together as carefully as it is felt",
+    "paras": [
+      "Elena Daunytė is a cellist, a prizewinner at international competitions and a member of the family ensemble Regnum Musicale. She graduated from the M. K. Čiurlionis School of Arts and studied at the Royal Northern College of Music in Manchester and at the Lithuanian Academy of Music and Theatre, in the class of Prof. Rimantas Armonas.",
+      "She has played with orchestras in Lithuania and abroad and taken masterclasses with Giovanni Sollima, David Geringas and Frans Helmerson. She has received letters of thanks from Presidents of the Republic of Lithuania Valdas Adamkus and Dalia Grybauskaitė. The music video “Ryto ugnis” was shown in the LRT archive as part of the KLIPVID 2021 competition."
+    ],
+    "creds": [
+      "M. K. Čiurlionis School of Arts",
+      "Royal Northern College of Music",
+      "LMTA · class of Prof. R. Armonas",
+      "Regnum Musicale"
+    ],
+    "closing": "Event organisers need more than music: they need someone who handles the sound, the schedule and the paperwork themselves. That is why every programme here has a clear length, line-up and price — rather than “we'll sort it out on the day”.",
+    "cta": "Get in touch",
+    "alt": "Elena Daunytė performing"
+  },
+
+  "quotes": {
+    "eyebrow": "Testimonials",
+    "h2": "What clients say",
+    "lede": "After each event, ask for a paragraph in writing and permission to publish it. Three real testimonials do more than ten general phrases.",
+    "slots": [
+      { "t": "Testimonial 1", "d": "Cultural centre — name, role, institution, town." },
+      { "t": "Testimonial 2", "d": "School — teacher or deputy head." }
+    ]
+  },
+
+  "faq": {
+    "eyebrow": "Practical questions",
+    "h2": "Frequently asked",
+    "items": [
+      {
+        "q": "Do you bring your own sound equipment?",
+        "a": "Yes. I have a portable sound system that covers a hall of up to <span class=\"fill\">number</span> people and small outdoor events. In acoustic spaces the cello often sounds best with no amplification at all."
+      },
+      {
+        "q": "Can you take care of the whole event, not just the music?",
+        "a": "Yes — I call this an event from A to Z. Programme, performers, stage, sound, catering and photographer are arranged through me, and you get one contact and one invoice. If you only need the artistic part of a wedding or a company celebration, that is just as usual."
+      },
+      {
+        "q": "I am looking for performers for my celebration. Can you help?",
+        "a": "Yes. Booking and liaison is a separate service: I select musicians, dancers, vocalists or actors to suit the occasion, the space and the budget, and coordinate their schedules. All you do is choose from the options prepared for you."
+      },
+      {
+        "q": "Do you teach?",
+        "a": "Yes — one-to-one and in groups, children and adults. Cello or another instrument of your choice, musical understanding, a feel for the stage. Beginners need no previous experience."
+      },
+      {
+        "q": "How does a therapeutic event differ from a concert?",
+        "a": "At a concert you listen; in a therapeutic session you take part. Music, word, scent and movement are arranged for a state rather than an effect, so the group is smaller (8–25 people) and the session is led together with a therapist."
+      },
+      {
+        "q": "How far in advance should a date be booked?",
+        "a": "For the Christmas season — from September, since December weekends fill up first. At other times 4–6 weeks is enough."
+      },
+      {
+        "q": "Do you issue invoices?",
+        "a": "Yes. I work under an individual activity certificate <span class=\"fill\">no.</span>, so I issue invoices and can sign a service contract — which suits the accounting departments of public-sector institutions."
+      },
+      {
+        "q": "What does travel outside the city cost?",
+        "a": "Travel within 60 km of Vilnius is included in the price. Beyond that a rate of €0.25/km applies, stated in the quote rather than added later."
+      },
+      {
+        "q": "Can the programme be adapted to our occasion?",
+        "a": "Yes, and it usually is. Repertoire, length and the spoken part are agreed before the event. If you have a particular piece in mind, say so early — preparation takes time."
+      },
+      {
+        "q": "What languages do you work in?",
+        "a": "Lithuanian, English and Italian. Concerts, educational sessions and conversations for international guests can be led in English or Italian without an interpreter."
+      },
+      {
+        "q": "What happens if the event is cancelled?",
+        "a": "If cancelled more than 14 days before the event, the deposit is returned or moved to another date. Terms for later cancellation are set out in the contract."
+      }
+    ]
+  },
+
+  "cta": {
+    "h2": "Shall we talk about your event?",
+    "lede": "Write and tell me the occasion, the place and the date — I reply within one working day with a concrete proposal.",
+    "btn": "Send a message"
+  },
+
+  "contact": {
+    "eyebrow": "Contact",
+    "h2": "Let's talk",
+    "fields": {
+      "name": "Name",
+      "org": "Institution or company",
+      "email": "Email",
+      "phone": "Phone",
+      "type": "What you are looking for",
+      "date": "Date or month",
+      "datePlaceholder": "e.g. 12 December 2026",
+      "message": "Message",
+      "messagePlaceholder": "Venue, approximate number of guests, occasion."
+    },
+    "options": [
+      "Concert programme",
+      "Seasonal or Christmas programme",
+      "Alternative concert or performance",
+      "Interactive concert",
+      "Educational session at a school",
+      "Creative workshop or lessons",
+      "Therapeutic or mindfulness event",
+      "Retreat",
+      "Wedding or family celebration",
+      "Event from A to Z",
+      "Finding performers",
+      "Something else — I'll write below"
+    ],
+    "submit": "Send enquiry",
+    "direct": [
+      { "k": "Phone", "type": "tel" },
+      { "k": "Email", "type": "email" },
+      { "k": "Based in", "type": "text", "v": "Vilnius, working across Lithuania" },
+      { "k": "Languages", "type": "text", "v": "Lithuanian, English, Italian" },
+      { "k": "Reply time", "type": "text", "v": "Within one working day" }
+    ]
+  },
+
+  "js": {
+    "msg-invalid": "Please fill in your name and email — without them I cannot reply.",
+    "msg-sending": "Sending…",
+    "msg-ok": "Thank you — your enquiry has arrived. I will reply within one working day.",
+    "msg-fail": "Sending failed. Please write directly to",
+    "msg-mailto": "Your email programme has been opened. If nothing happened, write to",
+    "mail-subject": "Enquiry about",
+    "mail-fallback": "a programme",
+    "mail-name": "Name",
+    "mail-org": "Institution",
+    "mail-email": "Email",
+    "mail-phone": "Phone",
+    "mail-type": "Looking for",
+    "mail-date": "Date"
+  },
+
+  "footer": {
+    "about": "Concerts, performances, education, therapeutic events and celebrations from A to Z across Lithuania.",
+    "colPages": "Sections",
+    "pages": [
+      { "href": "#paslaugos", "label": "Services" },
+      { "href": "#edukacijos", "label": "Education" },
+      { "href": "#programos", "label": "Programmes" },
+      { "href": "#studija", "label": "Studio" },
+      { "href": "#galerija", "label": "Gallery" },
+      { "href": "#apie", "label": "About" },
+      { "href": "#kontaktai", "label": "Contact" }
+    ],
+    "colDetails": "Details",
+    "details": [
+      "Elena Daunytė",
+      "Individual activity certificate no. <span class=\"fill\">000000</span>"
+    ],
+    "city": "Vilnius, Lithuania"
+  },
+
+  "schema": {
+    "jobTitle": "Cellist",
+    "knowsAbout": [
+      "Cello",
+      "Chamber music",
+      "Music education",
+      "Event production",
+      "Music therapy"
+    ],
+    "faq": [
+      {
+        "q": "Do you bring your own sound equipment?",
+        "a": "Yes. I have a portable sound system for small halls and outdoor events. In acoustic spaces the cello often sounds best with no amplification at all."
+      },
+      {
+        "q": "Can you take care of the whole event, not just the music?",
+        "a": "Yes. Programme, performers, stage, sound, catering and photographer are arranged through one contact, and the client receives a single invoice."
+      },
+      {
+        "q": "Do you teach?",
+        "a": "Yes — one-to-one and in groups, children and adults. Cello or another instrument of your choice."
+      },
+      {
+        "q": "How far in advance should a date be booked?",
+        "a": "For the Christmas season — from September. At other times 4–6 weeks is enough."
+      },
+      {
+        "q": "Do you issue invoices?",
+        "a": "Yes. I work under an individual activity certificate, so I issue invoices and can sign a service contract."
+      }
+    ]
+  }
+}

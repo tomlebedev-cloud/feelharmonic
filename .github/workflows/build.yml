@@ -1,0 +1,49 @@
+name: Perkurti puslapius
+
+# Kai pakeičiamas tekstas (turinys/*.json) arba karkasas (build.py),
+# GitHub pats paleidžia generatorių ir įrašo perkurtus index.html,
+# en/index.html, it/index.html bei sitemap.xml.
+#
+# Todėl tekstą galima taisyti tiesiai GitHub svetainėje, nieko
+# nediegiant kompiuteryje.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "turinys/**"
+      - "build.py"
+      - ".github/workflows/build.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Paleisti generatorių
+        run: python build.py
+
+      - name: Įrašyti pakeitimus
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html en/index.html it/index.html sitemap.xml
+          if git diff --staged --quiet; then
+            echo "Pakeitimų nėra."
+          else
+            git commit -m "Puslapiai perkurti is turinio failu"
+            git push
+          fi

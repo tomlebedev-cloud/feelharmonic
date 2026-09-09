@@ -5,18 +5,32 @@ Nereikia jokio ankstesnio konteksto: viskas, ką reikia žinoti, yra čia.
 
 ## Kas tai
 
-Statinis vieno puslapio tinklalapis. **Jokio karkaso, jokio kompiliavimo,
-jokio `npm install`.** Atsidarai `index.html` naršyklėje — ir jis veikia.
-Tai sąmoningas sprendimas: puslapį turi galėti prižiūrėti bet kas, bet kada,
-be priklausomybės nuo įrankių, kurie po kelerių metų nustos veikti.
+Statinis vieno puslapio tinklalapis **trimis kalbomis** — lietuvių, anglų ir
+italų. Jokio karkaso, jokio `npm install`, jokių priklausomybių: naršyklė gauna
+paprastą HTML.
 
-Kalba: lietuvių. Kodo komentarai taip pat lietuviški.
+Vienintelis įrankis — `build.py`: ~450 eilučių Python be bibliotekų, kuris iš
+trijų JSON failų ir vieno HTML karkaso sugeneruoja tris puslapius. Tai
+sąmoningas kompromisas: be jo tą patį tekstą reikėtų taisyti trijose vietose ir
+kalbos neišvengiamai išsiskirtų. Sugeneruoti failai **guli repozitorijoje**,
+todėl hostingui jokio build žingsnio nereikia — GitHub Pages tiesiog serviruoja
+jau paruoštą HTML.
+
+Kalba dokumentacijoje ir kodo komentaruose: lietuvių.
 
 ## Failai
 
 ```
-index.html              visas turinys ir struktūra
-404.html                klaidos puslapis
+build.py                generatorius: turinys/*.json + karkasas -> HTML
+turinys/lt.json         lietuviško puslapio tekstas
+turinys/en.json         angliško
+turinys/it.json         itališko
+index.html              SUGENERUOTAS lietuviškas puslapis — ranka neredaguoti
+en/index.html           SUGENERUOTAS angliškas
+it/index.html           SUGENERUOTAS itališkas
+sitemap.xml             SUGENERUOTAS (visos trys kalbos su hreflang)
+.github/workflows/build.yml   GitHub Actions: perkuria puslapius po push
+404.html                klaidos puslapis (rašomas ranka, tik lietuviškai)
 favicon.svg             ikonėlė (firminis ženklas)
 assets/css/style.css    visi stiliai; spalvos ir šriftai — :root bloke viršuje
 assets/js/main.js       CONFIG blokas + meniu, animacijos, forma, nuotraukos
@@ -26,6 +40,43 @@ spauda/FeelHarmonic-vizitine.pdf   sugeneruotas PDF
 ADMIN.md                instrukcija savininkei (be programavimo)
 TODO.md                 ko dar trūksta turinyje
 ```
+
+## Trys kalbos
+
+| Kalba | Adresas | Failas |
+|---|---|---|
+| Lietuvių | `https://www.feelharmonic.lt/` | `index.html` |
+| Anglų | `https://www.feelharmonic.lt/en/` | `en/index.html` |
+| Italų | `https://www.feelharmonic.lt/it/` | `it/index.html` |
+
+Kiekvienas puslapis turi savo `<html lang>`, `<title>`, `description`,
+`canonical`, `og:locale` ir pilną `hreflang` rinkinį su `x-default` į lietuvišką
+versiją. Turinys tas pats — verstas, ne sutrumpintas.
+
+Sekcijų `id` (`#paslaugos`, `#programos`, …) visose kalbose **vienodi**, todėl
+CSS, JS ir vidinės nuorodos bendros. Kalbų perjungiklis rodomas antraštėje,
+mobiliajame meniu ir poraštėje; jo nuorodos absoliučios (`/`, `/en/`, `/it/`).
+
+**Pasekmė:** dukart spustelėjus `index.html` (`file://`) puslapis veikia, bet
+kalbų perjungiklis — ne, nes absoliutus `/en/` rodo į disko šaknį. Norint
+patikrinti perjungiklį, reikia serverio (žr. „Paleisti lokaliai“).
+
+## Kaip perkurti puslapius
+
+```bash
+python build.py
+```
+
+Perrašo `index.html`, `en/index.html`, `it/index.html` ir `sitemap.xml`.
+Reikia tik Python 3 — jokių bibliotekų.
+
+Tą patį daro ir GitHub Actions: kai į `main` įkeliamas pakeitimas faile
+`turinys/**` arba `build.py`, veiksmas paleidžia generatorių ir pats įrašo
+perkurtus failus atgal į šaką. Todėl tekstą galima taisyti tiesiai GitHub
+svetainėje, nieko nediegiant.
+
+Jei JSON sugadinamas (pamiršta kabutė ar kablelis), veiksmas nulūžta su raudonu
+kryželiu, o gyvas puslapis lieka nepakitęs iki taisymo.
 
 ## Dizaino sistema
 
@@ -49,15 +100,24 @@ rezultatai 4,78–12,09:1 (WCAG AA). Keičiant spalvas tai reikia pertikrinti.
 Šriftai: **Playfair Display** (antraštės) ir **Jost** (tekstas), iš Google Fonts.
 Abu turi lietuviškas raides (latin-ext subsetas).
 
-Firminis ženklas — inline SVG `<symbol id="mark">` failo `index.html` pradžioje.
-Naudojamas per `<use href="#mark"/>` meniu, hero fone, skirtuke, poraštėje ir
-tuščiose nuotraukų vietose.
+Firminis ženklas — inline SVG `<symbol id="mark">` kiekvieno puslapio pradžioje
+(konstanta `MARK` faile `build.py`). Naudojamas per `<use href="#mark"/>` meniu,
+hero fone, skirtuke, poraštėje ir tuščiose nuotraukų vietose.
+
+Vėliau pridėti stiliai — kalbų perjungiklis (`.langs`), „NEW“ ženklelis
+(`.tag-new`), studijos blokas (`.studio`) ir vaizdo įrašo rėmelis (`.video`) —
+surašyti failo gale, po komentaru su pavadinimu.
 
 ## JavaScript
 
-Vienas failas, be priklausomybių. Viršuje — `CONFIG` blokas (el. paštas ir
-Formspree adresas), tai vienintelė vieta, kurią reikia redaguoti kasdienėje
-priežiūroje.
+Vienas failas, be priklausomybių, **bendras visoms trims kalboms**. Viršuje —
+`CONFIG` blokas (el. paštas ir Formspree adresas), tai vienintelė vieta, kurią
+reikia redaguoti kasdienėje priežiūroje.
+
+Kad tas pats failas veiktų visomis kalbomis, visi formos pranešimai („Siunčiama…“,
+„Ačiū — užklausa gauta“ ir kt.) imami iš `data-*` atributų ant `<form>`, o į juos
+patenka iš `turinys/<kalba>.json` bloko `"js"`. Funkcija `t("msg-ok")` faile
+`main.js` nuskaito atitinkamą atributą.
 
 Ką daro:
 - mobilųjį meniu (burger),
@@ -81,10 +141,14 @@ Adresas: https://www.feelharmonic.lt/ (senasis
 https://tomlebedev-cloud.github.io/feelharmonic/ persiunčia į jį).
 
 Failas `.nojekyll` išjungia Jekyll apdorojimą.
-Visos nuorodos reliatyvios, todėl puslapis vienodai veikia atidarytas iš failo,
-GitHub Pages adresu arba bet kuriame kitame hostinge.
+Nuorodos į CSS, JS ir nuotraukas reliatyvios (`en/` ir `it/` puslapiuose —
+su `../`), todėl puslapį galima perkelti į bet kurį hostingą. Absoliučios yra
+tik kalbų perjungiklio nuorodos — jos reikalauja, kad svetainė gulėtų domeno
+šaknyje (taip ir yra).
 
-Įkėlus pakeitimą į `main`, puslapis persikuria automatiškai per ~1 min.
+Įkėlus pakeitimą į `main`, puslapis persikuria automatiškai per ~1 min. Jei
+pakeistas `turinys/**` arba `build.py`, prieš tai dar suveikia GitHub Actions
+veiksmas, kuris perkuria HTML — tada iš viso užtrunka ~2 min.
 
 ## Domenas
 
@@ -119,20 +183,38 @@ Rezultatas turi būti 2 puslapiai po 258 × 173 pt (= 91 × 61 mm).
 
 ## Paleisti lokaliai
 
-Užtenka dukart spustelėti `index.html`. Jei nori tikro serverio:
-
 ```bash
 python -m http.server 8000
 ```
 
+Tada http://localhost:8000/ — veikia ir kalbų perjungiklis. Dukart spustelėjus
+`index.html` puslapis irgi atsidarys, bet perjungiklio nuorodos neveiks
+(žr. „Trys kalbos“).
+
 ## Ko šiame projekte NĖRA (ir kodėl)
 
-- **Karkaso ar build žingsnio** — sąmoningai, kad puslapį galėtų prižiūrėti
-  bet kas be įrankių diegimo.
+- **Karkaso, npm, node_modules** — vienintelė priklausomybė yra Python 3
+  standartinė biblioteka. Sugeneruoti puslapiai laikomi repozitorijoje, todėl
+  net ir dingus generatoriui svetainė toliau veiks.
+- **Kalbos perjungimo per JavaScript** — kiekviena kalba turi savo adresą ir
+  savo HTML. Taip Google indeksuoja visas tris versijas, o puslapis veikia ir
+  išjungus JS. Automatinio permetimo pagal naršyklės kalbą sąmoningai nėra:
+  GitHub Pages neturi serverio pusės, o JS permetimas kenkia SEO ir erzina.
 - **CMS** — realiai keičiasi tik kainos, nuotraukos ir atsiliepimai, kelis
-  kartus per metus. Jei prireiktų, tinkamiausias kelias: hostingą perkelti į
-  Netlify (ta pati repozitorija, nemokamai) ir uždėti Decap CMS.
+  kartus per metus, o `turinys/*.json` redaguojamas tiesiai GitHub svetainėje.
+  Jei prireiktų, tinkamiausias kelias: hostingą perkelti į Netlify (ta pati
+  repozitorija, nemokamai) ir uždėti Decap CMS.
 - **Tamsios temos** — dizainas sąmoningai vienspalvis, paimtas iš logotipo.
+
+## Į ką atkreipti dėmesį keičiant
+
+- `index.html`, `en/index.html`, `it/index.html` ir `sitemap.xml` **perrašomi**.
+  Taisyti reikia `turinys/*.json` arba `build.py`.
+- Pridedant naują lauką į JSON, jį reikia pridėti **visose trijose** kalbose —
+  kitaip `build.py` nulūš su `KeyError` ir tai bus matyti Actions žurnale.
+- JSON laukuose leidžiamas paprastas HTML (`<em>`, `<span class="fill">`),
+  todėl tekstas neekranuojamas. Į turinį nedėti nepatikimo teksto.
+- Sekcijų `id` keisti negalima nekeičiant `nav`/`footer` nuorodų visose kalbose.
 
 ## Kas dar neužbaigta
 
