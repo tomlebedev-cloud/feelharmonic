@@ -120,8 +120,10 @@ var CONFIG = {
       );
     }
 
+    /* Ieškoma tik „Apie“ bloko viduje: .about-photo klasę naudoja ir studijos
+       skiltis, o ji puslapyje yra anksčiau, tad document.querySelector rastų ją. */
     var about = document.querySelector(".about");
-    var aboutPhoto = document.querySelector(".about-photo");
+    var aboutPhoto = about && about.querySelector(".about-photo");
     if (about && aboutPhoto && !aboutPhoto.querySelector("img")) {
       about.classList.add("no-photo");
     }

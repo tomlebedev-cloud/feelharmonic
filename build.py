@@ -70,7 +70,7 @@ def attr(text):
 def photo(base, src, alt, cls="shot", cap=None):
     fig = ['<figure class="%s" data-photo>' % cls,
            '  <svg class="ph-empty" viewBox="0 0 100 100" aria-hidden="true"><use href="#mark"/></svg>',
-           '  <img src="%sassets/img/%s" alt="%s" loading="lazy" data-optional>' % (base, src, attr(alt))]
+           '  <img src="%sassets/img/%s" alt="%s" data-optional>' % (base, src, attr(alt))]
     if cap:
         fig.append('  <figcaption>%s</figcaption>' % cap)
     fig.append('</figure>')
@@ -396,7 +396,7 @@ def studio(lang, c):
       </div>
       <div class="about-photo" data-photo>
         <svg class="ph-empty" viewBox="0 0 100 100" aria-hidden="true"><use href="#mark"/></svg>
-        <img src="%(b)sassets/img/studija.jpg" alt="%(alt)s" loading="lazy" data-optional>
+        <img src="%(b)sassets/img/studija.jpg" alt="%(alt)s" data-optional>
       </div>
     </div>
   </div>
@@ -450,7 +450,7 @@ def about(lang, c):
 
       <div class="about-photo" data-photo>
         <svg class="ph-empty" viewBox="0 0 100 100" aria-hidden="true"><use href="#mark"/></svg>
-        <img src="%(b)sassets/img/apie.jpg" alt="%(alt)s" loading="lazy" data-optional>
+        <img src="%(b)sassets/img/apie.jpg" alt="%(alt)s" data-optional>
       </div>
     </div>
   </div>
