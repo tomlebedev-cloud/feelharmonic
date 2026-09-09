@@ -67,9 +67,14 @@ section{padding:84px 0}
 .lede{font-size:19px;max-width:56ch;color:var(--muted)}
 
 /* ---------- ženklas ---------- */
-.mark .ray{stroke:var(--gold);stroke-width:1.1;stroke-linecap:round}
-.mark .tri{fill:none;stroke:var(--gold);stroke-width:1.6}
+.mark .beam polygon{fill:var(--gold)}
+.mark .tri{fill:none;stroke:var(--gold);stroke-width:2.2}
 .mark .dot{fill:var(--gold)}
+
+/* mazas variantas antrastei ir poretei: storesni bruksniai, maziau detaliu */
+.mark-sm .ray{stroke:var(--gold);stroke-width:2.2;stroke-linecap:round}
+.mark-sm .tri{fill:none;stroke:var(--gold);stroke-width:2.6}
+.mark-sm .dot{fill:var(--gold)}
 
 /* ---------- mygtukai ---------- */
 .btn{
