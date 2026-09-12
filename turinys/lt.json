@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "FeelHarmonic — Elena Daunytė, violončelė",
+    "title": "FeelHarmonic — Elena Daunytė, menininkė, atlikėja",
     "description": "Koncertai ir performansai, edukacijos, terapiniai bei sąmoningumo renginiai ir šventės nuo A iki Z — mokykloms, kultūros centrams, dvarams, įmonėms ir privatiems užsakovams visoje Lietuvoje.",
     "ogDescription": "Koncertai, performansai, edukacijos, terapiniai renginiai ir šventės nuo A iki Z visoje Lietuvoje."
   },
@@ -25,14 +25,17 @@
     { "href": "#irasai", "label": "Įrašai" },
     { "href": "#edukacijos", "label": "Edukacijos" },
     { "href": "#programos", "label": "Programos" },
+    { "href": "#augimas", "label": "Asmeninis augimas" },
     { "href": "#studija", "label": "Studija" },
     { "href": "#galerija", "label": "Galerija" },
     { "href": "#apie", "label": "Apie" },
-    { "href": "#duk", "label": "DUK" }
+    { "href": "#duk", "label": "DUK" },
+    { "href": "#parama", "label": "Parama" }
   ],
 
   "hero": {
-    "h1": "Gyva muzika, kuri <em>lieka</em> ilgiau nei vakaras",
+    "h1": "Per muziką — į <em>naująjį save</em>!",
+    "kicker": "Į sąmoningą pokytį muzikos bei menų akivaizdoje",
     "sub": "Violončelės koncertai ir alternatyvūs performansai, kultūrinės edukacijos, terapiniai bei sąmoningumo renginiai ir šventės nuo A iki Z — mokykloms, kultūros centrams, dvarams, įmonėms ir privatiems užsakovams visoje Lietuvoje.",
     "ctaPrimary": "Užsakyti pasirodymą",
     "ctaSecondary": "Peržiūrėti programas",
@@ -42,12 +45,12 @@
       "Dirbu lietuvių, anglų ir italų kalbomis"
     ],
     "portraitAlt": "Elena Daunytė su violončele",
-    "portraitRole": "Violončelė"
+    "portraitRole": "Menininkė, atlikėja"
   },
 
   "services": {
     "eyebrow": "Ką siūlau",
-    "h2": "Šešios kryptys, viena kokybė",
+    "h2": "Įvairialypiai patyriminiai renginiai, pajuntant gyvenimo meną savyje",
     "lede": "Kiekviena programa pritaikoma erdvei, progai ir auditorijai — nuo mokyklos salės iki dvaro kiemo ar jogos studijos.",
     "items": [
       {
@@ -94,8 +97,8 @@
       {
         "img": "paslauga-pokalbiai.jpg",
         "alt": "Pokalbis su atlikėju po koncerto",
-        "h3": "„Dive into personality“",
-        "p": "Gyvi, jaukūs pokalbiai su atlikėjais iškart po koncerto — kai scena dar neatvėsusi. Filmuojama ir įrašoma; įrašas lieka organizatoriui. Taip pat — atlikėjų paieška ir ryšininkavimas jūsų šventei.",
+        "h3": "Interviu su atlikėju",
+        "p": "„Dive into personality“ — gyvas pokalbis su atlikėju iškart po koncerto, kol scena dar neatvėsusi. Publika priartėja prie kūrėjo, o atlikėjas įvardija, ką patyrė scenoje. Filmuojama; įrašas lieka organizatoriui. Taip pat — atlikėjų paieška jūsų šventei.",
         "more": "Papasakoti daugiau",
         "moreHref": "#programos"
       }
@@ -153,7 +156,7 @@
   "edu": {
     "eyebrow": "Edukacija",
     "h2": "Užsiėmimai, dirbtuvės ir mokymai",
-    "lede": "Pirmi du užsiėmimai teikiami Kultūros paso tvarka mokykloms. Dirbtuvės ir mokymai užsakomi tiesiogiai — ir vaikams, ir suaugusiems.",
+    "lede": "Edukacijos vaikams ir suaugusiems. Pirmi du užsiėmimai teikiami Kultūros paso tvarka mokykloms, kiti — užsakomi tiesiogiai.",
     "items": [
       {
         "h3": "Kaip skamba emocija?",
@@ -177,6 +180,18 @@
           { "k": "Kaina", "v": "5 €/mok." },
           { "k": "Vieta", "v": "mokykloje" },
           { "k": "Nuotoliu", "v": "ne" }
+        ]
+      },
+      {
+        "h3": "Klasikinės muzikos ir instrumentų pažinimas",
+        "p": "Edukacijos vaikams ir suaugusiems: pažintis su klasikine muzika bendrąja prasme ir su muzikos instrumentais — iš arti, gyvai skambant. Esant poreikiui užsiėmimai tęsiami mokymu: muzikos pažinimo ir atlikimo meno.",
+        "facts": [
+          { "k": "Amžius", "v": "vaikams ir suaugusiems" },
+          { "k": "Trukmė", "v": "derinama" },
+          { "k": "Dalyviai", "v": "derinama" },
+          { "k": "Kaina", "v": "sutartinė" },
+          { "k": "Vieta", "v": "derinama" },
+          { "k": "Tęsinys", "v": "mokymai pagal poreikį" }
         ]
       },
       {
@@ -206,7 +221,7 @@
     ],
     "notes": [
       "Kultūros paso lėšomis pirmuosius du užsiėmimus bus galima užsakyti nuo 2027 m. sausio, atrinkus paraišką. Iki tol — pagal tiesioginę sutartį su mokykla: viena diena, trys užsiėmimai skirtingoms klasėms, 420 €.",
-      "Dirbtuvių ir mokymų kaina priklauso nuo dalyvių skaičiaus, trukmės ir vietos — konkretų skaičių atsiunčiu pasiūlyme per vieną darbo dieną."
+      "Pažintinių edukacijų, dirbtuvių ir mokymų kaina priklauso nuo dalyvių skaičiaus, trukmės ir vietos — konkretų skaičių atsiunčiu pasiūlyme per vieną darbo dieną."
     ]
   },
 
@@ -287,8 +302,8 @@
         ]
       },
       {
-        "h3": "„Dive into personality“",
-        "p": "Gyvas pokalbis su atlikėju iškart po koncerto, prieš publiką. Po pasirodymo žmogus dar būna atviras kaip retai kada — todėl čia nuskamba dalykai, kurių nebūna interviu. Filmuojama ir įrašoma; įrašas lieka organizatoriui.",
+        "h3": "Interviu su atlikėju — „Dive into personality“",
+        "p": "Gyvas pokalbis su atlikėju — kūrėju, menininku — iškart po koncerto, prieš publiką. Tikslas — priartinti publiką prie atlikėjo. Tai abipusė refleksija: atlikėjas gali įvardyti savo techninius, interpretacinius, meninius ir scenos potyrius, o klausytojas geriau supranta, kas yra menininkas scenoje, ir labiau pažįsta atlikimo pasaulio niuansus. Po pasirodymo žmogus dar būna atviras kaip retai kada — todėl čia nuskamba dalykai, kurių nebūna įprastame interviu. Filmuojama ir įrašoma; įrašas lieka organizatoriui.",
         "specs": [
           { "k": "Trukmė", "v": "30–45 min" },
           { "k": "Sudėtis", "v": "Pokalbis + įrašas" },
@@ -308,6 +323,44 @@
       }
     ],
     "note": "Kainos nurodytos be kelionės už 60 km nuo Vilniaus spindulio — toliau taikomas 0,25 €/km įkainis, kuris įrašomas į pasiūlymą. Programos, pažymėtos „Sutartinė“, kainuojamos pagal sudėtį, trukmę ir erdvę — konkrečią sumą atsiunčiu per vieną darbo dieną. Individualiai aranžuotas kūrinys ir gruodžio savaitgaliai kainuojami atskirai; tikslią sumą matote pasiūlyme prieš pasirašant."
+  },
+
+  "growth": {
+    "eyebrow": "Per muziką patirti virsmą",
+    "h2": "Žmogus — instrumentas, kuriantis savo gyvenimą",
+    "lede": "Ir tiesiogine, ir perkeltine prasme.",
+    "paras": [
+      "Kiekvienas iš mūsų nešiojame savyje instrumentą — kūną, kvėpavimą, balsą, atmintį. Juo groja laikas, patirtys, artimieji, netgi tyla tarp jų. Klausimas tik toks: ar leidžiame, kad kas nors kitas liestų stygas, ar patys imamės meistrystės savo garsui kurti?",
+      "Muzika ir menas šioje erdvėje tampa ne pramoga, o būdu grįžti pas save — išgirsti, kaip skamba tavo vidinis tonas, kada jis suvirpa laisvai, o kada — įtemptas. Kaip muzikos instrumentas reikalauja kūno atsipalaidavimo, tačiau tuo pačiu sąmoningo dėmesio kiekvienam garsui, taip ir gyvenimas kviečia įsiklausyti, kol virsta savu kūriniu."
+    ],
+    "pathIntro": "Tas kelias turi savo natas",
+    "steps": [
+      { "k": "Atpažinti", "v": "Išgirsti, koks garsas šiuo metu skamba tavyje." },
+      { "k": "Suprasti", "v": "Kodėl jis toks, iš kur ateina jo tonas." },
+      { "k": "Harmonizuotis", "v": "Suderinti stygas su savimi, kol vidinis disonansas virsta akordu." },
+      { "k": "Išlaikyti harmoniją", "v": "Radus tą darną, ją puoselėti kasdien — kaip instrumentą, kurį reikia nuolat derinti." },
+      { "k": "Harmonizuoti kitus", "v": "Nes darniai suskambėjęs žmogus tampa kamertonu aplinkiniams." }
+    ],
+    "closing": "Čia, per garsą, ritmą ir tylą, kviečiame sustoti ir pajusti: kas šiandien groja tavimi — ir ką pats norėtum sugroti."
+  },
+
+  "artExchange": {
+    "eyebrow": "Asmeninis augimas",
+    "h2": "„Menais mainais“",
+    "tag": "NEW",
+    "lede": "Menai — kaip įrankis tobulinti elgseną, formuoti teigiamus įpročius ir turtinti vaizduotę, kurios dėka galime kurti gražesnį, tvaresnį, darnesnį ir harmoningesnį santykį su savimi bei su aplinkiniu pasauliu.",
+    "paras": [
+      "Renginys, kuriame asmenybės persipina per įvairius menus — muziką, žodį, judesį ir vaizdą, — skatinant dalyvių kūrybinę saviraišką.",
+      "„Menais mainais“ tikslas — priartinti dalyvį prie jo vidinio menininko, nes „mes visi esame užkoduoti menininkai, tik ne visi tai žinom…“. Būtent interaktyvus dalyvavimas muzikos ir kitų menų renginiuose žmogui gali padėti atrasti savo meniškąjį potencialą."
+    ],
+    "accent": "Krypti į tiesos kryptį!",
+    "cta": "Domina renginys",
+    "interview": {
+      "label": "Interviu · lrytas.lt · 2018 m. kovas",
+      "title": "Elena Daunytė apie vidinį menininką",
+      "note": "Skaityti interviu",
+      "url": "https://www.lrytas.lt/kultura/scena/2018/03/31/news/elena-daunyte-jei-buciau-turejusi-teti-nezinia-ar-muzika-ar-literatura-butu-likusi-fone--5551622"
+    }
   },
 
   "studio": {
@@ -343,7 +396,7 @@
     "eyebrow": "Apie",
     "h2": "Muzika, sudėliota taip pat kruopščiai, kaip pajausta",
     "paras": [
-      "Elena Daunytė — violončelininkė, tarptautinių konkursų laureatė ir šeimyninio ansamblio „Regnum Musicale“ narė. Baigiau M. K. Čiurlionio menų mokyklą, studijavau Karališkajame Šiaurės muzikos koledže Mančesteryje ir Lietuvos muzikos ir teatro akademijoje, prof. Rimanto Armono klasėje.",
+      "Elena Daunytė — menininkė, atlikėja, tarptautinių konkursų laureatė ir šeimyninio ansamblio „Regnum Musicale“ narė. Mano instrumentas — violončelė: baigiau M. K. Čiurlionio menų mokyklą, studijavau Karališkajame Šiaurės muzikos koledže Mančesteryje ir Lietuvos muzikos ir teatro akademijoje, prof. Rimanto Armono klasėje.",
       "Grojau su Lietuvos ir užsienio orkestrais, tobulinausi meistriškumo kursuose pas Giovanni Sollimą, Davidą Geringą ir Fransą Helmersoną. Esu gavusi Lietuvos Respublikos Prezidentų Valdo Adamkaus ir Dalios Grybauskaitės padėkas. Vaizdo klipas „Ryto ugnis“ rodytas LRT Mediatekoje, KLIPVID 2021 konkurse."
     ],
     "creds": [
@@ -397,7 +450,7 @@
       },
       {
         "q": "Ar išrašote sąskaitą faktūrą?",
-        "a": "Taip. Dirbu pagal individualios veiklos pažymą <span class=\"fill\">nr.</span>, todėl išrašau sąskaitą faktūrą ir galiu pasirašyti paslaugų sutartį — tai tinka viešojo sektoriaus įstaigų buhalterijai."
+        "a": "Taip. Dirbu pagal individualios veiklos pažymą (kodas DK4429441), todėl išrašau sąskaitą faktūrą ir galiu pasirašyti paslaugų sutartį — tai tinka viešojo sektoriaus įstaigų buhalterijai."
       },
       {
         "q": "Kiek kainuoja kelionė už miesto ribų?",
@@ -416,6 +469,16 @@
         "a": "Atšaukus likus daugiau nei 14 dienų iki renginio, avansas grąžinamas arba perkeliamas kitai datai. Vėlesnio atšaukimo sąlygos aprašomos sutartyje."
       }
     ]
+  },
+
+  "patreon": {
+    "eyebrow": "Parama",
+    "h2": "Palaikykite FeelHarmonic per Patreon",
+    "lede": "Netrukus čia atsiras FeelHarmonic Patreon puslapis — vieta, per kurią galėsite nuolat palaikyti naujus koncertus, edukacijas ir atviros erdvės kūrimą.",
+    "url": "",
+    "btn": "Palaikyti per Patreon",
+    "soonTitle": "Patreon · netrukus",
+    "soonText": "Nuoroda bus paskelbta čia, kai tik puslapis bus paruoštas."
   },
 
   "cta": {
@@ -446,6 +509,7 @@
       "Edukacinis užsiėmimas mokykloje",
       "Kūrybinės dirbtuvės ar mokymai",
       "Terapinis ar sąmoningumo renginys",
+      "„Menais mainais“ ar asmeninio augimo renginys",
       "Retreat‘as",
       "Vestuvės ar šeimos šventė",
       "Renginys nuo A iki Z",
@@ -485,21 +549,23 @@
       { "href": "#paslaugos", "label": "Paslaugos" },
       { "href": "#edukacijos", "label": "Edukacijos" },
       { "href": "#programos", "label": "Programos" },
+      { "href": "#augimas", "label": "Asmeninis augimas" },
       { "href": "#studija", "label": "Studija" },
       { "href": "#galerija", "label": "Galerija" },
       { "href": "#apie", "label": "Apie" },
+      { "href": "#parama", "label": "Parama (Patreon)" },
       { "href": "#kontaktai", "label": "Kontaktai" }
     ],
     "colDetails": "Rekvizitai",
     "details": [
       "Elena Daunytė",
-      "Individuali veikla nr. <span class=\"fill\">000000</span>"
+      "Individualios veiklos kodas DK4429441"
     ],
     "city": "Vilnius, Lietuva"
   },
 
   "schema": {
-    "jobTitle": "Violončelininkė",
+    "jobTitle": "Menininkė, atlikėja",
     "knowsAbout": [
       "Violončelė",
       "Kamerinė muzika",

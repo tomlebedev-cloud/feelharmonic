@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "FeelHarmonic — Elena Daunytė, violoncello",
+    "title": "FeelHarmonic — Elena Daunytė, artista e interprete",
     "description": "Concerti e performance, laboratori ed educazione musicale, eventi terapeutici e di consapevolezza, organizzazione completa di eventi — per scuole, centri culturali, dimore storiche, aziende e privati in tutta la Lituania.",
     "ogDescription": "Concerti, performance, educazione musicale, eventi terapeutici e organizzazione completa di eventi in tutta la Lituania."
   },
@@ -25,14 +25,17 @@
     { "href": "#irasai", "label": "Registrazioni" },
     { "href": "#edukacijos", "label": "Educazione" },
     { "href": "#programos", "label": "Programmi" },
+    { "href": "#augimas", "label": "Crescita personale" },
     { "href": "#studija", "label": "Studio" },
     { "href": "#galerija", "label": "Galleria" },
     { "href": "#apie", "label": "Chi sono" },
-    { "href": "#duk", "label": "FAQ" }
+    { "href": "#duk", "label": "FAQ" },
+    { "href": "#parama", "label": "Sostegno" }
   ],
 
   "hero": {
-    "h1": "Musica dal vivo che <em>resta</em> più a lungo della serata",
+    "h1": "Attraverso la musica — verso <em>il nuovo te</em>!",
+    "kicker": "Verso un cambiamento consapevole di fronte alla musica e alle arti",
     "sub": "Concerti per violoncello e performance alternative, educazione culturale, eventi terapeutici e di consapevolezza, feste organizzate dalla A alla Z — per scuole, centri culturali, dimore storiche, aziende e privati in tutta la Lituania.",
     "ctaPrimary": "Prenota un'esibizione",
     "ctaSecondary": "Vedi i programmi",
@@ -42,12 +45,12 @@
       "Lavoro in lituano, inglese e italiano"
     ],
     "portraitAlt": "Elena Daunytė con il violoncello",
-    "portraitRole": "Violoncello"
+    "portraitRole": "Artista, interprete"
   },
 
   "services": {
     "eyebrow": "Che cosa offro",
-    "h2": "Sei direzioni, un'unica qualità",
+    "h2": "Eventi esperienziali poliedrici, per sentire l'arte della vita dentro di te",
     "lede": "Ogni programma si adatta allo spazio, all'occasione e al pubblico — dall'aula magna di una scuola al cortile di una dimora storica o a uno studio di yoga.",
     "items": [
       {
@@ -94,8 +97,8 @@
       {
         "img": "paslauga-pokalbiai.jpg",
         "alt": "Conversazione con un artista dopo il concerto",
-        "h3": "«Dive into personality»",
-        "p": "Conversazioni dal vivo, intime, con gli artisti subito dopo il concerto — quando il palco è ancora caldo. Riprese e registrazione incluse; la registrazione resta all'organizzatore. Su richiesta, anche ricerca e scritturazione di artisti per la vostra festa.",
+        "h3": "Intervista con l'artista",
+        "p": "«Dive into personality» — una conversazione dal vivo con l'artista subito dopo il concerto, quando il palco è ancora caldo. Il pubblico si avvicina al creatore e l'artista mette in parole ciò che ha vissuto sulla scena. Riprese incluse; la registrazione resta all'organizzatore. Su richiesta, anche ricerca di artisti per la vostra festa.",
         "more": "Raccontami di più",
         "moreHref": "#programos"
       }
@@ -153,7 +156,7 @@
   "edu": {
     "eyebrow": "Educazione",
     "h2": "Laboratori, workshop e lezioni",
-    "lede": "I primi due laboratori vengono proposti alle scuole tramite il programma Culture Passport. Workshop e lezioni si prenotano direttamente — per bambini e adulti.",
+    "lede": "Educazione per bambini e adulti. I primi due laboratori vengono proposti alle scuole tramite il programma Culture Passport; gli altri si prenotano direttamente.",
     "items": [
       {
         "h3": "Che suono ha un'emozione?",
@@ -177,6 +180,18 @@
           { "k": "Prezzo", "v": "5 € / alunno" },
           { "k": "Sede", "v": "a scuola" },
           { "k": "Online", "v": "no" }
+        ]
+      },
+      {
+        "h3": "Alla scoperta della musica classica e degli strumenti",
+        "p": "Incontri per bambini e adulti: un'introduzione alla musica classica in senso ampio e agli strumenti musicali — da vicino, suonati dal vivo. Su richiesta il percorso prosegue con lezioni di comprensione musicale e di arte dell'esecuzione.",
+        "facts": [
+          { "k": "Età", "v": "bambini e adulti" },
+          { "k": "Durata", "v": "da concordare" },
+          { "k": "Gruppo", "v": "da concordare" },
+          { "k": "Prezzo", "v": "su richiesta" },
+          { "k": "Sede", "v": "da concordare" },
+          { "k": "Seguito", "v": "lezioni su richiesta" }
         ]
       },
       {
@@ -206,7 +221,7 @@
     ],
     "notes": [
       "I primi due laboratori saranno prenotabili con i fondi del Culture Passport da gennaio 2027, una volta approvata la candidatura. Fino ad allora — per accordo diretto con la scuola: una giornata, tre laboratori per classi diverse, 420 €.",
-      "Il prezzo di workshop e lezioni dipende dal numero di partecipanti, dalla durata e dalla sede — invio una cifra precisa con il preventivo entro un giorno lavorativo."
+      "Il prezzo degli incontri introduttivi, dei workshop e delle lezioni dipende dal numero di partecipanti, dalla durata e dalla sede — invio una cifra precisa con il preventivo entro un giorno lavorativo."
     ]
   },
 
@@ -287,8 +302,8 @@
         ]
       },
       {
-        "h3": "«Dive into personality»",
-        "p": "Conversazione dal vivo con l'artista subito dopo il concerto, davanti al pubblico. Appena scesi dal palco le persone sono aperte come raramente accade: qui si dicono cose che in un'intervista non emergono mai. Riprese e registrazione incluse; la registrazione resta all'organizzatore.",
+        "h3": "Intervista con l'artista — «Dive into personality»",
+        "p": "Conversazione dal vivo con l'artista — il creatore, l'interprete — subito dopo il concerto, davanti al pubblico. L'obiettivo è avvicinare il pubblico all'artista. È una riflessione reciproca: l'artista può dare un nome alle proprie esperienze tecniche, interpretative, artistiche e sceniche, mentre chi ascolta capisce meglio che cosa sia un artista sulla scena e conosce le sfumature del mondo dell'esecuzione. Appena scesi dal palco le persone sono aperte come raramente accade: qui si dicono cose che in un'intervista consueta non emergono mai. Riprese e registrazione incluse; la registrazione resta all'organizzatore.",
         "specs": [
           { "k": "Durata", "v": "30–45 min" },
           { "k": "Formato", "v": "Conversazione + registrazione" },
@@ -308,6 +323,44 @@
       }
     ],
     "note": "I prezzi non comprendono il viaggio oltre un raggio di 60 km da Vilnius: oltre tale distanza si applica una tariffa di 0,25 €/km, indicata nel preventivo. I programmi contrassegnati «Su richiesta» vengono quotati in base a organico, durata e spazio — invio la cifra esatta entro un giorno lavorativo. Gli arrangiamenti su misura e i fine settimana di dicembre si quotano a parte; l'importo preciso è indicato nel preventivo prima della firma."
+  },
+
+  "growth": {
+    "eyebrow": "Vivere la trasformazione attraverso la musica",
+    "h2": "L'essere umano — uno strumento che crea la propria vita",
+    "lede": "In senso letterale e figurato.",
+    "paras": [
+      "Ognuno di noi porta dentro di sé uno strumento — il corpo, il respiro, la voce, la memoria. Lo suonano il tempo, le esperienze, le persone care, perfino il silenzio tra di esse. La domanda è una sola: lasciamo che sia qualcun altro a toccare le corde, o prendiamo in mano l'arte di creare il nostro suono?",
+      "In questo spazio la musica e l'arte non sono intrattenimento, ma un modo per tornare a sé — per sentire come suona il proprio tono interiore, quando vibra libero e quando è teso. Come lo strumento musicale chiede un corpo rilassato e, insieme, un'attenzione consapevole a ogni suono, così anche la vita invita ad ascoltare, finché non diventa un'opera nostra."
+    ],
+    "pathIntro": "Questo cammino ha le sue note",
+    "steps": [
+      { "k": "Riconoscere", "v": "Sentire quale suono risuona in te in questo momento." },
+      { "k": "Comprendere", "v": "Perché suona così e da dove viene il suo timbro." },
+      { "k": "Armonizzarsi", "v": "Accordare le corde con se stessi, finché la dissonanza interiore diventa accordo." },
+      { "k": "Mantenere l'armonia", "v": "Una volta trovata, coltivarla ogni giorno — come uno strumento che va accordato di continuo." },
+      { "k": "Armonizzare gli altri", "v": "Perché chi risuona in armonia diventa un diapason per chi gli sta intorno." }
+    ],
+    "closing": "Qui, attraverso il suono, il ritmo e il silenzio, vi invitiamo a fermarvi e a sentire: che cosa suona oggi attraverso di voi — e che cosa vorreste suonare voi stessi?"
+  },
+
+  "artExchange": {
+    "eyebrow": "Crescita personale",
+    "h2": "«Menais mainais» — uno scambio attraverso le arti",
+    "tag": "NEW",
+    "lede": "Le arti come strumento per affinare il comportamento, formare abitudini positive e arricchire l'immaginazione — grazie alla quale possiamo costruire un rapporto più bello, sostenibile, equilibrato e armonioso con noi stessi e con il mondo intorno a noi.",
+    "paras": [
+      "Un evento in cui le personalità si intrecciano attraverso arti diverse — musica, parola, movimento e immagine — stimolando l'espressione creativa dei partecipanti.",
+      "L'obiettivo di «Menais mainais» è avvicinare ogni partecipante al proprio artista interiore, perché «siamo tutti artisti in codice — solo che non tutti lo sanno…». È proprio la partecipazione interattiva agli eventi musicali e artistici che può aiutare una persona a scoprire il proprio potenziale artistico."
+    ],
+    "accent": "Volgiti nella direzione della verità!",
+    "cta": "Mi interessa questo evento",
+    "interview": {
+      "label": "Intervista · lrytas.lt · marzo 2018 · in lituano",
+      "title": "Elena Daunytė sull'artista interiore",
+      "note": "Leggi l'intervista",
+      "url": "https://www.lrytas.lt/kultura/scena/2018/03/31/news/elena-daunyte-jei-buciau-turejusi-teti-nezinia-ar-muzika-ar-literatura-butu-likusi-fone--5551622"
+    }
   },
 
   "studio": {
@@ -343,7 +396,7 @@
     "eyebrow": "Chi sono",
     "h2": "Musica costruita con la stessa cura con cui è sentita",
     "paras": [
-      "Elena Daunytė è violoncellista, vincitrice di concorsi internazionali e membro dell'ensemble familiare Regnum Musicale. Si è diplomata alla Scuola d'arte M. K. Čiurlionis e ha studiato al Royal Northern College of Music di Manchester e all'Accademia lituana di musica e teatro, nella classe del prof. Rimantas Armonas.",
+      "Elena Daunytė è artista e interprete, vincitrice di concorsi internazionali e membro dell'ensemble familiare Regnum Musicale. Il suo strumento è il violoncello: si è diplomata alla Scuola d'arte M. K. Čiurlionis e ha studiato al Royal Northern College of Music di Manchester e all'Accademia lituana di musica e teatro, nella classe del prof. Rimantas Armonas.",
       "Ha suonato con orchestre lituane e straniere e si è perfezionata in masterclass con Giovanni Sollima, David Geringas e Frans Helmerson. Ha ricevuto attestati di ringraziamento dai Presidenti della Repubblica di Lituania Valdas Adamkus e Dalia Grybauskaitė. Il videoclip «Ryto ugnis» è stato trasmesso nell'archivio LRT nell'ambito del concorso KLIPVID 2021."
     ],
     "creds": [
@@ -397,7 +450,7 @@
       },
       {
         "q": "Emettete fattura?",
-        "a": "Sì. Lavoro con certificato di attività individuale <span class=\"fill\">n.</span>, quindi emetto fattura e posso firmare un contratto di servizi — cosa che va bene alle amministrazioni degli enti pubblici."
+        "a": "Sì. Lavoro con certificato di attività individuale (codice DK4429441), quindi emetto fattura e posso firmare un contratto di servizi — cosa che va bene alle amministrazioni degli enti pubblici."
       },
       {
         "q": "Quanto costa la trasferta fuori città?",
@@ -416,6 +469,16 @@
         "a": "In caso di annullamento più di 14 giorni prima dell'evento, l'acconto viene restituito o spostato a un'altra data. Le condizioni per annullamenti successivi sono indicate nel contratto."
       }
     ]
+  },
+
+  "patreon": {
+    "eyebrow": "Sostegno",
+    "h2": "Sostieni FeelHarmonic su Patreon",
+    "lede": "La pagina Patreon di FeelHarmonic sta per arrivare — un luogo dove sarà possibile sostenere con continuità nuovi concerti, programmi educativi e la creazione dello studio aperto.",
+    "url": "",
+    "btn": "Sostieni su Patreon",
+    "soonTitle": "Patreon · presto disponibile",
+    "soonText": "Il link sarà pubblicato qui non appena la pagina sarà pronta."
   },
 
   "cta": {
@@ -446,6 +509,7 @@
       "Laboratorio didattico a scuola",
       "Laboratorio creativo o lezioni",
       "Evento terapeutico o di consapevolezza",
+      "«Menais mainais» o evento di crescita personale",
       "Ritiro",
       "Matrimonio o festa di famiglia",
       "Evento dalla A alla Z",
@@ -485,21 +549,23 @@
       { "href": "#paslaugos", "label": "Servizi" },
       { "href": "#edukacijos", "label": "Educazione" },
       { "href": "#programos", "label": "Programmi" },
+      { "href": "#augimas", "label": "Crescita personale" },
       { "href": "#studija", "label": "Studio" },
       { "href": "#galerija", "label": "Galleria" },
       { "href": "#apie", "label": "Chi sono" },
+      { "href": "#parama", "label": "Sostegno (Patreon)" },
       { "href": "#kontaktai", "label": "Contatti" }
     ],
     "colDetails": "Dati",
     "details": [
       "Elena Daunytė",
-      "Certificato di attività individuale n. <span class=\"fill\">000000</span>"
+      "Codice di attività individuale DK4429441"
     ],
     "city": "Vilnius, Lituania"
   },
 
   "schema": {
-    "jobTitle": "Violoncellista",
+    "jobTitle": "Artista, interprete",
     "knowsAbout": [
       "Violoncello",
       "Musica da camera",

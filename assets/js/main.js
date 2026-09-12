@@ -5,7 +5,7 @@
 
 var CONFIG = {
   // El. pašto adresas, kuriuo su tavimi susisieks užsakovai.
-  email: "elena.daunyte@feelharmonic.lt",
+  email: "info@feelharmonic.lt",
 
   // Formspree adresas. Registruokis formspree.io, sukurk formą ir
   // įklijuok gautą nuorodą (atrodo taip: https://formspree.io/f/abcdwxyz).

@@ -37,6 +37,11 @@ LOCALE = {"lt": "lt_LT", "en": "en_GB", "it": "it_IT"}
 LANG_SHORT = {"lt": "LT", "en": "EN", "it": "IT"}
 LANG_NAME = {"lt": "Lietuvių", "en": "English", "it": "Italiano"}
 
+EMAIL = "info@feelharmonic.lt"
+
+# Šūkis, kuriuo baigiasi kiekviena skiltis. Visomis kalbomis vienodas.
+MOTTO = '<p class="motto reveal">Let it come!</p>'
+
 MARK = """<svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="mark" viewBox="0 0 100 100">
     <g class="mark">
@@ -178,6 +183,7 @@ def hero(lang, c):
     <div>
       <p class="tagline">Let it come!</p>
       <h1>%(h1)s</h1>
+      <p class="kicker">%(kicker)s</p>
       <p class="sub">%(sub)s</p>
       <div class="acts">
         <a class="btn solid" href="#kontaktai">%(cta1)s</a>
@@ -198,7 +204,7 @@ def hero(lang, c):
     </figure>
   </div>
 </div>
-""" % {"h1": h["h1"], "sub": h["sub"], "cta1": h["ctaPrimary"], "cta2": h["ctaSecondary"],
+""" % {"h1": h["h1"], "kicker": h["kicker"], "sub": h["sub"], "cta1": h["ctaPrimary"], "cta2": h["ctaSecondary"],
        "facts": facts, "b": BASE[lang], "alt": attr(h["portraitAlt"]), "role": h["portraitRole"]}
 
 
@@ -229,10 +235,12 @@ def services(lang, c):
     <div class="grid3 reveal">
       %(cards)s
     </div>
+
+    %(motto)s
   </div>
 </section>
 """ % {"eyebrow": s["eyebrow"], "h2": s["h2"], "lede": s["lede"],
-       "cards": "\n\n      ".join(cards)}
+       "cards": "\n\n      ".join(cards), "motto": MOTTO}
 
 
 def media(lang, c):
@@ -278,10 +286,12 @@ def media(lang, c):
       <!-- ĮDĖTI: <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" ...></iframe></div> -->
       %(slots)s
     </div>
+
+    %(motto)s
   </div>
 </section>
 """ % {"eyebrow": m["eyebrow"], "h2": m["h2"], "lede": m["lede"],
-       "label": m["cardLabel"], "note": m["cardNote"], "slots": slots}
+       "label": m["cardLabel"], "note": m["cardNote"], "slots": slots, "motto": MOTTO}
 
 
 def who(lang, c):
@@ -299,9 +309,11 @@ def who(lang, c):
     <div class="who-grid reveal">
       %s
     </div>
+
+    %s
   </div>
 </section>
-""" % items
+""" % (items, MOTTO)
 
 
 def edu(lang, c):
@@ -333,10 +345,12 @@ def edu(lang, c):
     </div>
 
     %(notes)s
+
+    %(motto)s
   </div>
 </section>
 """ % {"eyebrow": e["eyebrow"], "h2": e["h2"], "lede": e["lede"],
-       "arts": "\n\n      ".join(arts), "notes": notes}
+       "arts": "\n\n      ".join(arts), "notes": notes, "motto": MOTTO}
 
 
 def programs(lang, c):
@@ -371,10 +385,94 @@ def programs(lang, c):
     </div>
 
     <p class="after-note reveal">%(note)s</p>
+
+    %(motto)s
   </div>
 </section>
 """ % {"eyebrow": p["eyebrow"], "h2": p["h2"], "lede": p["lede"],
-       "arts": "\n\n      ".join(arts), "note": p["note"]}
+       "arts": "\n\n      ".join(arts), "note": p["note"], "motto": MOTTO}
+
+
+def growth(lang, c):
+    g = c["growth"]
+    paras = "\n      ".join("<p>%s</p>" % x for x in g["paras"])
+    steps = "\n      ".join(
+        """<li>
+        <span class="n">%02d</span>
+        <b>%s</b>
+        <span>%s</span>
+      </li>""" % (i + 1, s["k"], s["v"]) for i, s in enumerate(g["steps"]))
+    return """
+<!-- ---------- ASMENINIS AUGIMAS: ŽMOGUS — INSTRUMENTAS ---------- -->
+<section id="augimas" class="band-teal">
+  <div class="in">
+    <div class="head reveal">
+      <p class="eyebrow">%(eyebrow)s</p>
+      <h2>%(h2)s</h2>
+      <p class="lede">%(lede)s</p>
+    </div>
+
+    <div class="manifest reveal">
+      %(paras)s
+    </div>
+
+    <p class="path-intro reveal">%(intro)s</p>
+    <ol class="path reveal">
+      %(steps)s
+    </ol>
+
+    <p class="manifest-close reveal">%(closing)s</p>
+
+    %(motto)s
+  </div>
+</section>
+""" % {"eyebrow": g["eyebrow"], "h2": g["h2"], "lede": g["lede"], "paras": paras,
+       "intro": g["pathIntro"], "steps": steps, "closing": g["closing"], "motto": MOTTO}
+
+
+def art_exchange(lang, c):
+    a = c["artExchange"]
+    tag = ' <span class="tag-new">%s</span>' % a["tag"] if a.get("tag") else ""
+    paras = "\n        ".join("<p>%s</p>" % x for x in a["paras"])
+    iv = a["interview"]
+    return """
+<!-- ---------- MENAIS MAINAIS ---------- -->
+<section id="menais-mainais" class="band-cream">
+  <div class="in">
+    <div class="head reveal">
+      <p class="eyebrow">%(eyebrow)s</p>
+      <h2>%(h2)s%(tag)s</h2>
+      <p class="lede">%(lede)s</p>
+    </div>
+
+    <div class="two exchange reveal">
+      <div>
+        %(paras)s
+        <p class="accent">%(accent)s</p>
+        <a class="btn dark" href="#kontaktai">%(cta)s</a>
+      </div>
+
+      <a class="media-card light" href="%(url)s" target="_blank" rel="noopener">
+        <span class="media-play" aria-hidden="true">
+          <svg viewBox="0 0 20 20" fill="currentColor"><path d="M4 11.6C4 8 6 5.6 9 4.5l.7 1.4C8 6.7 7.1 8 7 9.4h2.6V16H4v-4.4Zm7.4 0c0-3.6 2-6 5-7.1l.7 1.4c-1.7.8-2.6 2.1-2.7 3.5H17V16h-5.6v-4.4Z"/></svg>
+        </span>
+        <span class="media-body">
+          <span class="media-label">%(ivlabel)s</span>
+          <b>%(ivtitle)s</b>
+          <span class="media-note">%(ivnote)s</span>
+        </span>
+        <span class="media-go" aria-hidden="true">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h7v7M13 3 3.5 12.5"/></svg>
+        </span>
+      </a>
+    </div>
+
+    %(motto)s
+  </div>
+</section>
+""" % {"eyebrow": a["eyebrow"], "h2": a["h2"], "tag": tag, "lede": a["lede"],
+       "paras": paras, "accent": a["accent"], "cta": a["cta"], "url": attr(iv["url"]),
+       "ivlabel": iv["label"], "ivtitle": iv["title"], "ivnote": iv["note"], "motto": MOTTO}
 
 
 def studio(lang, c):
@@ -399,10 +497,12 @@ def studio(lang, c):
         <img src="%(b)sassets/img/studija.jpg" alt="%(alt)s" data-optional>
       </div>
     </div>
+
+    %(motto)s
   </div>
 </section>
 """ % {"eyebrow": s["eyebrow"], "h2": s["h2"], "lede": s["lede"], "pts": pts,
-       "cta": s["cta"], "b": BASE[lang], "alt": attr(s["alt"])}
+       "cta": s["cta"], "b": BASE[lang], "alt": attr(s["alt"]), "motto": MOTTO}
 
 
 def gallery(lang, c):
@@ -421,9 +521,11 @@ def gallery(lang, c):
     <div class="gallery reveal">
       %(figs)s
     </div>
+
+    %(motto)s
   </div>
 </section>
-""" % {"eyebrow": g["eyebrow"], "h2": g["h2"], "lede": g["lede"], "figs": figs}
+""" % {"eyebrow": g["eyebrow"], "h2": g["h2"], "lede": g["lede"], "figs": figs, "motto": MOTTO}
 
 
 def about(lang, c):
@@ -453,10 +555,13 @@ def about(lang, c):
         <img src="%(b)sassets/img/apie.jpg" alt="%(alt)s" data-optional>
       </div>
     </div>
+
+    %(motto)s
   </div>
 </section>
 """ % {"eyebrow": a["eyebrow"], "h2": a["h2"], "paras": paras, "creds": creds,
-       "last": a["closing"], "cta": a["cta"], "b": BASE[lang], "alt": attr(a["alt"])}
+       "last": a["closing"], "cta": a["cta"], "b": BASE[lang], "alt": attr(a["alt"]),
+       "motto": MOTTO}
 
 
 def quotes(lang, c):
@@ -476,9 +581,11 @@ def quotes(lang, c):
     <div class="quotes reveal">
       %(slots)s
     </div>
+
+    %(motto)s
   </div>
 </section>
-""" % {"eyebrow": q["eyebrow"], "h2": q["h2"], "lede": q["lede"], "slots": slots}
+""" % {"eyebrow": q["eyebrow"], "h2": q["h2"], "lede": q["lede"], "slots": slots, "motto": MOTTO}
 
 
 def faq(lang, c):
@@ -499,9 +606,43 @@ def faq(lang, c):
     <div class="faq reveal">
       %(items)s
     </div>
+
+    %(motto)s
   </div>
 </section>
-""" % {"eyebrow": f["eyebrow"], "h2": f["h2"], "items": items}
+""" % {"eyebrow": f["eyebrow"], "h2": f["h2"], "items": items, "motto": MOTTO}
+
+
+def patreon(lang, c):
+    p = c["patreon"]
+    # Kol "url" tuščias, rodoma pažymėta vieta su užrašu „netrukus“.
+    # Įrašius Patreon nuorodą, vietoj jos atsiranda mygtukas.
+    if p.get("url"):
+        action = ('<a class="btn dark" href="%s" target="_blank" rel="noopener">%s</a>'
+                  % (attr(p["url"]), p["btn"]))
+    else:
+        action = '<div class="slot"><strong>%s</strong><span>%s</span></div>' % (
+            p["soonTitle"], p["soonText"])
+    return """
+<!-- ---------- PARAMA (PATREON) ---------- -->
+<section id="parama" class="band-cream">
+  <div class="in">
+    <div class="two patreon reveal">
+      <div>
+        <p class="eyebrow">%(eyebrow)s</p>
+        <h2>%(h2)s</h2>
+        <p class="lede">%(lede)s</p>
+      </div>
+      <div class="patreon-box">
+        %(action)s
+      </div>
+    </div>
+
+    %(motto)s
+  </div>
+</section>
+""" % {"eyebrow": p["eyebrow"], "h2": p["h2"], "lede": p["lede"], "action": action,
+       "motto": MOTTO}
 
 
 def cta(lang, c):
@@ -513,9 +654,11 @@ def cta(lang, c):
     <h2>%s</h2>
     <p class="lede">%s</p>
     <a class="btn solid" href="#kontaktai">%s</a>
+
+    %s
   </div>
 </section>
-""" % (x["h2"], x["lede"], x["btn"])
+""" % (x["h2"], x["lede"], x["btn"], MOTTO)
 
 
 def contact(lang, c):
@@ -527,7 +670,7 @@ def contact(lang, c):
         if d["type"] == "tel":
             v = '<a href="tel:+37067004184">+370 670 04184</a>'
         elif d["type"] == "email":
-            v = '<a data-email href="mailto:elena.daunyte@feelharmonic.lt">elena.daunyte@feelharmonic.lt</a>'
+            v = '<a data-email href="mailto:%s">%s</a>' % (EMAIL, EMAIL)
         else:
             v = d["v"]
         direct.append("<dt>%s</dt>\n        <dd>%s</dd>" % (d["k"], v))
@@ -573,10 +716,12 @@ def contact(lang, c):
         %(direct)s
       </dl>
     </div>
+
+    %(motto)s
   </div>
 </section>
 </main>
-""" % {"eyebrow": k["eyebrow"], "h2": k["h2"], "data": data, "opts": opts,
+""" % {"eyebrow": k["eyebrow"], "h2": k["h2"], "data": data, "opts": opts, "motto": MOTTO,
        "f_name": f["name"], "f_org": f["org"], "f_mail": f["email"], "f_tel": f["phone"],
        "f_type": f["type"], "f_date": f["date"], "p_date": attr(f["datePlaceholder"]),
        "f_msg": f["message"], "p_msg": attr(f["messagePlaceholder"]),
@@ -611,7 +756,7 @@ def footer(lang, c):
         <h4>%(coldetails)s</h4>
         <ul>
           %(details)s
-          <li><a data-email href="mailto:elena.daunyte@feelharmonic.lt">elena.daunyte@feelharmonic.lt</a></li>
+          <li><a data-email href="mailto:%(email)s">%(email)s</a></li>
           <li><a href="tel:+37067004184">+370 670 04184</a></li>
         </ul>
       </div>
@@ -623,7 +768,7 @@ def footer(lang, c):
   </div>
 </footer>
 """ % {"about": f["about"], "colpages": f["colPages"], "pages": pages,
-       "coldetails": f["colDetails"], "details": details, "city": f["city"],
+       "coldetails": f["colDetails"], "details": details, "city": f["city"], "email": EMAIL,
        "year": datetime.date.today().year,
        "langs": langbar(lang, "in-footer", c["langAria"])}
 
@@ -637,7 +782,7 @@ def jsonld(lang, c):
                 "name": "Elena Daunytė",
                 "jobTitle": c["schema"]["jobTitle"],
                 "url": SITE + HREF[lang],
-                "email": "elena.daunyte@feelharmonic.lt",
+                "email": EMAIL,
                 "telephone": "+370 670 04184",
                 "worksFor": {"@type": "Organization", "name": "FeelHarmonic",
                              "slogan": "Let it come!", "url": SITE + "/"},
@@ -662,8 +807,9 @@ def jsonld(lang, c):
 def page(lang, c):
     return "".join([
         head(lang, c), header(lang, c), hero(lang, c), services(lang, c), media(lang, c),
-        who(lang, c), edu(lang, c), programs(lang, c), studio(lang, c), gallery(lang, c),
-        about(lang, c), quotes(lang, c), faq(lang, c), cta(lang, c), contact(lang, c),
+        who(lang, c), edu(lang, c), programs(lang, c), growth(lang, c), art_exchange(lang, c),
+        studio(lang, c), gallery(lang, c), about(lang, c), quotes(lang, c), faq(lang, c),
+        patreon(lang, c), cta(lang, c), contact(lang, c),
         footer(lang, c), jsonld(lang, c),
         '\n<script src="%sassets/js/main.js"></script>\n</body>\n</html>\n' % BASE[lang],
     ])

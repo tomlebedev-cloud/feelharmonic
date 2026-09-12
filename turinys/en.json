@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "FeelHarmonic — Elena Daunytė, cellist",
+    "title": "FeelHarmonic — Elena Daunytė, artist and performer",
     "description": "Concerts and performance art, workshops and music education, therapeutic and mindfulness events, and full event production — for schools, cultural centres, manor houses, companies and private clients across Lithuania.",
     "ogDescription": "Concerts, performance art, education, therapeutic events and full event production across Lithuania."
   },
@@ -25,14 +25,17 @@
     { "href": "#irasai", "label": "Recordings" },
     { "href": "#edukacijos", "label": "Education" },
     { "href": "#programos", "label": "Programmes" },
+    { "href": "#augimas", "label": "Personal growth" },
     { "href": "#studija", "label": "Studio" },
     { "href": "#galerija", "label": "Gallery" },
     { "href": "#apie", "label": "About" },
-    { "href": "#duk", "label": "FAQ" }
+    { "href": "#duk", "label": "FAQ" },
+    { "href": "#parama", "label": "Support" }
   ],
 
   "hero": {
-    "h1": "Live music that <em>stays</em> longer than the evening",
+    "h1": "Through music — to <em>a new you</em>!",
+    "kicker": "Towards conscious change in the presence of music and the arts",
     "sub": "Cello concerts and alternative performances, cultural education, therapeutic and mindfulness events, and celebrations produced from A to Z — for schools, cultural centres, manor houses, companies and private clients across Lithuania.",
     "ctaPrimary": "Book a performance",
     "ctaSecondary": "See the programmes",
@@ -42,12 +45,12 @@
       "Working in Lithuanian, English and Italian"
     ],
     "portraitAlt": "Elena Daunytė with her cello",
-    "portraitRole": "Cello"
+    "portraitRole": "Artist, performer"
   },
 
   "services": {
     "eyebrow": "What I offer",
-    "h2": "Six directions, one standard",
+    "h2": "Multifaceted experiential events — feeling the art of life within you",
     "lede": "Every programme is adapted to the space, the occasion and the audience — from a school hall to a manor courtyard or a yoga studio.",
     "items": [
       {
@@ -94,8 +97,8 @@
       {
         "img": "paslauga-pokalbiai.jpg",
         "alt": "Conversation with a performer after a concert",
-        "h3": "“Dive into personality”",
-        "p": "Warm, live conversations with performers straight after a concert — while the stage is still warm. Filmed and recorded; the recording stays with the organiser. Also available: finding and booking performers for your celebration.",
+        "h3": "Interview with the performer",
+        "p": "“Dive into personality” — a live conversation with the performer straight after the concert, while the stage is still warm. The audience comes closer to the artist, and the artist puts into words what they lived through on stage. Filmed; the recording stays with the organiser. Also: finding performers for your celebration.",
         "more": "Tell me more",
         "moreHref": "#programos"
       }
@@ -153,7 +156,7 @@
   "edu": {
     "eyebrow": "Education",
     "h2": "Sessions, workshops and lessons",
-    "lede": "The first two sessions are delivered to schools through the Culture Passport scheme. Workshops and lessons are booked directly — for children and adults.",
+    "lede": "Education for children and adults. The first two sessions are delivered to schools through the Culture Passport scheme; the rest are booked directly.",
     "items": [
       {
         "h3": "What does an emotion sound like?",
@@ -177,6 +180,18 @@
           { "k": "Price", "v": "€5 / pupil" },
           { "k": "Venue", "v": "at the school" },
           { "k": "Online", "v": "no" }
+        ]
+      },
+      {
+        "h3": "Discovering classical music and instruments",
+        "p": "Sessions for children and adults: an introduction to classical music in the broad sense and to musical instruments — up close, played live. If there is interest, the sessions continue as lessons in musical understanding and the art of performance.",
+        "facts": [
+          { "k": "Age", "v": "children and adults" },
+          { "k": "Length", "v": "to be agreed" },
+          { "k": "Group", "v": "to be agreed" },
+          { "k": "Price", "v": "on request" },
+          { "k": "Venue", "v": "to be agreed" },
+          { "k": "Follow-up", "v": "lessons if desired" }
         ]
       },
       {
@@ -206,7 +221,7 @@
     ],
     "notes": [
       "The first two sessions will be bookable with Culture Passport funding from January 2027, once the application is approved. Until then — by direct agreement with the school: one day, three sessions for different classes, €420.",
-      "The price of workshops and lessons depends on the number of participants, the length and the venue — I send a concrete figure with the quote within one working day."
+      "The price of introductory sessions, workshops and lessons depends on the number of participants, the length and the venue — I send a concrete figure with the quote within one working day."
     ]
   },
 
@@ -287,8 +302,8 @@
         ]
       },
       {
-        "h3": "“Dive into personality”",
-        "p": "A live conversation with a performer straight after the concert, in front of the audience. Having just come off stage, people are open in a way they rarely are otherwise — so things are said here that never make it into an interview. Filmed and recorded; the recording stays with the organiser.",
+        "h3": "Interview with the performer — “Dive into personality”",
+        "p": "A live conversation with the performer — the creator, the artist — straight after the concert, in front of the audience. The aim is to bring the audience closer to the performer. It is a two-way reflection: the performer gets to name their technical, interpretive, artistic and stage experiences, while the listener comes to understand better what an artist on stage is and gets to know the nuances of the world of performance. Having just come off stage, people are open in a way they rarely are otherwise — so things are said here that never make it into an ordinary interview. Filmed and recorded; the recording stays with the organiser.",
         "specs": [
           { "k": "Length", "v": "30–45 min" },
           { "k": "Format", "v": "Conversation + recording" },
@@ -308,6 +323,44 @@
       }
     ],
     "note": "Prices exclude travel beyond a 60 km radius of Vilnius — past that a rate of €0.25/km applies and is written into the quote. Programmes marked “On request” are priced by line-up, length and venue — I send the exact figure within one working day. Individually arranged pieces and December weekends are priced separately; you see the exact sum in the quote before signing."
+  },
+
+  "growth": {
+    "eyebrow": "Experiencing transformation through music",
+    "h2": "The human being — an instrument that creates its own life",
+    "lede": "Both literally and figuratively.",
+    "paras": [
+      "Each of us carries an instrument within — the body, the breath, the voice, memory. It is played by time, by experience, by the people close to us, even by the silence between them. The only question is this: do we let someone else touch the strings, or do we take up the craft of creating our own sound?",
+      "In this space music and art become not entertainment but a way back to yourself — to hear how your inner tone sounds, when it vibrates freely and when it is tense. Just as a musical instrument asks for a relaxed body and, at the same time, conscious attention to every sound, life too invites us to listen closely until it becomes a work of our own."
+    ],
+    "pathIntro": "The path has its own notes",
+    "steps": [
+      { "k": "Recognise", "v": "Hear what sound is resonating in you right now." },
+      { "k": "Understand", "v": "Why it sounds that way, and where its tone comes from." },
+      { "k": "Attune yourself", "v": "Tune your strings to yourself until the inner dissonance becomes a chord." },
+      { "k": "Sustain the harmony", "v": "Once you find it, nurture it every day — like an instrument that needs constant tuning." },
+      { "k": "Attune others", "v": "Because a person who sounds in harmony becomes a tuning fork for those around them." }
+    ],
+    "closing": "Here, through sound, rhythm and silence, we invite you to pause and feel: what is playing through you today — and what would you like to play yourself?"
+  },
+
+  "artExchange": {
+    "eyebrow": "Personal growth",
+    "h2": "“Menais mainais” — an exchange through the arts",
+    "tag": "NEW",
+    "lede": "The arts as a tool for refining behaviour, forming positive habits and enriching the imagination — which lets us build a more beautiful, sustainable, balanced and harmonious relationship with ourselves and with the world around us.",
+    "paras": [
+      "An event where personalities intertwine through different arts — music, word, movement and image — encouraging participants' creative self-expression.",
+      "The aim of “Menais mainais” is to bring each participant closer to their inner artist, because “we are all encoded as artists — it's just that not all of us know it…”. It is precisely interactive participation in music and other arts events that can help a person discover their own artistic potential."
+    ],
+    "accent": "Turn towards the truth!",
+    "cta": "I'm interested in this event",
+    "interview": {
+      "label": "Interview · lrytas.lt · March 2018 · in Lithuanian",
+      "title": "Elena Daunytė on the inner artist",
+      "note": "Read the interview",
+      "url": "https://www.lrytas.lt/kultura/scena/2018/03/31/news/elena-daunyte-jei-buciau-turejusi-teti-nezinia-ar-muzika-ar-literatura-butu-likusi-fone--5551622"
+    }
   },
 
   "studio": {
@@ -343,7 +396,7 @@
     "eyebrow": "About",
     "h2": "Music put together as carefully as it is felt",
     "paras": [
-      "Elena Daunytė is a cellist, a prizewinner at international competitions and a member of the family ensemble Regnum Musicale. She graduated from the M. K. Čiurlionis School of Arts and studied at the Royal Northern College of Music in Manchester and at the Lithuanian Academy of Music and Theatre, in the class of Prof. Rimantas Armonas.",
+      "Elena Daunytė is an artist and performer, a prizewinner at international competitions and a member of the family ensemble Regnum Musicale. Her instrument is the cello: she graduated from the M. K. Čiurlionis School of Arts and studied at the Royal Northern College of Music in Manchester and at the Lithuanian Academy of Music and Theatre, in the class of Prof. Rimantas Armonas.",
       "She has played with orchestras in Lithuania and abroad and taken masterclasses with Giovanni Sollima, David Geringas and Frans Helmerson. She has received letters of thanks from Presidents of the Republic of Lithuania Valdas Adamkus and Dalia Grybauskaitė. The music video “Ryto ugnis” was shown in the LRT archive as part of the KLIPVID 2021 competition."
     ],
     "creds": [
@@ -397,7 +450,7 @@
       },
       {
         "q": "Do you issue invoices?",
-        "a": "Yes. I work under an individual activity certificate <span class=\"fill\">no.</span>, so I issue invoices and can sign a service contract — which suits the accounting departments of public-sector institutions."
+        "a": "Yes. I work under an individual activity certificate (code DK4429441), so I issue invoices and can sign a service contract — which suits the accounting departments of public-sector institutions."
       },
       {
         "q": "What does travel outside the city cost?",
@@ -416,6 +469,16 @@
         "a": "If cancelled more than 14 days before the event, the deposit is returned or moved to another date. Terms for later cancellation are set out in the contract."
       }
     ]
+  },
+
+  "patreon": {
+    "eyebrow": "Support",
+    "h2": "Support FeelHarmonic on Patreon",
+    "lede": "A FeelHarmonic Patreon page is coming soon — a place where you will be able to support new concerts, educational programmes and the creation of the open studio on an ongoing basis.",
+    "url": "",
+    "btn": "Support on Patreon",
+    "soonTitle": "Patreon · coming soon",
+    "soonText": "The link will be published here as soon as the page is ready."
   },
 
   "cta": {
@@ -446,6 +509,7 @@
       "Educational session at a school",
       "Creative workshop or lessons",
       "Therapeutic or mindfulness event",
+      "“Menais mainais” or a personal growth event",
       "Retreat",
       "Wedding or family celebration",
       "Event from A to Z",
@@ -485,21 +549,23 @@
       { "href": "#paslaugos", "label": "Services" },
       { "href": "#edukacijos", "label": "Education" },
       { "href": "#programos", "label": "Programmes" },
+      { "href": "#augimas", "label": "Personal growth" },
       { "href": "#studija", "label": "Studio" },
       { "href": "#galerija", "label": "Gallery" },
       { "href": "#apie", "label": "About" },
+      { "href": "#parama", "label": "Support (Patreon)" },
       { "href": "#kontaktai", "label": "Contact" }
     ],
     "colDetails": "Details",
     "details": [
       "Elena Daunytė",
-      "Individual activity certificate no. <span class=\"fill\">000000</span>"
+      "Individual activity code DK4429441"
     ],
     "city": "Vilnius, Lithuania"
   },
 
   "schema": {
-    "jobTitle": "Cellist",
+    "jobTitle": "Artist, performer",
     "knowsAbout": [
       "Cello",
       "Chamber music",

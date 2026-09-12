@@ -487,3 +487,88 @@ footer li{margin-bottom:7px}
   background:rgba(255,255,255,.04);
 }
 .studio .creds{margin-bottom:28px}
+
+/* =====================================================================
+   Pirmo ekrano paantraštė po pagrindiniu šūkiu
+   ===================================================================== */
+.hero p.kicker{
+  font-family:var(--serif);font-style:italic;font-size:clamp(20px,2.2vw,25px);
+  line-height:1.35;color:var(--gold-lt);max-width:36ch;margin:0 0 18px;
+}
+
+/* =====================================================================
+   „Let it come!“ — šūkis kiekvienos skilties gale
+   ===================================================================== */
+.motto{
+  display:flex;align-items:center;gap:14px;margin-top:44px;
+  font-family:var(--serif);font-style:italic;font-size:19px;line-height:1.2;
+  color:var(--gold-ink);
+}
+.motto::before{content:"";width:36px;height:1px;background:var(--gold);flex:none}
+.band-teal .motto{color:var(--gold-lt)}
+.cta .motto{justify-content:center}
+.cta .motto::after{content:"";width:36px;height:1px;background:var(--gold);flex:none}
+
+/* =====================================================================
+   Edukacijos: nelyginis paskutinis blokas per visą plotį
+   ===================================================================== */
+@media(min-width:820px){.edu article:last-child:nth-child(odd){grid-column:1 / -1}}
+
+/* =====================================================================
+   Asmeninis augimas — „Žmogus — instrumentas“
+   ===================================================================== */
+.manifest{display:grid;grid-template-columns:1fr;gap:18px 56px;max-width:1000px}
+@media(min-width:900px){.manifest{grid-template-columns:1fr 1fr}}
+.manifest p{color:rgba(255,255,255,.84)}
+
+.path-intro{
+  margin:52px 0 20px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--gold-lt);
+}
+.path{
+  list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr;
+  border-top:1px solid rgba(206,142,52,.3);
+}
+@media(min-width:620px){.path{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.path{grid-template-columns:repeat(5,1fr)}}
+.path li{
+  display:grid;align-content:start;gap:6px;padding:22px 20px 24px 0;
+  border-bottom:1px solid rgba(206,142,52,.3);
+}
+@media(min-width:1000px){
+  .path li{border-bottom:0;padding-right:22px}
+  .path li + li{border-left:1px solid rgba(206,142,52,.3);padding-left:22px}
+}
+.path .n{font-family:var(--serif);font-size:15px;color:var(--gold-lt)}
+.path b{font-family:var(--serif);font-weight:500;font-size:21px;line-height:1.2;color:#fff}
+.path li span:last-child{font-size:15.5px;line-height:1.55;color:rgba(255,255,255,.72)}
+
+.manifest-close{
+  margin-top:44px;max-width:52ch;
+  font-family:var(--serif);font-size:clamp(21px,2.4vw,26px);line-height:1.4;color:#fff;
+}
+
+/* =====================================================================
+   „Menais mainais“ ir nuoroda į interviu
+   ===================================================================== */
+.exchange p{color:var(--muted);margin-bottom:16px;max-width:58ch}
+.exchange p.accent{
+  font-family:var(--serif);font-style:italic;font-size:22px;line-height:1.3;
+  color:var(--gold-ink);margin:24px 0 26px;
+}
+.exchange .media-card{align-self:start}
+.media-card.light{color:var(--ink);background:var(--paper);border-color:var(--line)}
+.media-card.light:hover{border-color:var(--gold);background:#fff}
+.media-card.light .media-label{color:var(--gold-ink)}
+.media-card.light .media-note{color:var(--muted)}
+.media-card.light .media-go{color:var(--muted)}
+.media-card.light .media-play svg{margin-left:0}
+@media(max-width:620px){.media-card.light .media-note{display:block}}
+
+/* =====================================================================
+   Parama — vieta Patreon nuorodai
+   ===================================================================== */
+.patreon{align-items:center}
+.patreon h2{font-size:clamp(28px,3.6vw,38px);line-height:1.16;margin-bottom:14px}
+.patreon-box .slot{min-height:170px}
+.patreon-box .btn{width:100%}
